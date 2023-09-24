@@ -10,317 +10,42 @@
 
 <body>
     <header>
-        <nav>
-            <p>Menu</p>
+        <nav class="menu-hamburguesa">
+            <img src="images/icons/Hamburguesa cerrado.svg" alt="Desplegable">
         </nav>
-        <img class="icono" src="images/icons/PaginaLogo.svg" alt="icono">
-        <div>
-            <p>Busqueda</p>
-        </div>
-        <img src="images/icons/Lupa.svg" alt="Lupa">
-        <img src="images/icons/bi_cart-check.svg" alt="carrito">
-        <img src="images/icons/mdi_bell.svg" alt="notificaciones">
-        <img src="images/icons/tdesign_user.svg" alt="perfil">
+
+        <img class="icono" src="images/icons/PaginaLogo.svg" alt="icono" id="logo-pagina">
+
+        <img src="images/icons/Lupa.svg" alt="Lupa" id="lupa">
+        <input type="text" name="" id="barra-busqueda" placeholder="Busca tu juego!">
+
+        <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito">
+        <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
+        <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil">
 
     </header>
 
     <section>
-        <div>
-            <h2>Recomendados para ti</h2>
-            <div class="carrusel">
-                <div class="cards">
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/RedDeadRedemption2.jpg" alt="Red Dead Redemption 2">
-                        </div>
-                        <div>
-                            <p>Red Dead Redemption</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/4enLinea.png" alt="4 En Linea Counter-Terrorist vs Terrorist">
-                        </div>
-                        <div>
-                            <p>4 En Linea Counter-Terrorist vs Terrorist</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/AlbionOnline.jpg" alt="Albion Online">
-                        </div>
-                        <div>
-                            <p>Albion Online</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/BabaIsYou.jpg" alt="Baba Is You">
-                        </div>
-                        <div>
-                            <p>Baba Is You</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/BadNorth.jpg" alt="Bad North">
-                        </div>
-                        <div>
-                            <p>Bad North</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/BlackDesert.jpg" alt="Black Desert">
-                        </div>
-                        <div>
-                            <p>Black Desert</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Counter Strike Global Offensive.jpg" alt="Counter-Strike GO">
-                        </div>
-                        <div>
-                            <p>Counter-Strike GO</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/DeadSpace.jpg" alt="Dead Space">
-                        </div>
-                        <div>
-                            <p>Dead Space</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Destiny2.jpg" alt="Destiny 2">
-                        </div>
-                        <div>
-                            <p>Destiny 2</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Divinity 2.jpg" alt="Divinity 2 Original Sin">
-                        </div>
-                        <div>
-                            <p>Divinity 2 Original Sin</p>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Dota2.jpg" alt="Dota 2">
+            <h2>Recomendados para ti</h2>
+            
+                <div class="card">
+                    <div class="contenedorImagen">
+                        <img src="images/carrusel/AlbionOnline.jpg" alt="Albion Online" class="imgJuego">
+                        <div class="badge-gratis">
+                            <div class="badge">
+                                <p class="textoBadge">Gratis</p>
+                               
+                            </div>
+                            <div class="triangulo" ></div>
                         </div>
-                        <div>
-                            <p>Dota 2</p>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/GolfWithFriends.jpg" alt="Golf With Your Friends">
-                        </div>
-                        <div>
-                            <p>Golf With Your Friends</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/HalfLife2.jpg" alt="Half Life 2">
-                        </div>
-                        <div>
-                            <p>Half Life 2</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/HuntTheNight.jpg" alt="Hunt The Night">
-                        </div>
-                        <div>
-                            <p>Hunt The Night</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/InsideTheBackrooms.jpg" alt="Inside The Backrooms">
-                        </div>
-                        <div>
-                            <p>Inside The Backrooms</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/KerbalSpaceProgram.jpg" alt="Kerbal Space Program">
-                        </div>
-                        <div>
-                            <p>Kerbal Space Program</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/KillingFloor2.jpg" alt="Killing Floor 2">
-                        </div>
-                        <div>
-                            <p>Killing Floor 2</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Neccese.jpg" alt="Necesse">
-                        </div>
-                        <div>
-                            <p>Necesse</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/OuterWilds.jpg" alt="Outer Wilds">
-                        </div>
-                        <div>
-                            <p>Outer Wilds</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Overwatch2.jpg" alt="OverWatch 2">
-                        </div>
-                        <div>
-                            <p>OverWatch 2</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Papers Please.jpg" alt="Papers Please">
-                        </div>
-                        <div>
-                            <p>Papers Please</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/PathOfExile.jpg" alt="Path Of Exile">
-                        </div>
-                        <div>
-                            <p>Path Of Exile</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/RuneScape.jpg" alt="RuneScape">
-                        </div>
-                        <div>
-                            <p>RuneScape</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Rust.jpg" alt=Rust"">
-                        </div>
-                        <div>
-                            <p>Rust</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/SekiroShadowDieTwice.jpg" alt="Sekiro Shadow Die Twice">
-                        </div>
-                        <div>
-                            <p>Sekiro Shadow Die Twice</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Skyrim.jpg" alt="Skyrim">
-                        </div>
-                        <div>
-                            <p>Skyrim</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/TeamFortress2.jpg" alt="Team Fortress 2">
-                        </div>
-                        <div>
-                            <p>Team Fortress 2</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Terraria.jpg" alt="Terraria">
-                        </div>
-                        <div>
-                            <p>Terraria</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/TheLordOfTheRingsOnline.jpg" alt="The Lord Of The Rings Online">
-                        </div>
-                        <div>
-                            <p>The Lord Of The Rings Online</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/TheSims4.jpg" alt="The Sims 4">
-                        </div>
-                        <div>
-                            <p>The Sims 4</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/TheWitcher3.jpg" alt="The Witcher 3 Wild  Hunt">
-                        </div>
-                        <div>
-                            <p>The Witcher 3 Wild  Hunt</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/TitanFall2.jpg" alt="TitanFall2">
-                        </div>
-                        <div>
-                            <p>TitanFall2</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/VampireSurvivors.jpg" alt="Vampire Survivors">
-                        </div>
-                        <div>
-                            <p>Vampire Survivors</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Warframe.jpg" alt="Warframe">
-                        </div>
-                        <div>
-                            <p>Warframe</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/Yu-Gi-Oh!.jpg" alt="Yu-Gi-Oh!">
-                        </div>
-                        <div>
-                            <p>Yu-Gi-Oh!</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="images/carrusel/ZombieArmyTrilogy.jpg" alt="Zombie Army Trilogy">
-                        </div>
-                        <div>
-                            <p>Zombie Army Trilogy</p>
-                        </div>
+                    <div class="tituloJuego">
+                        <p>Albion Online</p>
                     </div>
                 </div>
-            </div>
-        </div>
+ 
+
 
     </section>
 
@@ -444,6 +169,7 @@
             <p>Copyright © 1996 - 2023 Games Haven</p>
         </div>
     </footer>
+    <script type="text/javascript" src="js/javascript.js"></script>
 </body>
 
 </html>

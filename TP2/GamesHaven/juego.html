@@ -8,21 +8,25 @@
 </head>
 <body>
     <header>
-        <nav>
-            <p>Menu</p>
+        <nav class="menu-hamburguesa">
+            <img src="images/icons/Hamburguesa cerrado.svg" alt="Desplegable">
         </nav>
-        <img class="icono" src="images/icons/PaginaLogo.svg" alt="icono">
-        <div><p>Busqueda</p></div>
-        <img src="images/icons/Lupa.svg" alt="Lupa">
-        <img src="images/icons/bi_cart-check.svg" alt="carrito">
-        <img src="images/icons/mdi_bell.svg" alt="notificaciones">
-        <img src="images/icons/tdesign_user.svg" alt="perfil">
+
+        <img class="icono" src="images/icons/PaginaLogo.svg" alt="icono" id="logo-pagina">
+
+        <img src="images/icons/Lupa.svg" alt="Lupa" id="lupa">
+        <input type="text" name="" id="barra-busqueda" placeholder="Busca tu juego!">
+
+        <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito">
+        <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
+        <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil">
+
     </header>
 
     <section class="seccion-juego">
         <div>
-            <h1>4 en linea Counter-Terrorist vs Terrorist</h1>
-            <p>Juegos -> Estrategia -> 4 en linea Counter-Terrorist vs Terrorist</p>   
+            <h1 class="titulo-juego">4 en linea Counter-Terrorist vs Terrorist</h1>
+            <p class="breadcrumbs">Juegos -> Estrategia -> 4 en linea Counter-Terrorist vs Terrorist</p>   
                 
             <div>
                 <img src="images/paginaJuego/MenuJuego.png" alt="">
@@ -337,113 +341,113 @@
 
     </section>
     <footer>
-        <div>
-            <img src="images/icons/formkit_visa.svg" alt="visa">
-            <img src="images/icons/fontisto_mastercard.svg" alt="mastercard">
-            <img src="images/icons/simple-icons_bankofamerica.svg" alt="bankofamerica">
-            <img src="images/icons/fontisto_paypal.svg" alt="paypal">
-            <img src="images/icons/arcticons_santander.svg" alt="santander">
-            <img src="images/icons/simple-icons_hsbc.svg" alt="hsbc">
-            <img src="images/icons/simple-icons_barclays.svg" alt="barclays">
-            <img src="images/icons/mdi_bitcoin.svg" alt="bitcoin">
-            <img src="images/icons/cib_ethereum.svg" alt="ethereum">
+        <div class="metodos-pago">
+            <img src="images/icons/formkit_visa.svg" alt="visa" class="icono-pago">
+            <img src="images/icons/fontisto_mastercard.svg" alt="mastercard" class="icono-pago">
+            <img src="images/icons/simple-icons_bankofamerica.svg" alt="bankofamerica" class="icono-pago">
+            <img src="images/icons/fontisto_paypal.svg" alt="paypal" class="icono-pago">
+            <img src="images/icons/arcticons_santander.svg" alt="santander" class="icono-pago">
+            <img src="images/icons/simple-icons_hsbc.svg" alt="hsbc" class="icono-pago">
+            <img src="images/icons/simple-icons_barclays.svg" alt="barclays" class="icono-pago">
+            <img src="images/icons/mdi_bitcoin.svg" alt="bitcoin" class="icono-pago">
+            <img src="images/icons/cib_ethereum.svg" alt="ethereum" class="icono-pago">
         </div>
-        <div><!--Inicio de categorias footer-->
+        <div class="categorias"><!--Inicio de categorias footer-->
             <ul><!--Inicio de links a sitios-->
-                <li><p>Links a sitios</p></li>
-                <li>
+                <li class="titulo-categoria"><p>Links a sitios</p></li>
+                <li class="titulo-subcategoria">
                     <a href="">Home</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Categorias</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Juegos nuevos</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Trending</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Actualizados</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Recientes</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Random</a>
                 </li>    
             </ul> <!--Fin de links a sitios-->
 
             <ul> <!--Inicio de privacidad-->
-                <li><p>Privacidad</p></li>
-                <li>
+                <li class="titulo-categoria"><p>Privacidad</p></li>
+                <li class="titulo-subcategoria">
                     <a href="">Terminos y condiciones</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Declaración sobre privacidad</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Declaración sobre las cookies</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Faqs</a>
                 </li>
             </ul> <!--Fin de privacidad-->
 
             <ul><!--Inicio de información de la compania-->
-                <li><p>Información de la compania</p></li>
-                <li>
+                <li class="titulo-categoria"><p>Información de la compania</p></li>
+                <li class="titulo-subcategoria">
                     <a href="">Sobre nosotros</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Premios</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Reseñas</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Testimonios</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Contactos</a>
                 </li>
-                <li>
-                    <a href="">Actializaciones</a>
+                <li class="titulo-subcategoria">
+                    <a href="">Actualizaciones</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Ayuda</a>
                 </li>   
             </ul> <!--Fin de información de la compania-->
             
             <ul><!--Inicio de desarrolladores-->
-                <li><p>Desarrolladores</p></li>
-                <li>
+                <li class="titulo-categoria"><p>Desarrolladores</p></li>
+                <li class="titulo-subcategoria">
                     <a href="">Gonzalo Ariel Gomez</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Juan Simon Zubigaray</a>
                 </li>
             
             </ul> <!--Fin de desarrolladores-->
 
             <ul><!--Inicio de redes sociales-->
-                <li>Redes sociales</li>
-                <li>
+                <li class="titulo-categoria">Redes sociales</li>
+                <li class="titulo-subcategoria">
                     <a href="">Facebook</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">X</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Instagram</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">Discord</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">YouTube</a>
                 </li>
-                <li>
+                <li class="titulo-subcategoria">
                     <a href="">TikTok</a>
                 </li> 
             </ul> <!--Fin de redes sociales-->

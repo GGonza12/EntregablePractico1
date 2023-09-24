@@ -7,17 +7,260 @@
     outline: none;
 }
 
-body{
-    background-color: #1B2838;
+:root {
+    --color-blanco: #F0EDED;
+    --color-negro: #020202;
+    --Acento: #4A1D8D;
+    --fourth-color: #D62828;
+    --fifth-color: #003049;
+    --fondo: #1B2838;
 }
-p {
-    color: #F0EDED;
-    font-family: myFirstFont;
+
+
+
+body{
+    background-color: var(--fondo);
+}
+/*Cosas del header*/
+header {
+    height: 70px;
+    background-color: #04050C;
+    display: flex;
+}
+
+.menu-hamburguesa{
+    margin: 15px;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.icono{
+    margin-left: 30px ;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    position: absolute;
+    left: 50px;
+    width: 70px;
+    height: 51px;
+    flex-shrink: 0;
+}
+
+#lupa{
+    margin:15px 0 15px 819.5px;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+}
+
+#barra-busqueda{
+    /* Arriba | Derecha | Abajo | Izquierda 
+    margin: 10px 470px 10px 470px;*/
+    margin: 10px 0px 10px 117.5px;
+    position: absolute;
+    left: 25%;
+    width: 500px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 90px;
+    opacity: 0.5;
+    background: var(--Gris-claro, #D9D9D9);
+}
+
+#barra-busqueda::placeholder{
+    position: absolute;
+    top: 20%;
+    padding-left: 21px;
+    color: var(--Color-primario, #0C0D14);
+    font-family: RobotoRegular;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+/*.seccion-miperfil{
+  margin-left: 70%;
+}*/
+
+#perfil{
+    width: 40px;
+    margin: 15px 10px 15px 0px;
+}
+
+#notificaciones{
+    height: 24px;
+    width: 24px;
+    margin: 23px 10px 15px 0px;
+}
+
+#carrito{
+    height: 40px;
+    width: 40px;
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 15px 10px 15px 260px;
+}
+/*Fin cosas del header*/
+
+/*Inicio de cosas del FOOTER*/
+
+.metodos-pago{
+    
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #131419;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.categorias{
+    background-color: #04050C;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.titulo-categoria{
+    color: var(--Card-imagen, #FFF);
+
+    /* H3 */
+    font-family: RobotoRegular;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.titulo-subcategoria{
+    color: var(--Card-imagen, #FFF);
+    text-align: center;
+    font-family: RobotoRegular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-align: start;
+}
+
+/*Fin de cosas del FOOTER*/
+.contenedorImagen {
+    position:relative;
+    height: 115px;
+}
+.badge-hover{
+    border: 1px solid var(--Acento, #4A1D8D);
+}
+.triangulo-hover {
+    border: 1px solid var(--Acento, #4A1D8D);
+}
+
+.hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    opacity: 0.2;
+}
+
+.badge {
+    position: absolute;
+    top: -4px;
+    left: -6px;
+    width: 76px;
+    height: 34px;
+    border-radius: 0px 0px 15px 0px;
+    background-color: #85b200;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.triangulo {
+    position: absolute;
+    top: 30px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #415701;
+    border-left: 6px solid transparent;
     
 }
 
+.textoBadge {
+    
+    color: var(--color-negro);
+    font-family: RobotoMedium;
+}
+
+div > p {
+    color: var(--color-blanco);
+    font-family: RobotoRegular;
+}
+h2 {
+    color: var(--color-blanco);
+    font-family: RobotoBlack;
+}
+
+.imgJuego {
+    width: 230px;
+    height: 115px;
+    border-radius: 10px 10px 0px 0px;
+    z-index: -1;
+}
+
+.tituloJuego {
+    height: 45px;
+    display:flex;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    margin-left: 20px;
+    width: 230px;
+height: 160px;
+border-radius: 10px;
+background: #131419;
+margin-top: 10px;
+margin-bottom: 50px;
+border: 234px #4A1D8D;
+}
+
+.card:hover {
+    border: 1px solid var(--Acento, #4A1D8D);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+.titulo-juego{
+    color: var(--color-blanco);
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 31px;
+}
+
+.breadcrumbs{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-top: 22px;
+    margin-bottom: 33px;
+}
+
+
 @font-face {
-    font-family: myFirstFont;
+    font-family: RobotoRegular;
     src: url(../Fuentes/Roboto-Regular.ttf);
   }
-  
+  @font-face {
+    font-family: RobotoBlack;
+    src: url(../Fuentes/Roboto-Black.ttf);
+  }
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../Fuentes/Roboto-Medium.ttf);
+}
