@@ -318,10 +318,6 @@ h2 {
         margin-bottom: 33px;
     }
 
-    section {
-        width: 800px;
-    }
-
     .btn-compartir {
         width: 158px;
         height: 36px;
@@ -401,30 +397,130 @@ h2 {
         justify-content: start;
     }
 
-    .contenedor-comentario {
-        display: flex;
-        margin-left: 205px;
-        width: 1100px;
-        border-bottom: 1px solid var(--color-blanco);
-    }
+/*------------------------------INICIO COMENTAR---------------------------------------------------*/
+.comentario-por-hacer{
+    display: grid;
+    width: auto;
+    grid-template-columns: 50px auto;
+    grid-template-rows: 80px;
+}
 
-    .imagen-perfil-comentario {
-        width: 50px;
-        height: 50px;
-    }
+.foto-perfil-comentario{
+    width: 50px;
+    height: 50px;
+}
 
-    .datos-comentario{
-        flex-direction: row;
-    }
+.contenedor-hacer-comentario{
+    margin-left: 15px;
+    width: 100%;
+    background: var(--color-blanco);
+    opacity: 0.7;
+    border-radius: 20px;
+}
+/*------------------------------FIN COMENTAR---------------------------------------------------*/
 
+/*------------------------------INICIO COMENTARIOS---------------------------------------------------*/
 
-    aside {
-        display: flex;
-        flex-direction: row;
-    }
+.seccion-comentarios{
+    margin-left: 89px;
+}
 
+.contenedor-comentario{
+    width: 1165px;
+    height: auto;
+    flex-shrink: 0;
 
+    border-bottom: 1px solid var(--color-blanco);
+}
 
+.comentario-usuario{
+    display:flex;
+}
+
+.nombre-y-tiempo{
+    margin-left: 15px;
+    margin-top: 14px;
+}
+
+.nombre-usuario-comentario{
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+
+    color: var(--color-blanco);
+    text-align: center;
+    font-family: 'RobotoRegular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tiempo-comentario{
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+
+    color: var(--color-blanco);
+    font-family: 'RobotoRegular';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.imagen-perfil-comentario{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.comentario{
+    width: 1100px;
+    height: auto;
+    flex-shrink: 0;
+
+    color: var(--color-blanco);
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.distancia-comentario{
+    margin-left: 65px;
+}
+
+.reacciones{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:flex;
+}
+
+.puntuacion-comentario{
+    margin-right: 5px;
+}
+
+.cantidad-puntuacion{
+    margin-right: 15px;
+}
+
+.btn-responder{
+    width: 77px;
+    height: 17px;
+    flex-shrink: 0;
+
+    color: var(--color-blanco);
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*-------------------------------FIN COMENTARIOS--------------------------------------------------*/
 }
 
 /*Fin desktop*/
@@ -571,7 +667,27 @@ h2 {
     margin-top: 31px;
 }
 
+
+
+
+
 /*Fin Cards*/
+
+/*Carrusel*/
+.contenedor-carrusel {
+
+    display: flex;
+    flex-direction: row;
+  
+}
+
+
+
+
+
+
+/*Fin Carrusel*/
+
 
 @font-face {
     font-family: RobotoRegular;
