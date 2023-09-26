@@ -106,6 +106,10 @@ header {
 
     /*Inicio de cosas del FOOTER*/
 
+    footer{
+        margin-top: 50px;
+    }
+
     .metodos-pago {
 
         height: 60px;
@@ -306,7 +310,7 @@ h2 {
     margin-top: 31px;
 }
 /*Fin de las Cards*/
-    */ .breadcrumbs {
+    .breadcrumbs {
         font-family: 'RobotoRegular';
         color: var(--color-blanco);
         font-size: 14px;
@@ -398,7 +402,20 @@ h2 {
     }
 
 /*------------------------------INICIO COMENTAR---------------------------------------------------*/
+.cantidad-comentarios{
+    color: var(--color-blanco);
+    font-family: 'RobotoRegular';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-blanco);
+    width: 1165px;
+}
+
 .comentario-por-hacer{
+    margin-top: 60px;
     display: grid;
     width: auto;
     grid-template-columns: 50px auto;
@@ -412,11 +429,51 @@ h2 {
 
 .contenedor-hacer-comentario{
     margin-left: 15px;
-    width: 100%;
+    width: 1100px;
     background: var(--color-blanco);
     opacity: 0.7;
     border-radius: 20px;
 }
+
+.contenedor-hacer-comentario::placeholder{
+    color: var(--color-negro);
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+}
+
+.contenedor-btn-comentar{
+    display: flex;
+    width: 1165px;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--color-blanco);
+}
+
+.btn-comentar{
+    width: 158px;
+    height: 60px;
+    flex-shrink: 0;
+
+    border-radius: 30px;
+    background: var(--color-negro);
+
+    width: 158px;
+    margin-top: 43px;
+    margin-bottom: 19px;
+    margin-right: 85px;
+    justify-content: flex-end;
+    color: var(--color-blanco);
+    text-align: center;
+    font-family: 'RobotoRegular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /*------------------------------FIN COMENTAR---------------------------------------------------*/
 
 /*------------------------------INICIO COMENTARIOS---------------------------------------------------*/
