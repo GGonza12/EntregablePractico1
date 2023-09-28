@@ -28,46 +28,6 @@ header {
     display: flex;
 }
 
-.contenedor-informacion {
-    display: flex;
-}
-
-.publicidad {
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 62.5%;
-}
-
-.publicidad-aside {
-    display: flex;
-    justify-content: center;
-}
-
-.publicidad-larga {
-    display: flex;
-    justify-content: center;
-    background-color: #F2CF03;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.contenedor-secundario-juego {
-    display: flex;
-    justify-content: center;
-    background-color: #363840;
-    border-radius: 20px;
-}
-
-.contenedor-primario-juego {
-    width: 90%;
-    margin-left: 5%;
-}
-
-.imagen-juego-principal {
-    width: 1100px;
-    height: 900px;
-}
-
 @media (min-width:1024px) {
 
 
@@ -362,6 +322,46 @@ h2 {
         margin-bottom: 33px;
     }
 
+    .contenedor-informacion {
+        display: flex;
+    }
+
+    .publicidad {
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-left: 27.5%;
+    }
+
+    .publicidad-aside {
+        display: flex;
+        justify-content: center;
+    }
+
+    .publicidad-larga {
+        display: flex;
+        justify-content: center;
+        background-color: #F2CF03;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .contenedor-secundario-juego {
+        display: flex;
+        justify-content: center;
+        background-color: #363840;
+        border-radius: 20px;
+    }
+
+    .contenedor-primario-juego {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .imagen-juego-principal {
+        width: 1100px;
+        height: 900px;
+    }
+
     .btn-compartir {
         width: 158px;
         height: 36px;
@@ -387,7 +387,7 @@ h2 {
     }
 
     .texto {
-        width: 800px;
+        width: 940px;
         color: var(--color-blanco);
         margin-top: 20px;
 
@@ -400,6 +400,7 @@ h2 {
     }
 
     .video {
+        border-radius: 20px;
         margin-top: 20px;
         width: 800px;
         height: 426px;
@@ -416,7 +417,12 @@ h2 {
         display: flex;
         width: 380px;
         height: 348px;
-        margin-top: 25px;
+        margin-top: 10px;
+        border-radius: 20px;
+    }
+
+    .img-muestra {
+        border-radius: 20px;
     }
 
     .img-muestra-2 {
@@ -447,10 +453,9 @@ h2 {
     }
 
     .linea {
-        width: 795px;
+        width: 940px;
         height: 1px;
         display: flex;
-        margin-left: 85px;
         flex-direction: row-reverse;
         border-bottom: 1px solid var(--color-blanco);
         opacity: 0.1;
