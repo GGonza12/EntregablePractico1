@@ -11,7 +11,7 @@
     --color-blanco: #F0EDED;
     --color-negro: #020202;
     --Acento: #4A1D8D;
-    --fourth-color: #131419;
+    --color-rojo-danger: #C80C0C;
     --fifth-color: #003049;
     --fondo: #1B2838;
 }
@@ -68,7 +68,7 @@ header {
         flex-shrink: 0;
         border-radius: 90px;
         opacity: 0.5;
-        background: var(--Gris-claro, #D9D9D9);
+        background: var(--color-blanco);
     }
 
     #barra-busqueda::placeholder {
@@ -329,12 +329,13 @@ h2 {
     .publicidad {
         border-radius: 10px;
         margin-bottom: 30px;
-        margin-left: 27.5%;
+
     }
 
-    .publicidad-aside {
+    .elementos-costado-derecho {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        margin-left: 90px;
     }
 
     .publicidad-larga {
@@ -366,7 +367,7 @@ h2 {
         width: 158px;
         height: 36px;
         border-radius: 30px;
-        border: 1px solid var(--Negro, #020202);
+        border: 1px solid var(--color-negro);
         font-family: 'RobotoBlack';
         font-size: 20px;
         background: var(--Acento-Lineal, linear-gradient(90deg, #762EE1 0%, #270657 100%));
@@ -387,7 +388,7 @@ h2 {
     }
 
     .texto {
-        width: 940px;
+        width: 800px;
         color: var(--color-blanco);
         margin-top: 20px;
 
@@ -453,7 +454,7 @@ h2 {
     }
 
     .linea {
-        width: 940px;
+        width: 800px;
         height: 1px;
         display: flex;
         flex-direction: row-reverse;
@@ -804,13 +805,242 @@ h2 {
 
 }
 
-
-
-
-
-
 /*Fin Carrusel*/
 
+/*Inicio de Login*/
+
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-iniciar-sesion {
+    border-radius: 20px;
+    background: var(--Color-primario-L1, #131419);
+
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 880px;
+}
+
+.contenedor-titulo-iniciar-sesion {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-blanco);
+}
+
+.titulo-iniciar-sesion {
+    color: var(--color-blanco);
+    text-align: center;
+    width: 266px;
+    margin-bottom: 10px;
+    /*border-bottom: 1px solid var(--color-blanco);*/
+
+    /* H2 */
+    font-family: 'RobotoRegular';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.texto-intermedio {
+    color: var(--color-blanco);
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    /* H2 */
+    font-family: 'RobotoRegular';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-iniciar-red-social {
+    width: 266px;
+    height: 45px;
+    flex-shrink: 0;
+
+
+    color: #000;
+    text-align: center;
+    /* Body */
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.iniciar-con-google {
+    margin-bottom: 11px;
+}
+
+.google {
+    border-radius: 90px;
+    background: var(--color-blanco);
+}
+
+.facebook {
+    border-radius: 90px;
+    background: #2458AB;
+}
+
+.texto-label-iniciar-sesion {
+    display: flex;
+    margin-bottom: 5px;
+    color: var(--color-blanco);
+    text-align: center;
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contenedor-input-iniciar-sesion {
+    width: 266px;
+    height: 30px;
+    flex-shrink: 0;
+
+    border-radius: 90px;
+    background: var(--color-blanco);
+    opacity: 0.8;
+}
+
+.contenedor-input-iniciar-sesion::placeholder {
+    padding-left: 10px;
+}
+
+.contenedor-captcha {
+    display: flex;
+    justify-content: center;
+}
+
+.captcha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--color-blanco);
+}
+
+.captcha-confirmacion {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    background: var(--color-blanco);
+    opacity: 0.7;
+}
+
+.captcha-texto {
+    color: var(--color-negro);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    /* Body */
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.captcha-flechas {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.asterisco {
+    color: var(--color-rojo-danger);
+}
+
+#input-contraseña {
+    margin-top: 22px;
+    margin-bottom: 35px;
+}
+
+.btn-iniciar-sesion {
+    width: 145px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--Acento-Lineal, linear-gradient(90deg, #762EE1 0%, #270657 100%));
+}
+
+.contenedor-btn-iniciar-sesion {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.texto-btn-iniciar-sesion {
+    color: var(--color-blanco);
+    text-align: center;
+
+    /* Texto Botones */
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.ir-a-registrarse {
+    color: var(--color-blanco);
+    text-align: center;
+
+    /* Body */
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.registrate-ahora {
+    color: var(--Registrarse, #1BA362);
+    text-align: center;
+    font-family: 'RobotoRegular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.contenedor-texto-intermedio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linea-texto-intermedio {
+    width: 118px;
+    height: 1px;
+    background-color: var(--color-blanco);
+}
+
+/*Fin de Login*/
 
 @font-face {
     font-family: RobotoRegular;
