@@ -1,25 +1,34 @@
 "use strict";
-/*document.addEventListener("DOMContentLoaded", function() {
-    let badge = document.querySelector(".gratis");
-    badge.addEventListener("mouseover",cambiarEstilo);
-    badge.addEventListener("mouseout",cambiarEstilo);
-   
+document.addEventListener("DOMContentLoaded", function () {
 
+const carousel = document.querySelector('.carousel');
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+let currentIndex = 0;
 
+nextBtn.addEventListener('click', () => {
+  currentIndex++;
+  if (currentIndex > 5) { // Cambiar este número si deseas mostrar más o menos tarjetas a la vez
+    currentIndex = 5;
+  }
+  updateCarousel();
+});
 
-function cambiarEstilo(){
-    let badgeGratis = document.querySelector(".badge-gratis");
-    let b = document.querySelector(".badge");
-    let triangulo = document.querySelector(".triangulo-gratis");
-    b.classList.toggle("hover");
-    badgeGratis.classList.toggle("badge-hover");
-    triangulo.classList.toggle("triangulo-hover");
+prevBtn.addEventListener('click', () => {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = 0;
+  }
+  updateCarousel();
+});
+
+function updateCarousel() {
+  let translateX = currentIndex * -250; // Ajusta este valor según el número de tarjetas visibles
+  carousel.style.transform = `translateX(${translateX}px)`;
 }
 
+updateCarousel(); // Inicializar el carrusel
 
 
 
-});*/
-
-
-
+});
