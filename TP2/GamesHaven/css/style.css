@@ -12,6 +12,7 @@
     --color-negro: #020202;
     --Acento: #4A1D8D;
     --color-rojo-danger: #C80C0C;
+    --metodos-pago-color: #131419;
     --fifth-color: #003049;
     --fondo: #1B2838;
 }
@@ -27,6 +28,7 @@ header {
     background-color: #04050C;
     display: flex;
 }
+
 .menu-hamburguesa {
     margin: 15px;
     width: 40px;
@@ -74,7 +76,7 @@ margin: 10px 470px 10px 470px;*/
     font-family: RobotoRegular;
     font-size: 14px;
     font-style: normal;
-    
+
     line-height: normal;
     opacity: 0.7;
 }
@@ -184,7 +186,7 @@ margin: 10px 470px 10px 470px;*/
 
         height: 60px;
         padding-top: 10px;
-        background-color: var(--fourth-color);
+        background-color: var(--metodos-pago-color);
         display: flex;
         justify-content: space-evenly;
     }
@@ -239,7 +241,7 @@ margin: 10px 470px 10px 470px;*/
 
     .footer-final {
         height: 60px;
-        background-color: var(--fourth-color);
+        background-color: var(--metodos-pago-color);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -253,20 +255,22 @@ margin: 10px 470px 10px 470px;*/
 
     /*Cards*/
 
-    .leftButton, .rightButton {
-        display: flex  ;
+    .leftButton,
+    .rightButton {
+        display: flex;
         width: 40px;
         height: 40px;
-        margin-left: 10px;  
-        
-        
+        margin-left: 10px;
+
+
     }
 
-    .contenedor-carrusel::-webkit-scrollbar  {
-   
+    .contenedor-carrusel::-webkit-scrollbar {
+
         display: none;
-        
+
     }
+
     /*
 .contenedorImagen {
     position:relative;
@@ -831,7 +835,7 @@ h2 {
     margin-bottom: 10px;
     border: 234px #4A1D8D;
 
-    
+
 }
 
 
@@ -886,30 +890,36 @@ h2 {
     flex-direction: row;
     align-items: center;
 }
+
 button {
     background-color: inherit;
 }
-.leftButton, .rightButton {
+
+.leftButton,
+.rightButton {
     width: 40px;
     height: 40px;
-    margin-left: 10px;  
-    
+    margin-left: 10px;
+
 }
+
 .rightButton {
     margin-right: 5px;
 }
-.leftButton:active, .rightButton:active {
+
+.leftButton:active,
+.rightButton:active {
     opacity: 0.2;
 }
 
 .contenedor-carrusel {
-   
+
     overflow-x: scroll;
     width: 100%;
-    
+
 }
 
-.carrusel{
+.carrusel {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -920,10 +930,12 @@ button {
     overflow: hidden;
     width: 100%;
 }
+
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+
 .controls {
     text-align: center;
     margin-top: 20px;
