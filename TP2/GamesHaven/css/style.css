@@ -252,6 +252,21 @@ margin: 10px 470px 10px 470px;*/
     /*Fin de cosas del FOOTER*/
 
     /*Cards*/
+
+    .leftButton, .rightButton {
+        display: flex  ;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;  
+        
+        
+    }
+
+    .contenedor-carrusel::-webkit-scrollbar  {
+   
+        display: none;
+        
+    }
     /*
 .contenedorImagen {
     position:relative;
@@ -869,33 +884,34 @@ h2 {
 .carrusel-botones {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
 }
-
-.leftButton {
+button {
+    background-color: inherit;
+}
+.leftButton, .rightButton {
     width: 40px;
     height: 40px;
+    margin-left: 10px;  
+    
 }
-
 .rightButton {
-    width: 40px;
-    height: 40px;
+    margin-right: 5px;
+}
+.leftButton:active, .rightButton:active {
+    opacity: 0.2;
 }
 
 .contenedor-carrusel {
- 
    
-    overflow: hidden;
+    overflow-x: scroll;
     width: 100%;
     
-
-    
-  
 }
 
 .carrusel{
     display: flex;
-    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
 }
 
 
@@ -913,17 +929,9 @@ h2 {
     margin-top: 20px;
 }
 
-#prevBtn, #nextBtn {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
 
-#prevBtn:hover, #nextBtn:hover {
-    background-color: #0056b3;
-}
+
+
 
 /*Fin Carrusel*/
 
