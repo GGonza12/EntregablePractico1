@@ -1,48 +1,62 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
 
-let carousel = document.querySelector('.carrusel');
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
-const cantCards = document.querySelectorAll('.card').length; //cantidad de cards
-const tamCard = document.querySelector('.card').offsetWidth + 10 ; // el tamaño de la card + 10 del margin que tiene  
-const tamCarrusel = document.querySelector('.carrusel').offsetWidth; // tamaño del carrusel que tiene en el momento
+let nextBtns = document.querySelectorAll('#nextBtn');
+for(let i=0 ;i< nextBtns.length;i++){
+  nextBtns[i].addEventListener('click', siguiente);
+} ;
+let prevBtns = document.querySelectorAll('#prevBtn');
+for(let i=0 ;i< nextBtns.length;i++){
+  prevBtns[i].addEventListener('click', anterior);
+} ;
 
-console.log(cantCards);
-console.log(tamCard);
-console.log(tamCarrusel);
 
 let currentIndex = 0;
 
-nextBtn.addEventListener('click', () => {
-  currentIndex++;
-  let carouselWidth = document.querySelector('.contenedor-carrusel').scrollWidth;
-  console.log(carouselWidth);
-  let cardsVisibles = (tamCarrusel/tamCard);
-  let limiteClick = (cantCards-cardsVisibles);
-  if (currentIndex > (limiteClick)) { // Cambiar este número si deseas mostrar más o menos tarjetas a la vez
-    currentIndex = limiteClick;
-  }
-  updateCarousel();
-  carousel.classList.add('test');
-});
 
-prevBtn.addEventListener('click', () => {
+function siguiente() {
+   
+    currentIndex++;
+    let claseCards= this.dataset.cards;
+    let claseCarrusel = this.dataset.carrusel;
+    let tamCard = document.querySelector(`.${claseCards}`).offsetWidth + 10 ; // el tamaño de la card + 10 del margin que tiene  
+    let cantCards = document.querySelectorAll(`.${claseCards}`).length; //cantidad de cards
+    let carrusel = document.querySelector(`.${claseCarrusel}`); //carrusel
+    let tamCarrusel = document.querySelector(`.${claseCarrusel}`).offsetWidth; // tamaño del carrusel que tiene en el momento
+    let carouselWidth = document.querySelector(`.${claseCarrusel}`).scrollWidth;
+    console.log(carouselWidth);
+    let cardsVisibles = (tamCarrusel/tamCard);
+    let limiteClick = (cantCards-cardsVisibles);
+    if (currentIndex > (limiteClick)) { // Cambiar este número si deseas mostrar más o menos tarjetas a la vez
+      currentIndex = limiteClick;
+    }
+    updateCarousel(carrusel,tamCard,currentIndex);
+  };
+
+function anterior(){
   currentIndex--;
+  let claseCards= this.dataset.cards;
+  let claseCarrusel = this.dataset.carrusel;
+  let carrusel = document.querySelector(`.${claseCarrusel}`); //carrusel.
+  let tamCard = document.querySelector(`.${claseCards}`).offsetWidth + 10 ;
+  
   if (currentIndex < 0) {
     currentIndex = 0;
   }
-  updateCarousel();
-});
+  updateCarousel(carrusel,tamCard ,currentIndex);
+};
 
-function updateCarousel() {
+function updateCarousel(carrusel, tamCard, currentIndex) {
   let translateX = currentIndex * -tamCard; // lo que se tiene que mover el carrusel dependiendo de la pantalla
-  carousel.style.transform = `translateX(${translateX}px)`;
-  console.log(carousel);
+  carrusel.style.transform = `translateX(${translateX}px)`;
+  console.log(carrusel);
      
 };
 
-updateCarousel(); // Inicializar el carrusel
+
+
+
+
 
 //cantVisible variable que es la cantidad de cards que quiere que se muestre en el home (capaz que en px del tamaño de card)
 //cantCards guardo la cantidad de cards que tengo 
