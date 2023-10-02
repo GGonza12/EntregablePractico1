@@ -100,7 +100,511 @@ margin: 10px 470px 10px 470px;*/
 }
 
 
-@media (min-width:1024px) {
+
+
+
+
+/*Mobile*/
+
+/*Cards*/
+
+
+
+
+
+.badge-gratis {
+    position: absolute;
+    top: -4px;
+    left: -6px;
+    width: 45px;
+    height: 24px;
+    border-radius: 0px 0px 15px 0px;
+    background-color: #85b200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangulo-gratis {
+    position: absolute;
+    top: 20px;
+    left: -6px;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid #415701;
+    border-left: 6px solid transparent;
+
+}
+
+.badge-pago {
+    position: absolute;
+    top: -4px;
+    left: -6px;
+    width: 60px;
+    height: 24px;
+    border-radius: 0px 0px 15px 0px;
+    background: var(--Colo-secundario, #F5AA00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangulo-pago {
+    position: absolute;
+    top: 20px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #976900;
+    border-left: 6px solid transparent;
+
+}
+
+.textoBadge {
+
+    color: var(--color-negro);
+    font-family: RobotoMedium;
+}
+
+.imgJuego {
+    width: 160px;
+    height: 90px;
+    border-radius: 10px 10px 0px 0px;
+    z-index: -1;
+}
+
+.contenedorImagen {
+    position: relative;
+    height: 90px;
+}
+
+.tituloJuego {
+    height: 28px;
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    margin: 5px;
+    width: 160px;
+    height: 118px;
+    border-radius: 10px;
+    background: #131419;
+    border: 234px #4A1D8D;
+
+}
+
+
+.card:hover {
+    border: 1px solid var(--Acento, #4A1D8D);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+.gratis:hover .badge {
+
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    opacity: 0.2;
+}
+
+.pago:hover .badge {
+
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    opacity: 0.2;
+}
+
+
+div>p {
+    color: var(--color-blanco);
+    font-family: RobotoRegular;
+    font-size: 12px;
+}
+
+h2 {
+    color: var(--color-blanco);
+    font-family: RobotoBlack;
+}
+
+.titulo-juego {
+    color: var(--color-blanco);
+    font-family: 'RobotoRegular';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 31px;
+}
+
+
+
+
+
+/*Fin Cards*/
+
+/*Carrusel 1*/
+.carrusel-botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button {
+    background-color: inherit;
+}
+
+.leftButton,
+.rightButton {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+
+}
+
+.rightButton {
+    margin-right: 5px;
+}
+
+.leftButton:active,
+.rightButton:active {
+    opacity: 0.2;
+}
+
+.contenedor-carrusel {
+
+    overflow-x: scroll;
+    width: 100%;
+    
+
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+/*Fin Carrusel*/
+
+/*Inicio de Login*/
+
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-iniciar-sesion {
+    border-radius: 20px;
+    background: var(--Color-primario-L1, #131419);
+
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 880px;
+}
+
+.contenedor-titulo-iniciar-sesion {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(240, 237, 237, 0.3);
+
+}
+
+.titulo-iniciar-sesion {
+    color: var(--color-blanco);
+    text-align: center;
+    width: 266px;
+    margin-bottom: 10px;
+    /*border-bottom: 1px solid var(--color-blanco);*/
+
+    /* H2 */
+    font-family: 'RobotoRegular';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.texto-intermedio {
+    color: var(--color-blanco);
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    /* H2 */
+    font-family: 'RobotoRegular';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-iniciar-red-social {
+    width: 266px;
+    height: 45px;
+    flex-shrink: 0;
+
+
+    color: #000;
+    text-align: center;
+    /* Body */
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.iniciar-con-google {
+    margin-bottom: 11px;
+}
+
+.google {
+    border-radius: 90px;
+    background: var(--color-blanco);
+}
+
+.facebook {
+    border-radius: 90px;
+    background: #2458AB;
+}
+
+.texto-label-iniciar-sesion {
+    display: flex;
+    margin-bottom: 5px;
+    color: var(--color-blanco);
+    text-align: center;
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contenedor-input-iniciar-sesion {
+    width: 266px;
+    height: 30px;
+    flex-shrink: 0;
+
+    border-radius: 90px;
+    background: var(--color-blanco);
+    opacity: 0.8;
+}
+
+.contenedor-input-iniciar-sesion::placeholder {
+    padding-left: 10px;
+}
+
+.contenedor-captcha {
+    display: flex;
+    justify-content: center;
+}
+
+.captcha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--color-blanco);
+}
+
+.captcha-confirmacion {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    background: var(--color-blanco);
+    opacity: 0.7;
+}
+
+.captcha-texto {
+    color: var(--color-negro);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    /* Body */
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.captcha-flechas {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.asterisco {
+    color: var(--color-rojo-danger);
+}
+
+#input-contraseña {
+    margin-top: 22px;
+    margin-bottom: 35px;
+}
+
+.btn-iniciar-sesion {
+    width: 145px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--Acento-Lineal, linear-gradient(90deg, #762EE1 0%, #270657 100%));
+}
+
+.contenedor-btn-iniciar-sesion {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.texto-btn-iniciar-sesion {
+    color: var(--color-blanco);
+    text-align: center;
+
+    /* Texto Botones */
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.ir-a-registrarse {
+    color: var(--color-blanco);
+    text-align: center;
+
+    /* Body */
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.registrate-ahora {
+    color: var(--Registrarse, #1BA362);
+    text-align: center;
+    font-family: 'RobotoRegular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.contenedor-texto-intermedio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linea-texto-intermedio {
+    width: 118px;
+    height: 1px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: var(--color-blanco);
+    opacity: 0.3;
+}
+
+/*Fin de Login*/
+
+/*Inicio de Sign Up*/
+
+.contenedor-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-signup {
+    margin-top: 22px;
+}
+
+.captcha-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--color-blanco);
+}
+
+.contenedor-titulo-signup {
+    margin-top: 2px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(240, 237, 237, 0.3);
+}
+
+.contenedor-captcha-signup {
+    margin-top: 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-btn-signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+
+/*Fin de Sign Up*/
+
+.cards-aside {
+    display: flex;
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../Fuentes/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoBlack;
+    src: url(../Fuentes/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../Fuentes/Roboto-Medium.ttf);
+}
+
+ /*-------------------------------Incio DESKTOP--------------------------------------------------*/
+
+@media  (min-width:1024px) {
 
 
 
@@ -297,7 +801,7 @@ margin: 10px 470px 10px 470px;*/
 }
 
 .triangulo-pago {
-    top: 24px;
+    top: 30px;
     left: -6px;
     
 }
@@ -664,517 +1168,4 @@ border-radius: 10px;
 
     /*-------------------------------FIN COMENTARIOS--------------------------------------------------*/
 }
-
 /*Fin desktop*/
-
-/*Mobile*/
-
-/*Cards*/
-
-
-
-
-
-.badge-gratis {
-    position: absolute;
-    top: -4px;
-    left: -6px;
-    width: 45px;
-    height: 24px;
-    border-radius: 0px 0px 15px 0px;
-    background-color: #85b200;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.triangulo-gratis {
-    position: absolute;
-    top: 20px;
-    left: -6px;
-    width: 0px;
-    height: 0px;
-    border-top: 7px solid #415701;
-    border-left: 6px solid transparent;
-
-}
-
-.badge-pago {
-    position: absolute;
-    top: -4px;
-    left: -6px;
-    width: 60px;
-    height: 24px;
-    border-radius: 0px 0px 15px 0px;
-    background: var(--Colo-secundario, #F5AA00);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.triangulo-pago {
-    position: absolute;
-    top: 20px;
-    left: -6px;
-    width: 0;
-    height: 0;
-    border-top: 7px solid #976900;
-    border-left: 6px solid transparent;
-
-}
-
-.textoBadge {
-
-    color: var(--color-negro);
-    font-family: RobotoMedium;
-}
-
-.imgJuego {
-    width: 160px;
-    height: 90px;
-    border-radius: 10px 10px 0px 0px;
-    z-index: -1;
-}
-
-.contenedorImagen {
-    position: relative;
-    height: 90px;
-}
-
-.tituloJuego {
-    height: 28px;
-    display: flex;
-    border-radius: 0px 0px 10px 10px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.card {
-    margin: 5px;
-    width: 160px;
-    height: 118px;
-    border-radius: 10px;
-    background: #131419;
-    border: 234px #4A1D8D;
-
-}
-
-
-.card:hover {
-    border: 1px solid var(--Acento, #4A1D8D);
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-}
-
-.gratis:hover .badge {
-
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    opacity: 0.2;
-}
-
-.pago:hover .badge {
-
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    opacity: 0.2;
-}
-
-
-div>p {
-    color: var(--color-blanco);
-    font-family: RobotoRegular;
-    font-size: 12px;
-}
-
-h2 {
-    color: var(--color-blanco);
-    font-family: RobotoBlack;
-}
-
-.titulo-juego {
-    color: var(--color-blanco);
-    font-family: 'RobotoRegular';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 31px;
-}
-
-
-
-
-
-/*Fin Cards*/
-
-/*Carrusel 1*/
-.carrusel-botones {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-button {
-    background-color: inherit;
-}
-
-.leftButton,
-.rightButton {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-
-}
-
-.rightButton {
-    margin-right: 5px;
-}
-
-.leftButton:active,
-.rightButton:active {
-    opacity: 0.2;
-}
-
-.contenedor-carrusel {
-
-    overflow-x: scroll;
-    width: 100%;
-
-}
-
-.carrusel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-
-/*Carrusel 2 */
-.carousel-container {
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.controls {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-
-
-
-/*Fin Carrusel*/
-
-/*Inicio de Login*/
-
-.contenedor-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedor-inputs {
-    display: flex;
-    flex-direction: column;
-}
-
-.formulario-iniciar-sesion {
-    border-radius: 20px;
-    background: var(--Color-primario-L1, #131419);
-
-    display: flex;
-    margin-top: 50px;
-    flex-direction: column;
-    align-items: center;
-    width: 600px;
-    height: 880px;
-}
-
-.contenedor-titulo-iniciar-sesion {
-    margin-top: 150px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(240, 237, 237, 0.3);
-
-}
-
-.titulo-iniciar-sesion {
-    color: var(--color-blanco);
-    text-align: center;
-    width: 266px;
-    margin-bottom: 10px;
-    /*border-bottom: 1px solid var(--color-blanco);*/
-
-    /* H2 */
-    font-family: 'RobotoRegular';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.texto-intermedio {
-    color: var(--color-blanco);
-    text-align: center;
-    margin-top: 2px;
-    margin-bottom: 2px;
-
-    /* H2 */
-    font-family: 'RobotoRegular';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.btn-iniciar-red-social {
-    width: 266px;
-    height: 45px;
-    flex-shrink: 0;
-
-
-    color: #000;
-    text-align: center;
-    /* Body */
-    font-family: 'RobotoRegular';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.iniciar-con-google {
-    margin-bottom: 11px;
-}
-
-.google {
-    border-radius: 90px;
-    background: var(--color-blanco);
-}
-
-.facebook {
-    border-radius: 90px;
-    background: #2458AB;
-}
-
-.texto-label-iniciar-sesion {
-    display: flex;
-    margin-bottom: 5px;
-    color: var(--color-blanco);
-    text-align: center;
-    font-family: 'RobotoRegular';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.contenedor-input-iniciar-sesion {
-    width: 266px;
-    height: 30px;
-    flex-shrink: 0;
-
-    border-radius: 90px;
-    background: var(--color-blanco);
-    opacity: 0.8;
-}
-
-.contenedor-input-iniciar-sesion::placeholder {
-    padding-left: 10px;
-}
-
-.contenedor-captcha {
-    display: flex;
-    justify-content: center;
-}
-
-.captcha {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
-    height: 70px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: var(--color-blanco);
-}
-
-.captcha-confirmacion {
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    background: var(--color-blanco);
-    opacity: 0.7;
-}
-
-.captcha-texto {
-    color: var(--color-negro);
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-
-    /* Body */
-    font-family: 'RobotoRegular';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.captcha-flechas {
-    width: 50px;
-    height: 50px;
-    flex-shrink: 0;
-}
-
-.asterisco {
-    color: var(--color-rojo-danger);
-}
-
-#input-contraseña {
-    margin-top: 22px;
-    margin-bottom: 35px;
-}
-
-.btn-iniciar-sesion {
-    width: 145px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: var(--Acento-Lineal, linear-gradient(90deg, #762EE1 0%, #270657 100%));
-}
-
-.contenedor-btn-iniciar-sesion {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.texto-btn-iniciar-sesion {
-    color: var(--color-blanco);
-    text-align: center;
-
-    /* Texto Botones */
-    font-family: 'RobotoRegular';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
-
-.ir-a-registrarse {
-    color: var(--color-blanco);
-    text-align: center;
-
-    /* Body */
-    font-family: 'RobotoRegular';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.registrate-ahora {
-    color: var(--Registrarse, #1BA362);
-    text-align: center;
-    font-family: 'RobotoRegular';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
-}
-
-.contenedor-texto-intermedio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.linea-texto-intermedio {
-    width: 118px;
-    height: 1px;
-    margin-right: 5px;
-    margin-left: 5px;
-    background-color: var(--color-blanco);
-    opacity: 0.3;
-}
-
-/*Fin de Login*/
-
-/*Inicio de Sign Up*/
-
-.contenedor-signup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.label-signup {
-    margin-top: 22px;
-}
-
-.captcha-signup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
-    height: 70px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: var(--color-blanco);
-}
-
-.contenedor-titulo-signup {
-    margin-top: 2px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(240, 237, 237, 0.3);
-}
-
-.contenedor-captcha-signup {
-    margin-top: 25px;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedor-btn-signup {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 15px;
-}
-
-
-
-/*Fin de Sign Up*/
-
-.cards-aside {
-    display: flex;
-}
-
-@font-face {
-    font-family: RobotoRegular;
-    src: url(../Fuentes/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: RobotoBlack;
-    src: url(../Fuentes/Roboto-Black.ttf);
-}
-
-@font-face {
-    font-family: RobotoMedium;
-    src: url(../Fuentes/Roboto-Medium.ttf);
-}

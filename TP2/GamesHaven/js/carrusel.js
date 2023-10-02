@@ -4,16 +4,24 @@ document.addEventListener("DOMContentLoaded", function () {
 let carousel = document.querySelector('.carrusel');
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
-const cantCards = document.querySelectorAll('.card').length;
+const cantCards = document.querySelectorAll('.card').length; //cantidad de cards
+const tamCard = document.querySelector('.card').offsetWidth + 10 ; // el tamaño de la card + 10 del margin que tiene  
+const tamCarrusel = document.querySelector('.carrusel').offsetWidth; // tamaño del carrusel que tiene en el momento
+
 console.log(cantCards);
+console.log(tamCard);
+console.log(tamCarrusel);
+
 let currentIndex = 0;
 
 nextBtn.addEventListener('click', () => {
   currentIndex++;
   let carouselWidth = document.querySelector('.contenedor-carrusel').scrollWidth;
   console.log(carouselWidth);
-  if (currentIndex > 7) { // Cambiar este número si deseas mostrar más o menos tarjetas a la vez
-    currentIndex = 7;
+  let cardsVisibles = (tamCarrusel/tamCard);
+  let limiteClick = (cantCards-cardsVisibles);
+  if (currentIndex > (limiteClick)) { // Cambiar este número si deseas mostrar más o menos tarjetas a la vez
+    currentIndex = limiteClick;
   }
   updateCarousel();
   carousel.classList.add('test');
@@ -28,7 +36,7 @@ prevBtn.addEventListener('click', () => {
 });
 
 function updateCarousel() {
-  let translateX = currentIndex * -165; // Ajusta este valor según el número de tarjetas visibles
+  let translateX = currentIndex * -tamCard; // lo que se tiene que mover el carrusel dependiendo de la pantalla
   carousel.style.transform = `translateX(${translateX}px)`;
   console.log(carousel);
      
@@ -36,57 +44,9 @@ function updateCarousel() {
 
 updateCarousel(); // Inicializar el carrusel
 
-
+//cantVisible variable que es la cantidad de cards que quiere que se muestre en el home (capaz que en px del tamaño de card)
+//cantCards guardo la cantidad de cards que tengo 
+//cantCards-cantVisible la cantidad de veces que se va a mover el carrusel si tengo 7 cards y muestro 5 se mueve 2 veces.
+//translateX mover la card por px mejor mover una card entera (230px)
 
 }); 
-
-/*"use strict";
-document.addEventListener("DOMContentLoaded", function () {
-  const carouselContainer = document.querySelector('.contenedor-carrusel');
-  const carousel = document.querySelector('.carrusel');
-  const prevBtn = document.querySelector('#prevBtn');
-  const nextBtn = document.querySelector('#nextBtn');
-  const cardSize = document.querySelector('.card').offsetWidth;
-  
-  
-  let currentIndex = 0;
-  let cardWidth; // Ancho de cada tarjeta en porcentaje, se calculará dinámicamente
-  
-  nextBtn.addEventListener('click', () => {
-    currentIndex++;
-    const maxIndex = Math.max(0, Math.min(cardCount - visibleCards, cardCount - 1));
-    currentIndex = Math.min(currentIndex, maxIndex);
-    updateCarousel();
-  });
-  
-  prevBtn.addEventListener('click', () => {
-    currentIndex--;
-    currentIndex = Math.max(currentIndex, 0);
-    updateCarousel();
-  });
-  
-  function updateCarousel() {
-    cardWidth = 100 / visibleCards; // Calcula el ancho de la tarjeta dinámicamente
-    const translateX = currentIndex * -cardWidth;
-    carousel.style.transform = `translateX(${translateX}%)`;
-  }
-  
-  // Detectar el número de tarjetas visibles en función del ancho de la ventana gráfica
-  let visibleCards = calculateVisibleCards();
-  window.addEventListener('resize', () => {
-    visibleCards = calculateVisibleCards();
-    updateCarousel();
-  });
-  
-  function calculateVisibleCards() {
-    const windowWidth = window.innerWidth;
-    const cardMargin = 5; // Márgenes entre tarjetas en píxeles
-    const minCardWidth = cardSize; // Ancho mínimo de la tarjeta en píxeles
-    return Math.floor((windowWidth - cardMargin) / minCardWidth);
-  }
-  
-  // Inicializar el carrusel
-  const cardCount = document.querySelectorAll('.card').length;
-  updateCarousel();
-
-});*/
