@@ -271,133 +271,56 @@ margin: 10px 470px 10px 470px;*/
 
     }
 
-    /*
+
 .contenedorImagen {
-    position:relative;
     height: 115px;
 }
 
-
-.hover{
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    opacity: 0.2;
-}
-
 .badge-gratis {
-    position: absolute;
-    top: -4px;
+    top: 2px;
     left: -6px;
     width: 55px;
     height: 28px;
-    border-radius: 0px 0px 15px 0px;
-    background-color: #85b200;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+
+}
+
+.triangulo-gratis {
+    top: 30px;
+    left: -6px;
+    
 }
 .badge-pago {
-    position: absolute;
-    top: -4px;
+    top: 2px;
     left: -6px;
     width: 75px;
     height: 28px;
-    border-radius: 0px 0px 15px 0px;
-    background: var(--Colo-secundario, #F5AA00);
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
-.triangulo-gratis {
-    position: absolute;
-    top: 24px;
-    left: -6px;
-    width: 0px;
-    height: 0px;
-    border-top: 7px solid #415701;
-    border-left: 6px solid transparent;
-    
-}
+
 .triangulo-pago {
-    position: absolute;
     top: 24px;
     left: -6px;
-    width: 0;
-    height: 0;
-    border-top: 7px solid #976900;
-    border-left: 6px solid transparent;
     
 }
 
-.textoBadge {
-    
-    color: var(--color-negro);
-    font-family: RobotoMedium;
-}
 .imgJuego {
-    width: 160px;
-    height: 90px;
-    border-radius: 10px 10px 0px 0px;
-    z-index: -1;
+    width: 230px;
+    height: 115px;
 }
 
 .tituloJuego {
     height: 45px;
-    display:flex;
-    border-radius: 0px 0px 10px 10px;
-    justify-content: center;
-    align-items: center;
 
 }
 
 .card {
-    margin-left: 20px;
-    width: 160px;
-height: 118px;
+    margin: 5px;
+    width: 230px;
+height: 160px;
 border-radius: 10px;
-background: #131419;
-margin-top: 10px;
-margin-bottom: 50px;
-border: 234px #4A1D8D;
 }
 
-.card:hover {
-    border: 1px solid var(--Acento, #4A1D8D);
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-}
-.gratis:hover .badge{
-    
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    opacity: 0.2;
-}
-.pago:hover .badge-pago {
-    border: 1px solid var(--Acento, #4A1D8D);
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    opacity: 0.2;
-}
-.pago:hover .badge {
-    
-    border: 1px solid var(--Acento, #4A1D8D);
-opacity: 0.2;
-}
 
-div > p {
-    color: var(--color-blanco);
-    font-family: RobotoRegular;
-}
-h2 {
-    color: var(--color-blanco);
-    font-family: RobotoBlack;
-}
 
-.titulo-juego{
-    color: var(--color-blanco);
-    font-family: 'RobotoRegular';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 31px;
-}
 /*Fin de las Cards*/
     .breadcrumbs {
         font-family: 'RobotoRegular';
@@ -751,10 +674,6 @@ h2 {
 
 
 
-.hover {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    opacity: 0.2;
-}
 
 .badge-gratis {
     position: absolute;
@@ -837,10 +756,7 @@ h2 {
     height: 118px;
     border-radius: 10px;
     background: #131419;
-
-
     border: 234px #4A1D8D;
-
 
 }
 

@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 let carousel = document.querySelector('.carrusel');
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
+const cantCards = document.querySelectorAll('.card').length;
+console.log(cantCards);
 let currentIndex = 0;
 
 nextBtn.addEventListener('click', () => {
