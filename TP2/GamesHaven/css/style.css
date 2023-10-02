@@ -831,8 +831,8 @@ h2 {
     height: 118px;
     border-radius: 10px;
     background: #131419;
-    
-    
+
+
     border: 234px #4A1D8D;
 
 
@@ -1181,6 +1181,49 @@ button {
 }
 
 /*Fin de Login*/
+
+/*Inicio de Sign Up*/
+
+.contenedor-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-signup {
+    margin-top: 22px;
+}
+
+.captcha-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--color-blanco);
+}
+
+.contenedor-titulo-signup {
+    margin-top: 2px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-blanco);
+}
+
+.contenedor-captcha-signup {
+    margin-top: 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Fin de Sign Up*/
 
 @font-face {
     font-family: RobotoRegular;

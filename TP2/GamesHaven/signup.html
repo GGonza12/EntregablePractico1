@@ -31,22 +31,26 @@
     <div class="contenedor-form">
         <section class="formulario-iniciar-sesion">
 
-            <div class="contenedor-titulo-iniciar-sesion">
+            <div class="contenedor-titulo-signup">
                 <h2 class="titulo-iniciar-sesion">Registrate aqui</h2>
             </div>
 
 
-            <form>
+            <form class="formulario">
                 <div class="iniciar-con-google">
-                    <button class="btn-iniciar-red-social google">
-                        <img src="images/icons/devicon_google.svg" alt="" class="icono-google">
-                        Iniciar sesión con Google</button>
+                    <a href="index.html">
+                        <button type="button" class="btn-iniciar-red-social google">
+                            <img src="images/icons/devicon_google.svg" alt="" class="icono-google">
+                            Iniciar sesión con Google</button>
+                    </a>
                 </div>
 
                 <div class="iniciar-con-facebook">
-                    <button class="btn-iniciar-red-social facebook">
-                        <img src="images/icons/logos_facebook.svg" alt="" class="icono-facebook">
-                        Iniciar sesión con Facebook</button>
+                    <a href="index.html">
+                        <button type="button" class="btn-iniciar-red-social facebook">
+                            <img src="images/icons/logos_facebook.svg" alt="" class="icono-facebook">
+                            Iniciar sesión con Facebook</button>
+                    </a>
                 </div>
 
                 <div class="contenedor-texto-intermedio">
@@ -56,8 +60,8 @@
                 </div>
 
 
-                <div class="contenedor-inputs">
-                    <div>
+                <div class="contenedor-signup">
+                    <div class="">
                         <label class="texto-label-iniciar-sesion">
                             Nombre y Apellido<span class="asterisco">*</span>
                         </label>
@@ -66,7 +70,7 @@
                     </div>
 
                     <div>
-                        <label class="texto-label-iniciar-sesion">
+                        <label class="texto-label-iniciar-sesion label-signup">
                             NickName
                         </label>
 
@@ -74,7 +78,7 @@
                     </div>
 
                     <div>
-                        <label class="texto-label-iniciar-sesion">
+                        <label class="texto-label-iniciar-sesion label-signup">
                             Edad<span class="asterisco">*</span>
                         </label>
 
@@ -82,7 +86,7 @@
                     </div>
 
                     <div>
-                        <label class="texto-label-iniciar-sesion">
+                        <label class="texto-label-iniciar-sesion label-signup">
                             Mail<span class="asterisco">*</span>
                         </label>
 
@@ -90,24 +94,26 @@
                             placeholder="Johndoe21312@gmail.com">
                     </div>
 
-                    <div id="input-contraseña-signup">
-                        <label class="texto-label-iniciar-sesion">
+                    <div id="">
+                        <label class="texto-label-iniciar-sesion label-signup">
                             Contraseña<span class="asterisco">*</span>
                         </label>
 
                         <input type="password" name="password" id="" class="contenedor-input-iniciar-sesion">
                     </div>
 
-                    <div id="input-again-contraseña">
-                        <label class="texto-label-iniciar-sesion">
-                            Contraseña<span class="asterisco">*</span>
+                    <div id="">
+                        <label class="texto-label-iniciar-sesion label-signup">
+                            Repita su contraseña<span class="asterisco">*</span>
                         </label>
 
-                        <input type="password" name="again-password" id="" class="contenedor-input-iniciar-sesion">
+                        <input type="password" name="again-password" id="again-password"
+                            class="contenedor-input-iniciar-sesion">
                     </div>
 
                 </div>
-                <div class="contenedor-captcha">
+
+                <div class="contenedor-captcha-signup">
                     <div class="captcha">
 
                         <div class="captcha-confirmacion">
@@ -121,15 +127,15 @@
                 </div>
 
                 <div class="contenedor-btn-iniciar-sesion">
-                    <button class="btn-iniciar-sesion texto-btn-iniciar-sesion">Registrarse</button>
+                    <a href="index.html">
+                        <button type="button" class="btn-iniciar-sesion texto-btn-iniciar-sesion">Registrarse</button>
+                    </a>
                 </div>
 
-
-
                 <p><span class="ir-a-registrarse">¿Ya una tienes cuenta?</span>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-                        class="registrate-ahora">Inicia sesion ahora</a>
+                    <a href="login.html" class="registrate-ahora">Inicia sesion ahora</a>
                 </p>
+
 
             </form>
         </section>
