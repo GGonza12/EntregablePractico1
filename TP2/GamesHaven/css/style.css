@@ -417,14 +417,20 @@ h2 {
 
     .publicidad {
         border-radius: 10px;
-        margin-bottom: 30px;
-
+        margin-bottom: 37px;
+        margin-top: 37px;
     }
 
     .elementos-costado-derecho {
         display: flex;
         flex-direction: column;
         margin-left: 90px;
+    }
+
+    .publicidad-aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .publicidad-larga {
@@ -1224,6 +1230,10 @@ button {
 }
 
 /*Fin de Sign Up*/
+
+.cards-aside {
+    display: flex;
+}
 
 @font-face {
     font-family: RobotoRegular;
