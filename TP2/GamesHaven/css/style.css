@@ -275,7 +275,7 @@ button {
 
     overflow-x: scroll;
     width: 100%;
-    
+
 
 }
 
@@ -602,9 +602,9 @@ button {
     src: url(../Fuentes/Roboto-Medium.ttf);
 }
 
- /*-------------------------------Incio DESKTOP--------------------------------------------------*/
+/*-------------------------------Incio DESKTOP--------------------------------------------------*/
 
-@media  (min-width:1024px) {
+@media (min-width:1024px) {
 
 
 
@@ -776,56 +776,65 @@ button {
     }
 
 
-.contenedorImagen {
-    height: 115px;
-}
+    .contenedorImagen {
+        height: 115px;
+    }
 
-.badge-gratis {
-    top: 2px;
-    left: -6px;
-    width: 55px;
-    height: 28px;
+    .badge-gratis {
+        top: 2px;
+        left: -6px;
+        width: 55px;
+        height: 28px;
 
-}
+    }
 
-.triangulo-gratis {
-    top: 30px;
-    left: -6px;
-    
-}
-.badge-pago {
-    top: 2px;
-    left: -6px;
-    width: 75px;
-    height: 28px;
-}
+    .triangulo-gratis {
+        top: 30px;
+        left: -6px;
 
-.triangulo-pago {
-    top: 30px;
-    left: -6px;
-    
-}
+    }
 
-.imgJuego {
-    width: 230px;
-    height: 115px;
-}
+    .badge-pago {
+        top: 2px;
+        left: -6px;
+        width: 75px;
+        height: 28px;
+    }
 
-.tituloJuego {
-    height: 45px;
+    .triangulo-pago {
+        top: 30px;
+        left: -6px;
 
-}
+    }
 
-.card {
-    margin: 5px;
-    width: 230px;
-height: 160px;
-border-radius: 10px;
-}
+    .imgJuego {
+        width: 230px;
+        height: 115px;
+    }
+
+    .tituloJuego {
+        height: 45px;
+        width: 230px;
+    }
+
+    .tituloJuego p {
+        font-size: 20px;
+    }
+
+    .textoBadge {
+        font-size: 16px;
+    }
+
+    .card {
+        margin: 5px;
+        width: 230px;
+        height: 160px;
+        border-radius: 10px;
+    }
 
 
 
-/*Fin de las Cards*/
+    /*Fin de las Cards*/
     .breadcrumbs {
         font-family: 'RobotoRegular';
         color: var(--color-blanco);
@@ -1168,4 +1177,5 @@ border-radius: 10px;
 
     /*-------------------------------FIN COMENTARIOS--------------------------------------------------*/
 }
+
 /*Fin desktop*/
