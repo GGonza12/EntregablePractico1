@@ -194,14 +194,81 @@ margin: 10px 470px 10px 470px;*/
     border-radius: 10px;
     background: #131419;
     border: 234px #4A1D8D;
-
 }
 
 
 .card:hover {
     border: 1px solid var(--Acento, #4A1D8D);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    transition-property: box-shadow, border;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+
 }
+
+.card-grande {
+    width: 320px;
+    height: 246px;
+    border-radius: 10px;
+    background: #131419;
+    border: 234px #4A1D8D;
+}
+
+.contenedorImagen-grande {
+    position: relative;
+    height: 180px;
+}
+
+.imgJuego-grande {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+    z-index: -1;
+}
+
+.badge-pago-grande {
+    position: absolute;
+    top: -4px;
+    left: -6px;
+    width: 60px;
+    height: 24px;
+    border-radius: 0px 0px 15px 0px;
+    background: var(--Colo-secundario, #F5AA00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangulo-pago-grande {
+    position: absolute;
+    top: 20px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #976900;
+    border-left: 6px solid transparent;
+
+}
+
+.textoBadge-grande {
+
+    color: var(--color-negro);
+    font-family: RobotoMedium;
+}
+.tituloJuego-grande {
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blanco);
+    text-align: center;
+    font-size: 43.56px;
+    
+
+    
+}
+
+
 
 .gratis:hover .badge {
 
@@ -258,7 +325,7 @@ button {
 .rightButton {
     width: 40px;
     height: 40px;
-    margin-left: 10px;
+    margin: 10px;
 
 }
 
@@ -269,6 +336,7 @@ button {
 .leftButton:active,
 .rightButton:active {
     opacity: 0.2;
+    
 }
 
 .contenedor-carrusel {
