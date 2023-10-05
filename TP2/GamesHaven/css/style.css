@@ -255,6 +255,7 @@ margin: 10px 470px 10px 470px;*/
     color: var(--color-negro);
     font-family: RobotoMedium;
 }
+
 .tituloJuego-grande {
     display: flex;
     border-radius: 0px 0px 10px 10px;
@@ -263,10 +264,18 @@ margin: 10px 470px 10px 470px;*/
     color: var(--color-blanco);
     text-align: center;
     font-size: 43.56px;
-    
 
-    
+
+
 }
+
+.cuatroCards {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
 
 
 
@@ -336,7 +345,7 @@ button {
 .leftButton:active,
 .rightButton:active {
     opacity: 0.2;
-    
+
 }
 
 .contenedor-carrusel {
