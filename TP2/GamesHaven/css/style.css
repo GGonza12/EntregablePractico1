@@ -212,6 +212,7 @@ margin: 10px 470px 10px 470px;*/
     border-radius: 10px;
     background: #131419;
     border: 234px #4A1D8D;
+    margin: 5px;
 }
 
 .contenedorImagen-grande {
@@ -271,9 +272,16 @@ margin: 10px 470px 10px 470px;*/
 
 .cuatroCards {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 400px;
 
 
+}
+
+.test1 {
+    display: grid;
+    grid-area: auto;
 }
 
 
@@ -351,13 +359,13 @@ button {
 .contenedor-carrusel {
 
     overflow-x: scroll;
-    width: 100%;
 
 
 }
 
 .carrusel {
     display: flex;
+    flex-direction: row;
     transition: transform 0.5s ease-in-out;
 }
 
