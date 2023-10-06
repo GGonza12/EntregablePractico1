@@ -155,6 +155,7 @@ margin: 10px 470px 10px 470px;*/
 
     color: var(--color-negro);
     font-family: RobotoMedium;
+    font-size: 12px;
 }
 
 .imgJuego {
@@ -169,14 +170,7 @@ margin: 10px 470px 10px 470px;*/
     height: 90px;
 }
 
-.tituloJuego {
-    height: 28px;
-    display: flex;
-    border-radius: 0px 0px 10px 10px;
-    justify-content: center;
-    align-items: center;
 
-}
 
 .card {
     margin: 5px;
@@ -210,25 +204,49 @@ margin: 10px 470px 10px 470px;*/
 }
 
 
-div>p {
-    color: var(--color-blanco);
-    font-family: RobotoRegular;
-    font-size: 12px;
-}
 
 h2 {
     color: var(--color-blanco);
     font-family: RobotoBlack;
 }
 
-.titulo-juego {
+section>h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.tituloJuego {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color-blanco);
     font-family: 'RobotoRegular';
-    font-size: 32px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 31px;
+    height: 28px;
+
+}
+
+.btnCarrito {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 35px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--Negro, #020202);
+    background: var(--Boton, #85B200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCarrito{
+    width: 12px;
+    height: 12px;
+
 }
 
 /*Card Grande*/
@@ -237,7 +255,6 @@ h2 {
     height: 180px;
     border-radius: 10px;
     background: #131419;
-    border: 234px #4A1D8D;
     margin: 5px;
 }
 
@@ -284,7 +301,7 @@ h2 {
 }
 
 .tituloJuego-grande {
-   
+
     display: flex;
     justify-content: center;
     color: var(--color-blanco);
@@ -346,7 +363,7 @@ button {
     width: 100%;
     margin-left: 5%;
     margin-right: 5%;
-    
+
 
 
 }
@@ -905,12 +922,13 @@ button {
         height: 160px;
         border-radius: 10px;
     }
+
     .cuatroCards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 700px;
-       
+
     }
 
 
