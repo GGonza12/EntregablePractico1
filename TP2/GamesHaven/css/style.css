@@ -197,6 +197,41 @@ margin: 10px 470px 10px 470px;*/
 
 }
 
+.gratis:hover .badge {
+
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    opacity: 0.2;
+}
+
+.pago:hover .badge {
+
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    opacity: 0.2;
+}
+
+
+div>p {
+    color: var(--color-blanco);
+    font-family: RobotoRegular;
+    font-size: 12px;
+}
+
+h2 {
+    color: var(--color-blanco);
+    font-family: RobotoBlack;
+}
+
+.titulo-juego {
+    color: var(--color-blanco);
+    font-family: 'RobotoRegular';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 31px;
+}
+
+/*Card Grande*/
 .card-grande {
     width: 244px;
     height: 180px;
@@ -208,12 +243,12 @@ margin: 10px 470px 10px 470px;*/
 
 .contenedorImagen-grande {
     position: relative;
-    height: 180px;
+    height: 104px;
 }
 
 .imgJuego-grande {
     width: 244px;
-    height: 104px;
+    height: 124px;
     border-radius: 10px 10px 0px 0px;
     z-index: -1;
 }
@@ -249,65 +284,29 @@ margin: 10px 470px 10px 470px;*/
 }
 
 .tituloJuego-grande {
-
+   
     display: flex;
     justify-content: center;
     color: var(--color-blanco);
     font-family: 'RobotoRegular';
     text-align: center;
     font-size: 20px;
+    margin-top: 38px;
 }
 
+/*Fin card grande*/
+
 .cuatroCards {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 400px;
+    display: none;
 }
 
 .grandeConCuatro {
     display: flex;
     flex-direction: row;
 }
-
-
-
-.gratis:hover .badge {
-
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    opacity: 0.2;
-}
-
-.pago:hover .badge {
-
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-    opacity: 0.2;
-}
-
-
-div>p {
-    color: var(--color-blanco);
-    font-family: RobotoRegular;
-    font-size: 12px;
-}
-
-h2 {
-    color: var(--color-blanco);
-    font-family: RobotoBlack;
-}
-
-.titulo-juego {
-    color: var(--color-blanco);
-    font-family: 'RobotoRegular';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 31px;
-}
-
-
-
 
 
 /*Fin Cards*/
@@ -343,8 +342,11 @@ button {
 }
 
 .contenedor-carrusel {
-
     overflow-x: scroll;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
 
 
 }
@@ -353,6 +355,7 @@ button {
     display: flex;
     flex-direction: row;
     transition: transform 0.5s ease-in-out;
+
 }
 
 
@@ -902,6 +905,13 @@ button {
         height: 160px;
         border-radius: 10px;
     }
+    .cuatroCards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 700px;
+       
+    }
 
 
 
@@ -1119,6 +1129,7 @@ button {
         justify-content: flex-end;
         border-bottom: 1px solid var(--color-blanco);
     }
+
 
     .btn-comentar {
         width: 158px;
