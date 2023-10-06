@@ -198,8 +198,8 @@ margin: 10px 470px 10px 470px;*/
 }
 
 .card-grande {
-    width: 320px;
-    height: 246px;
+    width: 244px;
+    height: 180px;
     border-radius: 10px;
     background: #131419;
     border: 234px #4A1D8D;
@@ -212,8 +212,8 @@ margin: 10px 470px 10px 470px;*/
 }
 
 .imgJuego-grande {
-    width: 320px;
-    height: 180px;
+    width: 244px;
+    height: 104px;
     border-radius: 10px 10px 0px 0px;
     z-index: -1;
 }
@@ -249,13 +249,13 @@ margin: 10px 470px 10px 470px;*/
 }
 
 .tituloJuego-grande {
+   
     display: flex;
-    border-radius: 0px 0px 10px 10px;
     justify-content: center;
-    align-items: center;
     color: var(--color-blanco);
+    font-family: 'RobotoRegular';
     text-align: center;
-    font-size: 43.56px;
+    font-size: 20px;
 }
 
 .cuatroCards {
@@ -328,6 +328,7 @@ button {
     width: 40px;
     height: 40px;
     margin: 10px;
+    display: none;
 
 }
 
