@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function agregar(){
         let pos = this.dataset.index;
         btn[pos].classList.toggle("sacar");
-        estadoCarrito[pos].classList.toggle("mostrar");
+        console.log(pos);
+        console.log(btn[pos]);
+        console.log(estadoCarrito[pos]);
+        estadoCarrito[pos].classList.remove("agregadoCarritoOculto")
+        estadoCarrito[pos].classList.toggle("agregadoCarritoVisible");
 
     }
 

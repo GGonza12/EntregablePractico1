@@ -252,8 +252,7 @@ section>h2 {
 .sacar {
     display: none;
 }
-.mostra {
-    display:block;
+.agregadoCarritoVisible {
     position: absolute;
     bottom: 0px;
     width: 160px;
