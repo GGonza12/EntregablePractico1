@@ -12,17 +12,19 @@
 <body>
     <header>
         <nav class="menu-hamburguesa">
-            <img src="images/icons/Hamburguesa cerrado.svg" alt="Desplegable">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
             <div class="menu">
-        <div>
-            <ul>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>About</a></li>
-                <li><a href='#'>Services</a></li>
-                <li><a href='#'>Contact</a></li>
-            </ul>
-        </div>
-    </div>
+                <div>
+                    <ul>
+                        <li class="sombraMenu"><img src="images/icons/ico-accion.svg" alt="accion"><a href='#accion' class="menuCategoria">Accion</a></li>
+                        <li class="sombraMenu"><img src="images/icons/ico-multijugador.svg" alt="multijugador"><a href='#multijugador' class="menuCategoria">Multijugador</a></li>
+                        <li class="sombraMenu"><img src="images/icons/ico-estrategia.svg" alt="estrategia"><a href='#estrategia' class="menuCategoria">Estrategia</a></li>
+                        <li class="sombraMenu"><img src="images/icons/ico-aventura.svg" alt="aventura"><a href='#aventura' class="menuCategoria">Aventura</a></li>
+                        <li class="sombraMenu"><img src="images/icons/ico-terror.svg" alt="terror"><a href='#terror' class="menuCategoria">Terror</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <a href="index.html">
@@ -439,7 +441,7 @@
             </button>
         </div>
 
-        <h2>Acción</h2>
+        <h2 id="accion">Acción</h2>
         <div class="carrusel-botones">
             <button type="button" id="prevBtn" data-carrusel="carrusel-accion" data-cards="card-accion" data-index="0">
                 <img src="images/icons/LeftButton.svg" alt="Anterior" class="leftButton">
@@ -658,7 +660,7 @@
             </button>
         </div>
 
-        <h2>Multijugador</h2>
+        <h2 id="multijugador">Multijugador</h2>
         <div class="carrusel-botones">
             <button type="button" id="prevBtn" data-carrusel="carrusel-multijugador" data-cards="card-multijugador"
                 data-index="0">
@@ -923,7 +925,7 @@
         </div>
 
 
-        <h2>Estrategia</h2>
+        <h2 id="estrategia">Estrategia</h2>
 
         <div class="carrusel-botones">
             <button type="button" id="prevBtn" data-carrusel="carrusel-estrategia" data-cards="card-estrategia"
@@ -1104,7 +1106,7 @@
         </div>
 
 
-        <h2>Aventura</h2>
+        <h2 id="aventura">Aventura</h2>
 
         <div class="carrusel-botones">
             <button type="button" id="prevBtn" data-carrusel="carrusel-aventura" data-cards="card-aventura"
@@ -1320,7 +1322,7 @@
             </button>
         </div>
 
-        <h2>Terror</h2>
+        <h2 id="terror">Terror</h2>
         <div class="carrusel-botones">
             <button type="button" id="prevBtn" data-carrusel="carrusel-terror" data-cards="card-terror" data-index="0">
                 <img src="images/icons/LeftButton.svg" alt="Anterior" class="leftButton">
