@@ -36,6 +36,16 @@ header {
     flex-shrink: 0;
 }
 
+.hamburguesaOculto {
+width: 150px;
+height: 300px;
+margin-top: 10px;
+background: var(--Color-primario, #0C0D14);
+
+
+}
+
+
 .icono {
     margin-left: 30px;
     margin-top: 10px;
