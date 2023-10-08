@@ -20,13 +20,16 @@
 body {
     background-color: var(--fondo);
 }
-
+/*Mobile first home*/
 /*Cosas del header*/
 header {
     height: 70px;
     width: 100%;
     background-color: #04050C;
     display: flex;
+}
+.headerDesktop{
+    display: none;
 }
 
 
@@ -56,8 +59,8 @@ header {
 
 .hamburger>div {
     position: relative;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 0px;
     background-color: var(--color-blanco);
     height: 2px;
     width: 60%;
@@ -166,22 +169,17 @@ header {
 
 
 
-.icono {
-    margin-bottom: 9px;
+.iconoLogo {
+
     position: absolute;
     left: 60px;
-    top: 10px;
+    top: 15px;
     width: 60px;
     height: 41px;
     flex-shrink: 0;
 }
 
-.lupa {
 
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
 .contenedorBarraBusqueda{
     position: absolute;
     visibility: hidden;
@@ -231,27 +229,14 @@ header {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 0px;
     left: 50%;
+    margin-right: 10px;
 }
-.perfil {
+.iconoHeader {
     width: 30px;
     height: 30px;
-
-}
-
-.notificaciones {
-    height: 30px;
-    width: 30px;
-
-}
-
-.carrito {
-    height: 30px;
-    width: 30px;
-    /* Arriba | Derecha | Abajo | Izquierda */
-
 }
 
 /*Mobile*/
@@ -994,13 +979,146 @@ li>a {
 /*-------------------------------Incio DESKTOP--------------------------------------------------*/
 
 @media screen and (min-width:1024px) {
-
-    .menu-hamburguesa {
-        margin: 15px;
-        width: 40px;
-        height: 40px;
-        flex-shrink: 0;
+    .headerDesktop {
+        display: flex;
     }
+    .headerMobile {
+        display: none;
+    }
+
+    .toggler {
+        z-index: 1;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        opacity: 0;
+    }
+    
+    .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        width: 40px;
+        padding: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hamburger>div {
+        position: relative;
+        top: 5px;
+        left: 0px;
+        background-color: var(--color-blanco);
+        height: 2px;
+        width: 60%;
+        transition: all 0.4s ease;
+    }
+    
+    
+    .hamburger>div::before,
+    .hamburger>div::after {
+        content: '';
+        position: absolute;
+        top: -10px;
+        background-color: var(--color-blanco);
+        width: 100%;
+        height: 2px;
+        transition: all 0.4s ease;
+    }
+    
+    .hamburger>div::after {
+        top: 10px;
+    }
+    
+    
+    .toggler:checked+.hamburger>div {
+        background-color: var(--color-negro);
+    }
+    
+    .toggler:checked+.hamburger>div::before {
+        top: 0;
+        transform: rotate(45deg);
+    
+    }
+    
+    
+    .toggler:checked+.hamburger>div::after {
+        top: 0;
+        transform: rotate(135deg);
+    
+    }
+    
+    
+    .menu {
+        width: 0%;
+        height: 300px;
+        transition: all 0.4s ease;
+    }
+    
+    
+    .toggler:checked~.menu {
+        width: 30%;
+    }
+    
+    .menu>div>ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        padding-left: 10px;
+        visibility: hidden;
+    }
+    
+    .menu>div>ul>li {
+        list-style: none;
+        padding: 0.5px;
+    }
+    
+    .menu>div>ul>li>a {
+        color: var(--color-blanco);
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .toggler:checked~.menu>div>ul {
+        position: absolute;
+        z-index: 1;
+        transition: visibility 0.4s ease;
+        transition-delay: 0.1s;
+        visibility: visible;
+        background: var(--Color-primario, #0C0D14);
+        width: 160px;
+        height: 215px;
+        border-radius: 0px 0px 10px 0px;
+    }
+    
+    .toggler:checked~.menu>div>ul>li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    
+    }
+    
+    .sombraMenu:hover {
+        box-shadow: 4px 0px 0px 0px #4A1D8D;
+    
+    }
+    
+    .menuCategoria {
+        margin-left: 10px;
+    }
+    
+    .menuCategoria:hover {
+        color: var(--Colo-secundario, #F5AA00);
+    }
+    
+    
 
     .icono {
         margin-left: 30px;
