@@ -172,7 +172,7 @@ header {
 .iconoLogo {
 
     position: absolute;
-    left: 60px;
+    left: 75px;
     top: 15px;
     width: 60px;
     height: 41px;
@@ -231,7 +231,7 @@ header {
     position: absolute;
     top: 20px;
     right: 0px;
-    left: 50%;
+    left: 55%;
     margin-right: 10px;
 }
 .iconoHeader {
