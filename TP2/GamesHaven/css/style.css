@@ -126,9 +126,6 @@ background: var(--Color-primario, #0C0D14);
     width: 30%;
 }
 
-
-
-
 .menu >  div > ul{
     display: flex;
     flex-direction: column;
@@ -148,8 +145,6 @@ background: var(--Color-primario, #0C0D14);
     text-decoration: none;
     font-size: 18px;
 }
-
-
 
 .toggler:checked ~ .menu > div > ul{
     position: absolute;
@@ -180,7 +175,16 @@ background: var(--Color-primario, #0C0D14);
     color: var(--Colo-secundario, #F5AA00);
 }
 
-
+.titulo-juego{
+    color: var(--color-blanco);
+    margin-top: 30px;
+    /* H1 */
+    font-family: 'RobotoRegular';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 .icono {
     margin-left: 30px;
@@ -396,31 +400,33 @@ section>h2 {
 }
 
 .sacar {
-    display: none;
+
+    visibility: hidden;
 }
 
 .agregadoCarritoVisible {
     position: absolute;
     bottom: 0px;
-    width: 160px;
+    width: 100%;
     height: 15px;
     background: var(--Carrito-agregado, #6E9007);
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
 .agregadoCarritoOculto {
     display: none;
 }
 
-.agregadoCarritoOculto>p {
+.agregadoCarritoVisible>p {
     font-family: 'RobotoRegular';
     font-size: 12px;
 
 }
 
-.agregadoCarritoOculto>.imgCarrito {
+.agregadoCarritoVisible>.imgCarrito {
     margin-top: 1px;
 }
 
@@ -435,7 +441,7 @@ section>h2 {
 
 .contenedorImagen-grande {
     position: relative;
-    height: 104px;
+    height: 124px;
 }
 
 .imgJuego-grande {
@@ -476,7 +482,8 @@ section>h2 {
 }
 
 .tituloJuego-grande {
-
+    position: relative;
+    bottom: 20px;
     display: flex;
     justify-content: center;
     color: var(--color-blanco);
@@ -484,6 +491,14 @@ section>h2 {
     text-align: center;
     font-size: 20px;
     margin-top: 38px;
+}
+
+.btnGrande{
+    position: absolute;
+    width: 45px;
+    height: 20px;
+    border-radius: 20px;
+
 }
 
 /*Fin card grande*/
@@ -505,6 +520,13 @@ section>h2 {
 /*Fin Cards*/
 
 /*Carrusel 1*/
+
+.categoriaJuegos > h2{
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
 .carrusel-botones {
     display: flex;
     flex-direction: row;
@@ -846,9 +868,99 @@ button {
     margin-bottom: 15px;
 }
 
-
-
 /*Fin de Sign Up*/
+/*FOOTER MOBILE*/
+
+footer{
+    margin-top:  50px;
+}
+
+.metodos-pago{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--metodos-pago-color);
+}
+
+.icono-pago-mobile{
+    display: block;
+    align-self: center;
+    justify-self: center;
+    margin: 10px;
+}
+
+.categorias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #04050C;
+
+}
+
+.ul-categorias-footer{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.desarrolladores{
+    height: 44px;
+}
+
+.titulo-categoria{
+    color: var(--color-blanco);
+
+    margin-top: 18px;
+    font-family: 'RobotoRegular';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.titulo-subcategoria{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+li > a{
+    color: var(--color-blanco);
+    text-align: center;
+    font-family: 'RobotoRegular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-align: start;
+}
+
+.footer-final{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--metodos-pago-color);
+}
+
+#logo{
+    width: 70px;
+    height: 51px;
+    margin: 5px;
+}
+
+#copyright{
+
+    color: var(--Card-imagen, #FFF);
+    text-align: center;
+    /* Body */
+    font-family: 'RobotoRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*FIN FOOTER MOBILE*/
 
 .cards-aside {
     display: flex;
@@ -871,9 +983,7 @@ button {
 
 /*-------------------------------Incio DESKTOP--------------------------------------------------*/
 
-@media (min-width:1024px) {
-
-
+@media screen and (min-width:1024px) {
 
     .menu-hamburguesa {
         margin: 15px;
@@ -970,9 +1080,8 @@ button {
 
     .titulo-categoria {
         color: var(--color-blanco);
-
         margin-top: 36px;
-        font-family: RobotoRegular;
+        font-family: 'RobotoRegular';
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
@@ -991,7 +1100,7 @@ button {
     li>a {
         color: var(--color-blanco);
         text-align: center;
-        font-family: RobotoRegular;
+        font-family: 'RobotoRegular';
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -1014,12 +1123,25 @@ button {
         height: 60px;
         background-color: var(--metodos-pago-color);
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+    }
+
+    #logo{
+        width: 70px;
+        height: 51px;
     }
 
     #copyright {
         margin-left: 13px;
+
+        color: var(--Card-imagen, #FFF);
+        text-align: center;
+        /* Body */
+        font-family: 'RobotoRegular';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     /*Fin de cosas del FOOTER*/
@@ -1431,6 +1553,7 @@ button {
 
     .cantidad-puntuacion {
         margin-right: 15px;
+
     }
 
     .btn-responder {
