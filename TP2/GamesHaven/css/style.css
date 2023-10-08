@@ -169,7 +169,7 @@ header {
 .icono {
     margin-bottom: 9px;
     position: absolute;
-    left: 60px;
+    left: 75px;
     top: 10px;
     width: 60px;
     height: 41px;
@@ -233,7 +233,8 @@ header {
     position: absolute;
     top: 15px;
     right: 0px;
-    left: 50%;
+    left: 55%;
+    width: 130px;
 }
 .perfil {
     width: 30px;
