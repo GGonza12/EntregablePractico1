@@ -40,6 +40,8 @@
 
 
     <header>
+        <!-- Menu Hamburgesa-->
+
         <nav class="menu-hamburguesa">
             <input type="checkbox" class="toggler">
             <div class="hamburger">
@@ -62,17 +64,35 @@
                 </div>
             </div>
         </nav>
-
+        <!--Fin Menu Hamburguesa -->
         <a href="index.html">
             <img class="icono" src="images/icons/PaginaLogo.svg" alt="icono" id="logo-pagina">
         </a>
 
-        <img src="images/icons/Lupa.svg" alt="Lupa" id="lupa">
-        <input type="text" name="" id="barra-busqueda" placeholder="Busca tu juego!">
 
-        <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito">
-        <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
-        <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil">
+
+        <nav>
+            <ul class="menuUsuario">
+                <li> <button>
+                        <img src="images/icons/lupaBlanca.svg" alt="Lupa" id="lupa" class="lupa">
+                    </button>
+
+                </li>
+                <li> <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito" class="carrito">
+                </li>
+                <li>
+                    <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones"
+                        class="notificaciones">
+                </li>
+
+                <li>
+                    <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil" class="perfil">
+                </li>
+            </ul>
+        </nav>
+        <div class="contenedorBarraBusqueda">
+            <input type="text" name="" class="barra-busqueda" placeholder="Busca tu juego!">
+        </div>
 
     </header>
 
