@@ -205,7 +205,7 @@ header {
 
 
 
-.barra-busqueda-oculto {
+.divVisible {
 
     visibility: visible;
 }
@@ -1334,6 +1334,47 @@ li>a {
         text-decoration-line: underline;
     }
 
+    .desplegableUsuario{
+        position: absolute;
+        visibility: hidden;
+        right: 0;
+        top: 70px;
+        width: 250px;
+        height: 280px;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.50));
+        background: var(--Color-primario, #0C0D14);
+        z-index: 2;
+        border-radius: 0px 0px 0px 7px;
+
+    }
+
+    .desplegableUsuario ul li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 15px;
+        font-size: 24px;
+        height: 70px;
+        color: var(--color-blanco);
+    }
+    
+    .desplegableUsuario ul li:hover{
+        color: var(--Colo-secundario, #F5AA00);
+    }
+    .desplegableUsuario li{
+        background: var(--Color-primario, #0C0D14);
+      
+    }
+    .shadowLi:hover{
+       
+        box-shadow: 4px 0px 0px 0px #4A1D8D inset;
+       
+    }
+
+    .opcionesUsuario{
+        margin-left: 5px;
+        font-family: RobotoRegular;
+    }
 
     /*Fin cosas del header*/
 
@@ -1571,6 +1612,10 @@ li>a {
         margin-top: 1px;
         margin-right: 3px;
     }
+
+   
+
+
 
     /*Card Grande*/
     .card-grande {

@@ -2,19 +2,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".lupa").addEventListener("click",busquedaVisible);
     document.querySelector(".carritoCart").addEventListener("click",carritoVisible);
-
+    document.querySelector(".desplegarPerfil").addEventListener("click", desplegableUsuarioVisible);
     function busquedaVisible() {
         let busqueda = document.querySelector(".contenedorBarraBusqueda");
-        busqueda.classList.toggle("barra-busqueda-oculto");
+        busqueda.classList.toggle("divVisible");
  
         
 
     };
     function carritoVisible(){
-        console.log("ja");
         let carrito = document.querySelector(".shopping-cart");
-        carrito.classList.toggle("shopping-cart-Visible");
-        console.log("ja");
+        carrito.classList.toggle("divVisible");
+    }
+    function desplegableUsuarioVisible(){
+        let usuario = document.querySelector(".desplegableUsuario");
+        usuario.classList.toggle("divVisible");
     }
 
 
