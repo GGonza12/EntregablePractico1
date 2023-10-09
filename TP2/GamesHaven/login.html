@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <header class="headerMobile">
+
+    <header>
         <nav class="menu-hamburguesa">
             <input type="checkbox" class="toggler">
             <div class="hamburger">
@@ -34,87 +35,111 @@
             </div>
         </nav>
 
-        <!--Fin Menu Hamburguesa -->
         <a href="index.html">
-            <img class="iconoLogo" src="images/icons/PaginaLogo.svg" alt="icono" id="logo-pagina">
+            <img class="icono" src="images/icons/PaginaLogo.svg" alt="icono" id="logo-pagina">
         </a>
-
-
+        <div class="contenedorBusqueda">
+            <img src="images/icons/Lupa.svg" alt="Lupa" id="lupa">
+            <input type="text" name="" id="barra-busqueda" placeholder="Busca tu juego!">
+        </div>
 
         <nav>
+
             <ul class="menuUsuario">
-                <li> <button>
-                        <img src="images/icons/lupaBlanca.svg" alt="Lupa" id="lupa" class="lupa iconoHeader">
-                    </button>
-
-                </li>
-                <li> <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito" class="carrito iconoHeader">
+                <li>
+                    <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito">
                 </li>
                 <li>
-                    <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones"
-                        class="notificaciones iconoHeader">
+                    <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
                 </li>
-
                 <li>
-                    <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil" class="perfil iconoHeader">
+                    <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil">
                 </li>
             </ul>
         </nav>
-        <div class="contenedorBarraBusqueda">
-            <input type="text" name="" class="barra-busqueda" placeholder="Busca tu juego!">
-        </div>
-    </header>
-    <div class="headerDesktop">
-        <header>
-            <nav class="menu-hamburguesa">
-                <input type="checkbox" class="toggler">
-                <div class="hamburger">
-                    <div></div>
-                </div>
-                <div class="menu">
-                    <div>
-                        <ul>
-                            <li class="sombraMenu"><img src="images/icons/ico-accion.svg" alt="accion"><a href='#accion'
-                                    class="menuCategoria">Accion</a></li>
-                            <li class="sombraMenu"><img src="images/icons/ico-multijugador.svg" alt="multijugador"><a
-                                    href='#multijugador' class="menuCategoria">Multijugador</a></li>
-                            <li class="sombraMenu"><img src="images/icons/ico-estrategia.svg" alt="estrategia"><a
-                                    href='#estrategia' class="menuCategoria">Estrategia</a></li>
-                            <li class="sombraMenu"><img src="images/icons/ico-aventura.svg" alt="aventura"><a
-                                    href='#aventura' class="menuCategoria">Aventura</a></li>
-                            <li class="sombraMenu"><img src="images/icons/ico-terror.svg" alt="terror"><a href='#terror'
-                                    class="menuCategoria">Terror</a></li>
-                        </ul>
+        <div class="contenedorCart">
+            <div class="shopping-cart">
+                <div class="shopping-cart-header">
+                    <img src="images/icons/bi_cart-check.svg" alt="carrito">
+                    <p class="badgeCart">3</p>
+                    <div class="shopping-cart-total">
+                        <p>Total: </p>
+                        <p class="destacarPrecio"> $1.853,99</p>
                     </div>
-                </div>
-            </nav>
+                </div> <!--end shopping-cart-header -->
 
-            <a href="index.html">
-                <img class="icono" src="images/icons/PaginaLogo.svg" alt="icono" id="logo-pagina">
-            </a>
+                <ul>
+                    <li class="imgDetalles">
+                        <img class="imgCart" src="images/carrusel/ZombieArmyTrilogy.jpg" alt="Zombie Army Trilogy">
+                        <div class="detallesCart">
+                            <p class="item-titulo">Zombie Army Trilogy</p>
+                            <div class="precioEliminar">
+                                <p class="destacarPrecio">$489.99</p>
+                                <a class="eliminar">Eliminar</a>
+                            </div>
 
-            <img src="images/icons/Lupa.svg" alt="Lupa" id="lupa">
-            <input type="text" name="" id="barra-busqueda" placeholder="Busca tu juego!">
-            <nav>
-
-                <ul class="menuUsuario">
-                    <li>
-                        <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito">
+                        </div>
                     </li>
-                    <li>
-                        <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
+
+                    <li class="imgDetalles">
+                        <img class="imgCart" src="images/carrusel/InsideTheBackrooms.jpg"
+                            alt="Inside The Backrooms">
+                        <div class="detallesCart">
+                            <p class="item-titulo">Inside The Backrooms</p>
+                            <div class="precioEliminar">
+                                <p class="destacarPrecio">$599</p>
+                                <a class="eliminar">Eliminar</a>
+                            </div>
+                        </div>
                     </li>
-                    <li>
-                        <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil">
+
+                    <li class="imgDetalles">
+                        <img class="imgCart" src="images/carrusel/Divinity 2.jpg" alt="Divinity Original Sin 2">
+                        <div class="detallesCart">
+                            <p class="item-titulo">Divinity Original Sin 2</p>
+                            <div class="precioEliminar">
+                                <p class="destacarPrecio">$765</p>
+                                <a class="eliminar">Eliminar</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-            </nav>
+                <button class="btnComprar">Comprar</button>
+            </div> <!--end shopping-cart -->
+        </div> <!--end container -->
+
+        <div class="desplegableUsuario">
+            <ul class="listaUsuario">
+                <div class="shadowLi">
 
 
+                    <li class="test12">
+                        <img src="images/icons/mdi_user.svg" alt="perfil">
+                        <p class="opcionesUsuario">Mi perfil</p>
+                    </li>
+                </div>
+                <div class="shadowLi">
+                    <li>
+                        <img src="images/icons/uil_edit.svg" alt="editar">
+                        <p class="opcionesUsuario">Editar perfil</p>
+                    </li>
+                </div>
+                <div class="shadowLi">
+                    <li>
+                        <img src="images/icons/ph_configuracion.svg" alt="configuracion">
+                        <p class="opcionesUsuario">Configuración</p>
+                    </li>
+                </div>
+                <div class="shadowLi">
+                    <li>
+                        <img src="images/icons/mdi_cerrar-sesion.svg" alt="salir">
+                        <p class="opcionesUsuario">Cerrar sesión</p>
+                    </li>
+                </div>
+            </ul>
+        </div>
 
-
-        </header>
-    </div>
+    </header>
 
     <div class="contenedor-form">
         <section class="formulario-iniciar-sesion">

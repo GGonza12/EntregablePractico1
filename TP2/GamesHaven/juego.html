@@ -46,16 +46,97 @@
 
             <ul class="menuUsuario">
                 <li>
-                    <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito">
+                    <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito" class="carritoCart">
                 </li>
                 <li>
                     <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
                 </li>
                 <li>
-                    <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil">
+                    <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil" class="desplegarPerfil">
                 </li>
             </ul>
         </nav>
+        <div class="contenedorCart">
+            <div class="shopping-cart">
+                <div class="shopping-cart-header">
+                    <img src="images/icons/bi_cart-check.svg" alt="carrito">
+                    <p class="badgeCart">3</p>
+                    <div class="shopping-cart-total">
+                        <p>Total: </p>
+                        <p class="destacarPrecio"> $1.853,99</p>
+                    </div>
+                </div> <!--end shopping-cart-header -->
+
+                <ul>
+                    <li class="imgDetalles">
+                        <img class="imgCart" src="images/carrusel/ZombieArmyTrilogy.jpg" alt="Zombie Army Trilogy">
+                        <div class="detallesCart">
+                            <p class="item-titulo">Zombie Army Trilogy</p>
+                            <div class="precioEliminar">
+                                <p class="destacarPrecio">$489.99</p>
+                                <a class="eliminar">Eliminar</a>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="imgDetalles">
+                        <img class="imgCart" src="images/carrusel/InsideTheBackrooms.jpg"
+                            alt="Inside The Backrooms">
+                        <div class="detallesCart">
+                            <p class="item-titulo">Inside The Backrooms</p>
+                            <div class="precioEliminar">
+                                <p class="destacarPrecio">$599</p>
+                                <a class="eliminar">Eliminar</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="imgDetalles">
+                        <img class="imgCart" src="images/carrusel/Divinity 2.jpg" alt="Divinity Original Sin 2">
+                        <div class="detallesCart">
+                            <p class="item-titulo">Divinity Original Sin 2</p>
+                            <div class="precioEliminar">
+                                <p class="destacarPrecio">$765</p>
+                                <a class="eliminar">Eliminar</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btnComprar">Comprar</button>
+            </div> <!--end shopping-cart -->
+        </div> <!--end container -->
+
+        <div class="desplegableUsuario">
+            <ul class="listaUsuario">
+                <div class="shadowLi">
+
+
+                    <li class="test12">
+                        <img src="images/icons/mdi_user.svg" alt="perfil">
+                        <p class="opcionesUsuario">Mi perfil</p>
+                    </li>
+                </div>
+                <div class="shadowLi">
+                    <li>
+                        <img src="images/icons/uil_edit.svg" alt="editar">
+                        <p class="opcionesUsuario">Editar perfil</p>
+                    </li>
+                </div>
+                <div class="shadowLi">
+                    <li>
+                        <img src="images/icons/ph_configuracion.svg" alt="configuracion">
+                        <p class="opcionesUsuario">Configuración</p>
+                    </li>
+                </div>
+                <div class="shadowLi">
+                    <li>
+                        <img src="images/icons/mdi_cerrar-sesion.svg" alt="salir">
+                        <p class="opcionesUsuario">Cerrar sesión</p>
+                    </li>
+                </div>
+            </ul>
+        </div>
 
 
 
