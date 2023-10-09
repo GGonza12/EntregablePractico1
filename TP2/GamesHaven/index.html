@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <!--
     <div class="overlay">
         <div class="contenedor-spinner">
             <div class="loadingio-spinner-bean-eater-2c1bqqrcco2">
@@ -37,7 +37,7 @@
         </div>
     </div>
 
-
+-->
     <header class="headerMobile">
         <nav class="menu-hamburguesa">
             <input type="checkbox" class="toggler">
@@ -129,7 +129,9 @@
 
                 <ul class="menuUsuario">
                     <li>
-                        <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito">
+                        <input type="checkbox" name="" id="myCheckbox1" class="checkboxCart">
+                        <label for="myCheckbox1"><img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito"></label>
+                        
                     </li>
                     <li>
                         <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
@@ -139,6 +141,56 @@
                     </li>
                 </ul>
             </nav>
+            <div class="contenedorCart">
+                <div class="shopping-cart">
+                    <div class="shopping-cart-header">
+                        <img src="images/icons/bi_cart-check.svg" alt="carrito">
+                        <p class="badgeCart">3</p>
+                        <div class="shopping-cart-total">
+                            <p>Total: </p>
+                            <p class="destacarPrecio"> $1.853,99</p>
+                        </div>
+                    </div> <!--end shopping-cart-header -->
+
+                    <ul class="shoppi   ng-cart-items">
+                        <li class="imgDetalles">
+                            <img class="imgCart" src="images/carrusel/ZombieArmyTrilogy.jpg" alt="Zombie Army Trilogy">
+                            <div class="detallesCart">
+                                <p class="item-titulo">Zombie Army Trilogy</p>
+                                <div class="precioEliminar">
+                                    <p class="destacarPrecio">$489.99</p>
+                                    <a class="eliminar">Eliminar</a>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="imgDetalles">
+                            <img class="imgCart" src="images/carrusel/InsideTheBackrooms.jpg"
+                                alt="Inside The Backrooms">
+                            <div class="detallesCart">
+                                <p class="item-titulo">Inside The Backrooms</p>
+                                <div class="precioEliminar">
+                                    <p class="destacarPrecio">$599</p>
+                                    <a class="eliminar">Eliminar</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="imgDetalles">
+                            <img class="imgCart" src="images/carrusel/Terraria.jpg" alt="Terraria">
+                            <div class="detallesCart">
+                                <p class="item-titulo">Terraria</p>
+                                <div class="precioEliminar">
+                                    <p class="destacarPrecio">$765</p>
+                                    <a class="eliminar">Eliminar</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btnComprar">Comprar</button>
+                </div> <!--end shopping-cart -->
+            </div> <!--end container -->
 
 
 

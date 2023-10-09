@@ -151,8 +151,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-
 }
 
 .sombraMenu:hover {
@@ -1146,21 +1144,23 @@ li>a {
         height: 51px;
         flex-shrink: 0;
     }
-    .contenedorBusqueda{
+
+    .contenedorBusqueda {
         position: relative;
         top: -75px;
         left: 20%;
 
     }
+
     #lupa {
         position: relative;
         margin: 15px 0 15px 68%;
         width: 40px;
         height: 40px;
-        left:540px;
+        left: 540px;
         top: 75px;
         z-index: 1;
-        
+
     }
 
     #barra-busqueda {
@@ -1225,6 +1225,111 @@ li>a {
         /* Arriba | Derecha | Abajo | Izquierda */
 
     }
+    .checkboxCart{
+        display: none;
+    }
+    #carrito:checked> .contenedorCart{
+        visibility: visible;
+    }
+    .contenedorCart{
+        visibility: hidden;
+    }
+    .badgeCart {
+        background-color: var(--Color-secundario-S2, #976900);
+        border-radius: 10px;
+        color: white;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 1;
+        padding: 3px 7px;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    .shopping-cart {
+        border-radius: 0px 0px 0px 7px;
+        background: var(--Color-primario-S1, #070810);
+        width: 320px;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        border-radius: 3px;
+        padding: 20px;
+        z-index: 2;
+        color: var(--color-blanco);
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+    .destacarPrecio{
+
+        color: var(--Colo-secundario, #F5AA00);;
+    }
+    .shopping-cart-header {
+        border-bottom: 1px solid var(--color-blanco);
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: center;
+    }
+
+    .shopping-cart-total {
+        margin-left: 160px;
+        display: flex;
+    }
+
+    .imgDetalles {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background: var(--Fondo, #1B2838);
+        width: 315px;
+        height: 70px;
+    }
+
+    .detallesCart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+   
+    .item-titulo {
+        padding-left: 20px;
+    }
+
+    .precioEliminar {
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+    }
+
+    .imgCart {
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .btnComprar {
+        width: 80px;
+        height: 33px;
+        border-radius: 30px;
+        color: var(--color-blanco);
+        background: var(--Boton, #85B200);
+    }
+    .btnComprar:hover{
+        background: #6E9007;
+    }
+
 
     /*Fin cosas del header*/
 
@@ -2149,6 +2254,46 @@ li>a {
         outline: none;
     }
 
+    /*Animacion de botones login y signup*/
+    .btnfos {
+        cursor: pointer;
+        line-height: 45px;
+        max-width: 160px;
+        margin: 0 auto 2em;
+        position: relative;
+    }
+
+    .btnfos-4 {
+
+        overflow: hidden;
+        position: relative;
+    }
+
+    .btnfos-4 {
+        z-index: 20;
+    }
+
+    .btnfos-4:after {
+        background: var(--color-blanco);
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        width: 50px;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        transform: rotate(35deg);
+        z-index: -10;
+    }
+
+    .btnfos-4:hover:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    /*Fin de animacion de botones login y signup*/
+
     .btn-comentar-efectos:hover {
         background: var(--color-blanco);
         color: var(--color-negro);
@@ -2201,6 +2346,11 @@ li>a {
         100% {
             width: 100%;
         }
+    }
+
+    .btn-link-registro {
+        width: 145px;
+        height: 60px;
     }
 }
 
