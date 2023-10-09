@@ -1546,7 +1546,7 @@ li>a {
 
     .categoriaJuegos>h2 {
         margin-top: 20px;
-        margin-left: 10%;
+        margin-left: 5%;
         margin-bottom: 10px;
     }
 
@@ -1554,13 +1554,26 @@ li>a {
         display: flex;
         flex-direction: row;
         align-items: center;
-        
+        position: relative;
+        width: 100%;
+    }
+    #prevBtn {
+        position: absolute;
+        left: 25px;
+        z-index: 1;
+    }
+    #nextBtn{
+        position: absolute;
+        right: 25px;
+        z-index: 1;
     }
 
 
     .contenedor-carrusel {
         overflow-x: scroll;
     }
+
+    
 
 
 
