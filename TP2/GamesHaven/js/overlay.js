@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 5000);
   setTimeout(function () {
     document.querySelector('.overlay').remove();
-  }, 5100);
+  }, 10000);
 });

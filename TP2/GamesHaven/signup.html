@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="headerMobile">
         <nav class="menu-hamburguesa">
             <input type="checkbox" class="toggler">
             <div class="hamburger">
@@ -34,18 +34,87 @@
             </div>
         </nav>
 
+        <!--Fin Menu Hamburguesa -->
         <a href="index.html">
-            <img class="icono" src="images/icons/PaginaLogo.svg" alt="icono" id="logo-pagina">
+            <img class="iconoLogo" src="images/icons/PaginaLogo.svg" alt="icono" id="logo-pagina">
         </a>
 
-        <img src="images/icons/Lupa.svg" alt="Lupa" id="lupa">
-        <input type="text" name="" id="barra-busqueda" placeholder="Busca tu juego!">
 
-        <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito">
-        <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
-        <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil">
 
+        <nav>
+            <ul class="menuUsuario">
+                <li> <button>
+                        <img src="images/icons/lupaBlanca.svg" alt="Lupa" id="lupa" class="lupa iconoHeader">
+                    </button>
+
+                </li>
+                <li> <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito" class="carrito iconoHeader">
+                </li>
+                <li>
+                    <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones"
+                        class="notificaciones iconoHeader">
+                </li>
+
+                <li>
+                    <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil" class="perfil iconoHeader">
+                </li>
+            </ul>
+        </nav>
+        <div class="contenedorBarraBusqueda">
+            <input type="text" name="" class="barra-busqueda" placeholder="Busca tu juego!">
+        </div>
     </header>
+    <div class="headerDesktop">
+        <header>
+            <nav class="menu-hamburguesa">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <ul>
+                            <li class="sombraMenu"><img src="images/icons/ico-accion.svg" alt="accion"><a href='#accion'
+                                    class="menuCategoria">Accion</a></li>
+                            <li class="sombraMenu"><img src="images/icons/ico-multijugador.svg" alt="multijugador"><a
+                                    href='#multijugador' class="menuCategoria">Multijugador</a></li>
+                            <li class="sombraMenu"><img src="images/icons/ico-estrategia.svg" alt="estrategia"><a
+                                    href='#estrategia' class="menuCategoria">Estrategia</a></li>
+                            <li class="sombraMenu"><img src="images/icons/ico-aventura.svg" alt="aventura"><a
+                                    href='#aventura' class="menuCategoria">Aventura</a></li>
+                            <li class="sombraMenu"><img src="images/icons/ico-terror.svg" alt="terror"><a href='#terror'
+                                    class="menuCategoria">Terror</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <a href="index.html">
+                <img class="icono" src="images/icons/PaginaLogo.svg" alt="icono" id="logo-pagina">
+            </a>
+
+            <img src="images/icons/Lupa.svg" alt="Lupa" id="lupa">
+            <input type="text" name="" id="barra-busqueda" placeholder="Busca tu juego!">
+            <nav>
+
+                <ul class="menuUsuario">
+                    <li>
+                        <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito">
+                    </li>
+                    <li>
+                        <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
+                    </li>
+                    <li>
+                        <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil">
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+        </header>
+    </div>
 
     <div class="contenedor-form">
         <section class="formulario-iniciar-sesion">
