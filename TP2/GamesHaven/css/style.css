@@ -1522,7 +1522,7 @@ li>a {
         left: -15px;
         width: 0;
         height: 0;
-        border-top: 17.424px solid 415701;
+        border-top: 17.424px solid #415701;
         border-left: 15.246px solid transparent;
     }
 
@@ -1599,14 +1599,14 @@ li>a {
     }
 
     #prevBtn {
-        position: absolute;
-        left: 25px;
+        position: relative;
+        left: 8%;
         z-index: 1;
     }
 
     #nextBtn {
-        position: absolute;
-        right: 25px;
+        position: relative;
+        right: 7.5%;
         z-index: 1;
     }
 
