@@ -20,6 +20,7 @@
 body {
     background-color: var(--fondo);
 }
+
 /*Mobile first home*/
 /*Cosas del header*/
 header {
@@ -28,7 +29,8 @@ header {
     background-color: #04050C;
     display: flex;
 }
-.headerDesktop{
+
+.headerDesktop {
     display: none;
 }
 
@@ -180,7 +182,7 @@ header {
 }
 
 
-.contenedorBarraBusqueda{
+.contenedorBarraBusqueda {
     position: absolute;
     visibility: hidden;
     background-color: #04050C;
@@ -191,7 +193,8 @@ header {
     justify-content: center;
     align-items: center;
 }
-.barra-busqueda{
+
+.barra-busqueda {
     position: absolute;
     width: 90%;
     height: 30px;
@@ -199,14 +202,14 @@ header {
     border-radius: 90px;
     opacity: 0.5;
     background: var(--color-blanco);
- 
+
 }
 
 
 
 .barra-busqueda-oculto {
 
-   visibility: visible;
+    visibility: visible;
 }
 
 
@@ -223,7 +226,7 @@ header {
 }
 
 /*Menu usuario*/
-.menuUsuario{
+.menuUsuario {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -234,6 +237,7 @@ header {
     left: 55%;
     margin-right: 10px;
 }
+
 .iconoHeader {
     width: 30px;
     height: 30px;
@@ -318,11 +322,11 @@ header {
     height: 118px;
     border-radius: 10px;
     background: #131419;
-    border: 234px #4A1D8D;
 }
 
 
-.card:hover {
+.card:hover,
+.card-grande:hover {
     border: 1px solid var(--Acento, #4A1D8D);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
     transition-property: box-shadow, border;
@@ -982,6 +986,7 @@ li>a {
     .headerDesktop {
         display: flex;
     }
+
     .headerMobile {
         display: none;
     }
@@ -996,7 +1001,7 @@ li>a {
         cursor: pointer;
         opacity: 0;
     }
-    
+
     .hamburger {
         position: absolute;
         top: 0;
@@ -1008,7 +1013,7 @@ li>a {
         align-items: center;
         justify-content: center;
     }
-    
+
     .hamburger>div {
         position: relative;
         top: 5px;
@@ -1018,8 +1023,8 @@ li>a {
         width: 60%;
         transition: all 0.4s ease;
     }
-    
-    
+
+
     .hamburger>div::before,
     .hamburger>div::after {
         content: '';
@@ -1030,41 +1035,41 @@ li>a {
         height: 2px;
         transition: all 0.4s ease;
     }
-    
+
     .hamburger>div::after {
         top: 10px;
     }
-    
-    
+
+
     .toggler:checked+.hamburger>div {
         background-color: var(--color-negro);
     }
-    
+
     .toggler:checked+.hamburger>div::before {
         top: 0;
         transform: rotate(45deg);
-    
+
     }
-    
-    
+
+
     .toggler:checked+.hamburger>div::after {
         top: 0;
         transform: rotate(135deg);
-    
+
     }
-    
-    
+
+
     .menu {
         width: 0%;
         height: 300px;
         transition: all 0.4s ease;
     }
-    
-    
+
+
     .toggler:checked~.menu {
         width: 30%;
     }
-    
+
     .menu>div>ul {
         display: flex;
         flex-direction: column;
@@ -1073,18 +1078,18 @@ li>a {
         padding-left: 10px;
         visibility: hidden;
     }
-    
+
     .menu>div>ul>li {
         list-style: none;
         padding: 0.5px;
     }
-    
+
     .menu>div>ul>li>a {
         color: var(--color-blanco);
         text-decoration: none;
         font-size: 18px;
     }
-    
+
     .toggler:checked~.menu>div>ul {
         position: absolute;
         z-index: 1;
@@ -1096,29 +1101,29 @@ li>a {
         height: 215px;
         border-radius: 0px 0px 10px 0px;
     }
-    
+
     .toggler:checked~.menu>div>ul>li {
         display: flex;
         flex-direction: row;
         align-items: center;
-    
-    
+
+
     }
-    
+
     .sombraMenu:hover {
         box-shadow: 4px 0px 0px 0px #4A1D8D;
-    
+
     }
-    
+
     .menuCategoria {
         margin-left: 10px;
     }
-    
+
     .menuCategoria:hover {
         color: var(--Colo-secundario, #F5AA00);
     }
-    
-    
+
+
 
     .icono {
         margin-left: 30px;
@@ -1292,36 +1297,58 @@ li>a {
 
     }
 
-
-    .contenedorImagen {
-        height: 115px;
-    }
+    /*Cards*/
 
     .badge-gratis {
-        top: 2px;
+        position: absolute;
+        top: -4px;
         left: -6px;
-        width: 55px;
+        width: 75px;
         height: 28px;
-
+        border-radius: 0px 0px 15px 0px;
+        background-color: #85b200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .triangulo-gratis {
-        top: 30px;
+        position: absolute;
+        top: 24px;
         left: -6px;
+        width: 0px;
+        height: 0px;
+        border-top: 7px solid #415701;
+        border-left: 6px solid transparent;
 
     }
 
     .badge-pago {
-        top: 2px;
+        position: absolute;
+        top: -4px;
         left: -6px;
         width: 75px;
         height: 28px;
+        border-radius: 0px 0px 15px 0px;
+        background: var(--Colo-secundario, #F5AA00);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .triangulo-pago {
-        top: 30px;
+        position: absolute;
+        top: 24px;
         left: -6px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid #976900;
+        border-left: 6px solid transparent;
 
+    }
+
+    .textoBadge {
+        font-size: 16px;
     }
 
     .imgJuego {
@@ -1329,33 +1356,214 @@ li>a {
         height: 115px;
     }
 
-    .tituloJuego {
-        height: 45px;
-        width: 230px;
+    .contenedorImagen {
+        position: relative;
+        height: 115px;
     }
 
-    .tituloJuego p {
-        font-size: 20px;
-    }
 
-    .textoBadge {
-        font-size: 16px;
-    }
 
     .card {
         margin: 5px;
+        margin-top: 14.24px;
+        margin-bottom: 14.24px; 
         width: 230px;
         height: 160px;
         border-radius: 10px;
+        background: #131419;
+
     }
+
+    .tituloJuego {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: var(--color-blanco);
+        font-family: 'RobotoRegular';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        height: 40px;
+    }
+    .categoriaJuegos h2 {
+        font-size: 30px;
+    }
+
+    .btnCarrito {
+        right: 2px;
+        width: 50px;
+        height: 20px;
+    }
+
+    .imgCarrito {
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .agregadoCarritoVisible {
+        width: 100%;
+        height: 20px;
+
+    }
+
+    .agregadoCarritoOculto {
+        display: none;
+    }
+
+    .agregadoCarritoVisible>p {
+        font-family: 'RobotoRegular';
+        font-size: 16px;
+
+    }
+
+    .agregadoCarritoVisible>.imgCarrito {
+        margin-top: 1px;
+        margin-right: 3px;
+    }
+
+    /*Card Grande*/
+    .card-grande {
+        width: 500.94px;
+        height: 348.48px;
+        margin: 5px;
+    }
+
+    .contenedorImagen-grande {
+        height: 250.47px;
+    }
+
+    .imgJuego-grande {
+        width: 500.94px;
+        height: 250.47px;
+    }
+
+    .badge-gratis-grande {
+        position: absolute;
+        top: -4px;
+        left: -15px;
+        width: 119.79px;
+        height: 60.984px;
+        border-radius: 0px 0px 32.67px 0px;
+        background: var(--Boton, #85B200);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .badge-pago-grande {
+        position: absolute;
+        top: -4px;
+        left: -15px;
+        width: 163.35px;
+        height: 60.984px;
+        border-radius: 0px 0px 32.67px 0px;
+        background: var(--Colo-secundario, #F5AA00);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .triangulo-pago-grande {
+        position: absolute;
+        top: 56.984px;
+        left: -15px;
+        width: 0;
+        height: 0;
+        border-top: 17.424px solid #976900;
+        border-left: 15.246px solid transparent;
+
+    }
+
+    .triangulo-gratis-grande {
+        position: absolute;
+        top: 56.984px;
+        left: -15px;
+        width: 0;
+        height: 0;
+        border-top: 17.424px solid #415701;
+        border-left: 15.246px solid transparent;
+    }
+
+    .textoBadge-grande {
+
+        color: var(--color-negro);
+        font-family: RobotoMedium;
+        font-size: 34.848px;
+    }
+
+    .tituloJuego-grande {
+        position: relative;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        color: var(--color-blanco);
+        font-family: 'RobotoRegular';
+        text-align: center;
+        font-size: 34.848px;
+        margin-top: 49px;
+    }
+
+    .btnGrande {
+        position: absolute;
+        width: 98.9px;
+        height: 33.56px;
+        border-radius: 21.78px;
+
+    }
+    .imgCarritoGrande {
+
+        width: 28.848px;
+        height: 28.848px;
+        
+    }
+
+
+    /*Fin card grande*/
 
     .cuatroCards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 700px;
+        width: 500px;
 
     }
+
+    .grandeConCuatro {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /*Fin Cards*/
+
+    /*Carrusel 1*/
+
+    .categoriaJuegos>h2 {
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-bottom: 10px;
+    }
+
+    .carrusel-botones {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+
+    .contenedor-carrusel {
+        overflow-x: scroll;
+    }
+
+
+
 
 
 
