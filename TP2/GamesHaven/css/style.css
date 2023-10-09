@@ -1244,7 +1244,7 @@ li>a {
     }
 
     .shopping-cart {
-        
+
         border-radius: 0px 0px 0px 7px;
         background: var(--Color-primario-S1, #070810);
         width: 320px;
@@ -1263,10 +1263,13 @@ li>a {
 
 
     }
-    .destacarPrecio{
 
-        color: var(--Colo-secundario, #F5AA00);;
+    .destacarPrecio {
+
+        color: var(--Colo-secundario, #F5AA00);
+        ;
     }
+
     .shopping-cart-header {
         border-bottom: 1px solid var(--color-blanco);
         padding-bottom: 15px;
@@ -1300,7 +1303,7 @@ li>a {
         justify-content: space-between;
 
     }
-   
+
     .item-titulo {
         padding-left: 20px;
     }
@@ -1327,14 +1330,16 @@ li>a {
         color: var(--color-blanco);
         background: var(--Boton, #85B200);
     }
-    .btnComprar:hover{
+
+    .btnComprar:hover {
         background: #6E9007;
     }
+
     .eliminar {
         text-decoration-line: underline;
     }
 
-    .desplegableUsuario{
+    .desplegableUsuario {
         position: absolute;
         visibility: hidden;
         right: 0;
@@ -1348,7 +1353,7 @@ li>a {
 
     }
 
-    .desplegableUsuario ul li{
+    .desplegableUsuario ul li {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -1357,21 +1362,23 @@ li>a {
         height: 70px;
         color: var(--color-blanco);
     }
-    
-    .desplegableUsuario ul li:hover{
+
+    .desplegableUsuario ul li:hover {
         color: var(--Colo-secundario, #F5AA00);
     }
-    .desplegableUsuario li{
+
+    .desplegableUsuario li {
         background: var(--Color-primario, #0C0D14);
-      
-    }
-    .shadowLi:hover{
-       
-        box-shadow: 4px 0px 0px 0px #4A1D8D inset;
-       
+
     }
 
-    .opcionesUsuario{
+    .shadowLi:hover {
+
+        box-shadow: 4px 0px 0px 0px #4A1D8D inset;
+
+    }
+
+    .opcionesUsuario {
         margin-left: 5px;
         font-family: RobotoRegular;
     }
@@ -1613,7 +1620,7 @@ li>a {
         margin-right: 3px;
     }
 
-   
+
 
 
 
@@ -1859,6 +1866,52 @@ li>a {
     .corrimiento-derecha {
         margin-left: 65px;
     }
+
+    .popUp {
+        position: relative;
+        left: 25%;
+        top: -80px;
+        width: 595px;
+        height: 301px;
+        border-radius: 35px;
+        background: var(--Pop-Up-Compartir, #151D69);
+        visibility: hidden;
+
+    }
+
+    .popUpUl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        
+        top: 65px;
+    }
+
+    .compartirLink {
+        position: relative;
+        top: 129px;
+        left: 73px;
+        width: 450px;
+        height: 57px;
+        border-radius: 25px;
+        background: var(--Gris-claro, #D9D9D9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .compartirLink a {
+        color: var(--color-negro);
+    }
+    .btnCerrar{
+        position: relative;
+        top: -133px;
+        right: -570px;
+    }
+
+
 
     .texto {
         width: 830px;

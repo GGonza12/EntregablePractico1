@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".lupa").addEventListener("click",busquedaVisible);
     document.querySelector(".carritoCart").addEventListener("click",carritoVisible);
+    document.querySelector(".btn-compartir").addEventListener("click",desplegablePopUp);
     document.querySelector(".desplegarPerfil").addEventListener("click", desplegableUsuarioVisible);
     function busquedaVisible() {
         let busqueda = document.querySelector(".contenedorBarraBusqueda");
@@ -17,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function desplegableUsuarioVisible(){
         let usuario = document.querySelector(".desplegableUsuario");
         usuario.classList.toggle("divVisible");
+    }
+    function desplegablePopUp(){
+        let popUp = document.querySelector(".popUp");
+        popUp.classList.toggle("divVisible");
     }
 
 
