@@ -82,8 +82,7 @@
                     </li>
 
                     <li class="imgDetalles">
-                        <img class="imgCart" src="images/carrusel/InsideTheBackrooms.jpg"
-                            alt="Inside The Backrooms">
+                        <img class="imgCart" src="images/carrusel/InsideTheBackrooms.jpg" alt="Inside The Backrooms">
                         <div class="detallesCart">
                             <p class="item-titulo">Inside The Backrooms</p>
                             <div class="precioEliminar">
@@ -149,7 +148,7 @@
             </div>
 
 
-            <form class="formulario">
+            <form class="formulario" action="index.html">
                 <div class="iniciar-con-google">
                     <a href="index.html">
                         <button type="button" class="btn-iniciar-red-social google">
@@ -160,7 +159,7 @@
 
                 <div class="iniciar-con-facebook">
                     <a href="index.html">
-                        <button type="button" class="btn-iniciar-red-social facebook">
+                        <button type="submit" class="btn-iniciar-red-social facebook">
                             <img src="images/icons/logos_facebook.svg" alt="" class="icono-facebook">
                             Iniciar sesión con Facebook</button>
                     </a>
@@ -180,7 +179,7 @@
                         </label>
 
                         <input type="email" name="email" id="" class="contenedor-input-iniciar-sesion"
-                            placeholder="Johndoe21312@gmail.com">
+                            placeholder="Johndoe21312@gmail.com" required>
                     </div>
 
                     <div id="input-contraseña">
@@ -188,7 +187,7 @@
                             Contraseña <span class="asterisco"> *</span>
                         </label>
 
-                        <input type="password" name="password" id="" class="contenedor-input-iniciar-sesion">
+                        <input type="password" name="password" id="" class="contenedor-input-iniciar-sesion" required>
                     </div>
 
                 </div>
@@ -206,9 +205,9 @@
                 </div>
 
                 <div class="contenedor-btn-iniciar-sesion">
-                    <a href="index.html" class="btn-link-registro">
-                        <button type="button" class="btn-iniciar-sesion texto-btn-iniciar-sesion btnfos btnfos-4">Iniciar
-                            sesión
+                    <a class="btn-link-registro" id="btn-inicio-sesion">
+                        <button type="button" class="btn-iniciar-sesion texto-btn-iniciar-sesion btnfos btnfos-4"
+                            required>Iniciar sesión
                         </button>
                     </a>
                 </div>
@@ -218,6 +217,9 @@
                 </p>
 
             </form>
+            <div class="registroOculto">
+                <p>Te Ingresaste con exito! ✓</p>
+            </div>
         </section>
     </div>
 
@@ -348,6 +350,8 @@
             <p id="copyright">Copyright © 1996 - 2023 Games Haven</p>
         </div>
     </footer>
+    <script src="js/formulario.js"></script>
+
 </body>
 
 </html>

@@ -320,6 +320,7 @@ header {
     height: 118px;
     border-radius: 10px;
     background: #131419;
+    transition: all 0.3s ease;
 }
 
 
@@ -330,6 +331,7 @@ header {
     transition-property: box-shadow, border;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
+
 
 }
 
@@ -556,6 +558,7 @@ button {
 
 
 
+
 }
 
 .carrusel {
@@ -563,7 +566,9 @@ button {
     flex-direction: row;
     transition: transform 0.5s ease-in-out;
 
+
 }
+
 
 
 
@@ -596,6 +601,18 @@ button {
     align-items: center;
     width: 600px;
     height: 880px;
+}
+
+.formulario-iniciar-sesion2 {
+    border-radius: 20px;
+    background: var(--Color-primario-L1, #131419);
+
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 940px;
 }
 
 .contenedor-titulo-iniciar-sesion {
@@ -657,11 +674,13 @@ button {
 .google {
     border-radius: 90px;
     background: var(--color-blanco);
+    cursor: pointer;
 }
 
 .facebook {
     border-radius: 90px;
     background: #2458AB;
+    cursor: pointer;
 }
 
 .texto-label-iniciar-sesion {
@@ -992,6 +1011,9 @@ li>a {
 /*-------------------------------Incio DESKTOP--------------------------------------------------*/
 
 @media screen and (min-width:1024px) {
+
+
+
     .headerDesktop {
         display: flex;
     }
@@ -1227,7 +1249,7 @@ li>a {
     }
 
     .shopping-cart-Visible {
-        visibility: visible;
+        display: flex !important;
     }
 
     .badgeCart {
@@ -1256,10 +1278,10 @@ li>a {
         z-index: 2;
         color: var(--color-blanco);
         font-size: 16px;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
-        visibility: hidden;
+
 
 
     }
@@ -1341,7 +1363,7 @@ li>a {
 
     .desplegableUsuario {
         position: absolute;
-        visibility: hidden;
+        display: none;
         right: 0;
         top: 70px;
         width: 250px;
@@ -1363,7 +1385,7 @@ li>a {
         color: var(--color-blanco);
     }
 
-    .desplegableUsuario ul li:hover {
+    .desplegableUsuario ul li a:hover {
         color: var(--Colo-secundario, #F5AA00);
     }
 
@@ -1378,9 +1400,16 @@ li>a {
 
     }
 
+
+
     .opcionesUsuario {
         margin-left: 5px;
         font-family: RobotoRegular;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
     }
 
     /*Fin cosas del header*/
@@ -1867,7 +1896,13 @@ li>a {
         margin-left: 65px;
     }
 
+    .mostrarDivOculto {
+        display: block !important;
+    }
+
     .popUp {
+
+        display: none;
         position: relative;
         left: 25%;
         top: -80px;
@@ -1875,7 +1910,9 @@ li>a {
         height: 301px;
         border-radius: 35px;
         background: var(--Pop-Up-Compartir, #151D69);
-        visibility: hidden;
+        margin-top: 50px;
+        z-index: 3;
+
 
     }
 
@@ -1884,7 +1921,7 @@ li>a {
         flex-direction: row;
         justify-content: space-evenly;
         position: relative;
-        
+
         top: 65px;
     }
 
@@ -1902,10 +1939,12 @@ li>a {
 
 
     }
+
     .compartirLink a {
         color: var(--color-negro);
     }
-    .btnCerrar{
+
+    .btnCerrar {
         position: relative;
         top: -133px;
         right: -570px;
@@ -2139,6 +2178,23 @@ li>a {
         margin-left: 65px;
     }
 
+    .registroOculto {
+        display: none;
+    }
+
+    .registroVisible {
+        margin-top: 25px;
+        display: block !important;
+        transition: transform 0.5s ease-in-out;
+        color: var(--Boton, #85B200);
+        font-family: 'RobotoRegular';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        z-index: 4;
+    }
+
     .reacciones {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -2200,6 +2256,21 @@ li>a {
         transition: opacity 5s ease-in-out;
     }
 
+    .loader-container {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .percentage {
+        color: var(--Card-imagen, #FFF);
+        font-family: 'RobotoRegular';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
     @keyframes spin {
         0% {
@@ -2392,13 +2463,6 @@ li>a {
     .btnfos-4:hover:after {
         left: 120%;
         transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    }
-
-    /*Fin de animacion de botones login y signup*/
-
-    .btn-comentar-efectos:hover {
-        background: var(--color-blanco);
-        color: var(--color-negro);
     }
 
     /*Animacion de botones de iniciar sesion/registrarse */

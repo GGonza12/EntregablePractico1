@@ -11,6 +11,7 @@
 
 <body>
     <header>
+
         <nav class="menu-hamburguesa">
             <input type="checkbox" class="toggler">
             <div class="hamburger">
@@ -46,13 +47,18 @@
 
             <ul class="menuUsuario">
                 <li>
-                    <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito" class="carritoCart">
+                    <button>
+                        <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito" class="carritoCart">
+
+                    </button>
                 </li>
                 <li>
                     <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
                 </li>
                 <li>
-                    <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil" class="desplegarPerfil">
+                    <button>
+                        <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil" class="desplegarPerfil">
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -113,32 +119,31 @@
 
                     <li class="test12">
                         <img src="images/icons/mdi_user.svg" alt="perfil">
-                        <p class="opcionesUsuario">Mi perfil</p>
+                        <a class="opcionesUsuario">Mi perfil</a>
                     </li>
                 </div>
                 <div class="shadowLi">
                     <li>
                         <img src="images/icons/uil_edit.svg" alt="editar">
-                        <p class="opcionesUsuario">Editar perfil</p>
+                        <a class="opcionesUsuario">Editar perfil</a>
                     </li>
                 </div>
                 <div class="shadowLi">
                     <li>
                         <img src="images/icons/ph_configuracion.svg" alt="configuracion">
-                        <p class="opcionesUsuario">Configuración</p>
+                        <a class="opcionesUsuario">Configuración</a>
                     </li>
                 </div>
                 <div class="shadowLi">
                     <li>
                         <img src="images/icons/mdi_cerrar-sesion.svg" alt="salir">
-                        <p class="opcionesUsuario">Cerrar sesión</p>
+
+                        <a class="opcionesUsuario" href="login.html">Cerrar sesión</a>
+
                     </li>
                 </div>
             </ul>
         </div>
-
-
-
 
     </header>
 
@@ -273,21 +278,19 @@
                         </div>
                     </div>
 
-                    <div class="div-juego-aside">
-                        <div class="card pago">
-                            <div class="contenedorImagen">
-                                <img src="images/carrusel/ZombieArmyTrilogy.jpg" alt="Zombie Army Trilogy"
-                                    class="imgJuego">
-                                <div class="badge">
-                                    <div class="badge-pago">
-                                        <p class="textoBadge">$489,99</p>
-                                    </div>
-                                    <div class="triangulo-pago"></div>
+                    <div class="card gratis card-recomendados">
+                        <div class="contenedorImagen">
+                            <img src="images/carrusel/TheSims4.jpg" alt="The Sims 4" class="imgJuego">
+
+                            <div class="badge">
+                                <div class="badge-gratis">
+                                    <p class="textoBadge">Gratis</p>
                                 </div>
+                                <div class="triangulo-gratis"></div>
                             </div>
-                            <div class="tituloJuego">
-                                <p>Zombie Army Trilogy</p>
-                            </div>
+                        </div>
+                        <div class="tituloJuego">
+                            <p>The Sims 4</p>
                         </div>
                     </div>
 
@@ -303,39 +306,41 @@
             <div class="cards-aside">
 
                 <div>
-                    <div class="div-juego-aside">
-                        <div class="card pago">
-                            <div class="contenedorImagen">
-                                <img src="images/carrusel/ZombieArmyTrilogy.jpg" alt="Zombie Army Trilogy"
-                                    class="imgJuego">
-                                <div class="badge">
-                                    <div class="badge-pago">
-                                        <p class="textoBadge">$489,99</p>
-                                    </div>
-                                    <div class="triangulo-pago"></div>
+                    <div class="card pago card-accion">
+                        <div class="contenedorImagen">
+                            <img src="images/carrusel/Divinity 2.jpg" alt="Divinity Original Sin 2" class="imgJuego">
+                            <div class="badge">
+                                <div class="badge-pago">
+                                    <p class="textoBadge">$2.999,99</p>
                                 </div>
+                                <div class="triangulo-pago"></div>
                             </div>
-                            <div class="tituloJuego">
-                                <p>Zombie Army Trilogy</p>
+                            <div class="agregadoCarritoOculto">
+                                <img src="images/icons/bi_cart-checked-black.svg" alt="carrito" class="imgCarrito">
+                                <p>Agregado al carrito</p>
                             </div>
+                            <button class="btnCarrito">
+                                <img src="images/icons/bi_cart-check-black.svg" alt="carrito" class="imgCarrito">
+                            </button>
+                        </div>
+                        <div class="tituloJuego">
+                            <p>Divinity Original Sin 2</p>
                         </div>
                     </div>
 
-                    <div class="div-juego-aside">
-                        <div class="card pago">
-                            <div class="contenedorImagen">
-                                <img src="images/carrusel/ZombieArmyTrilogy.jpg" alt="Zombie Army Trilogy"
-                                    class="imgJuego">
-                                <div class="badge">
-                                    <div class="badge-pago">
-                                        <p class="textoBadge">$489,99</p>
-                                    </div>
-                                    <div class="triangulo-pago"></div>
+                    <div class="card gratis card-multijugador">
+                        <div class="contenedorImagen">
+                            <img src="images/carrusel/Overwatch2.jpg" alt="OverWatch 2" class="imgJuego">
+
+                            <div class="badge">
+                                <div class="badge-gratis">
+                                    <p class="textoBadge">Gratis</p>
                                 </div>
+                                <div class="triangulo-gratis"></div>
                             </div>
-                            <div class="tituloJuego">
-                                <p>Zombie Army Trilogy</p>
-                            </div>
+                        </div>
+                        <div class="tituloJuego">
+                            <p>OverWatch 2</p>
                         </div>
                     </div>
 
@@ -642,6 +647,7 @@
         </div>
     </footer>
     <script type="text/javascript" src="js/desplegable.js"></script>
+    <script type="text/javascript" src="js/desplegablePopUp.js"></script>
 </body>
 
 </html>

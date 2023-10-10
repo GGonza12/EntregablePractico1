@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <!--
     <div class="overlay">
         <div class="contenedor-spinner">
             <div class="loadingio-spinner-bean-eater-2c1bqqrcco2">
@@ -35,9 +34,11 @@
                 <div class="progress-value"></div>
             </div>
         </div>
-    </div>
 
--->
+        <div class="loader-container">
+            <div class="percentage" id="percentage">0%</div>
+        </div>
+    </div>
     <header class="headerMobile">
         <nav class="menu-hamburguesa">
             <input type="checkbox" class="toggler">
@@ -129,13 +130,18 @@
 
                 <ul class="menuUsuario">
                     <li>
-                        <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito" class="carritoCart">
+                        <button>
+                            <img src="images/icons/bi_cart-check.svg" alt="carrito" id="carrito" class="carritoCart">
+
+                        </button>
                     </li>
                     <li>
                         <img src="images/icons/mdi_bell.svg" alt="notificaciones" id="notificaciones">
                     </li>
                     <li>
-                        <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil" class="desplegarPerfil">
+                        <button>
+                            <img src="images/icons/tdesign_user.svg" alt="perfil" id="perfil" class="desplegarPerfil">
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -197,32 +203,31 @@
 
                         <li class="test12">
                             <img src="images/icons/mdi_user.svg" alt="perfil">
-                            <p class="opcionesUsuario">Mi perfil</p>
+                            <a class="opcionesUsuario">Mi perfil</a>
                         </li>
                     </div>
                     <div class="shadowLi">
                         <li>
                             <img src="images/icons/uil_edit.svg" alt="editar">
-                            <p class="opcionesUsuario">Editar perfil</p>
+                            <a class="opcionesUsuario">Editar perfil</a>
                         </li>
                     </div>
                     <div class="shadowLi">
                         <li>
                             <img src="images/icons/ph_configuracion.svg" alt="configuracion">
-                            <p class="opcionesUsuario">Configuración</p>
+                            <a class="opcionesUsuario">Configuración</a>
                         </li>
                     </div>
                     <div class="shadowLi">
                         <li>
                             <img src="images/icons/mdi_cerrar-sesion.svg" alt="salir">
-                            <p class="opcionesUsuario">Cerrar sesión</p>
+
+                            <a class="opcionesUsuario" href="login.html">Cerrar sesión</a>
+
                         </li>
                     </div>
                 </ul>
             </div>
-
-
-
 
         </header>
     </div>
@@ -855,8 +860,8 @@
         <div class="categoriaJuegos">
             <h2 id="multijugador">Multijugador</h2>
             <div class="carrusel-botones">
-                <button type="button" id="prevBtn" data-carrusel="carrusel-multijugador" data-cards="card-multijugador"
-                    data-index="0">
+                <button type="button" id="prevBtnMulti" data-carrusel="carrusel-multijugador"
+                    data-cards="card-multijugador" data-index="0">
                     <img src="images/icons/LeftButton.svg" alt="Anterior" class="leftButton">
                 </button>
 
@@ -1111,8 +1116,8 @@
                     </div>
 
                 </div>
-                <button type="button" id="nextBtn" data-carrusel="carrusel-multijugador" data-cards="card-multijugador"
-                    data-index="0">
+                <button type="button" id="nextBtnMulti" data-carrusel="carrusel-multijugador"
+                    data-cards="card-multijugador" data-index="0">
                     <img src="images/icons/RightButton.svg" alt="Siguiente" class="rightButton">
                 </button>
             </div>
@@ -1790,7 +1795,9 @@
     </footer>
     <script type="text/javascript" src="js/carrusel.js"></script>
     <script type="text/javascript" src="js/carrito.js"></script>
+
     <script type="text/javascript" src="js/desplegable.js"></script>
+
     <script type="text/javascript" src="js/overlay.js"></script>
 </body>
 

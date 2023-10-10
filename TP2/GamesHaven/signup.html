@@ -81,8 +81,7 @@
                     </li>
 
                     <li class="imgDetalles">
-                        <img class="imgCart" src="images/carrusel/InsideTheBackrooms.jpg"
-                            alt="Inside The Backrooms">
+                        <img class="imgCart" src="images/carrusel/InsideTheBackrooms.jpg" alt="Inside The Backrooms">
                         <div class="detallesCart">
                             <p class="item-titulo">Inside The Backrooms</p>
                             <div class="precioEliminar">
@@ -141,7 +140,7 @@
     </header>
 
     <div class="contenedor-form">
-        <section class="formulario-iniciar-sesion">
+        <section class="formulario-iniciar-sesion2">
 
             <div class="contenedor-titulo-signup">
                 <h2 class="titulo-iniciar-sesion">Registrate aqui</h2>
@@ -241,10 +240,11 @@
                     </div>
                 </div>
 
-                <div class="contenedor-btn-signup">
-                    <a href="index.html" class="btn-link-registro">
-                        <button type="button" class="btn-iniciar-sesion texto-btn-iniciar-sesion btnfos btnfos-4">
-                            Registrarse
+
+                <div class="contenedor-btn-iniciar-sesion">
+                    <a class="btn-link-registro" id="btn-inicio-sesion">
+                        <button type="button" class="btn-iniciar-sesion texto-btn-iniciar-sesion btnfos btnfos-4"
+                            required>Registrate
                         </button>
                     </a>
                 </div>
@@ -255,6 +255,9 @@
 
 
             </form>
+            <div class="registroOculto">
+                <p>Te Ingresaste con exito! ✓</p>
+            </div>
         </section>
     </div>
 
@@ -385,6 +388,7 @@
             <p id="copyright">Copyright © 1996 - 2023 Games Haven</p>
         </div>
     </footer>
+    <script src="js/formulario.js"></script>
 </body>
 
 </html>
