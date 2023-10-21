@@ -1902,6 +1902,12 @@ li>a {
         display: block !important;
     }
 
+
+    .canvasJuego {
+        display: flex;
+        justify-content: center;
+    }
+
     .popUp {
 
         display: none;
