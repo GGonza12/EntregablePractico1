@@ -1,7 +1,7 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
 
-    const canvas = document.getElementById("juego");
+    const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     let fondoJuego = new Image(222, 600);
     let canvasWidth = 1920;
@@ -18,21 +18,31 @@ document.addEventListener("DOMContentLoaded", function () {
     "./images/paginaJuego/CT3.png",
     "./images/paginaJuego/CT4.png" ];
     let maxFichas = 42; // limite de 4 en linea
-
-   /* fondoJuego.onload = function () {
+/*
+    fondoJuego.onload = function () {
         drawImageMethod(this);
-    }; */
-
+    }; 
+/*
     function drawImageMethod(image) {
         ctx.drawImage(image, 0, 0, 1920, 1080);
 
     };
+*/
 
-    function probarFichas() {
-        addFicha();
+    
+    function probarRectangulo() {
+        addRectangulo();
 
     };
 
+    function addRectangulo() {
+        let fondo = new Rectangulo(0, 0, 1920, 1080, "#101B27", ctx);
+        fondo.draw();
+
+    };
+    probarRectangulo();
+
+/* 
     function drawFicha() {
         for (let i = 0; i < fichas.length; i++) {
             fichas[i].draw();
@@ -65,18 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
         let a = 255;
         return `rgba(${r},${g},${b},${a}) `;
     };
-
+*/ /*
     function randomImages(){
         /*let imgRandom = new Image();
         imgRandom.src =  images[Math.round(Math.random()* 8)]; */
         let imgRandom = images[Math.round(Math.random()* 8)];
-      /*   let pattern = ctx.createPattern(imgRandom, "no-repeat"); */
+      /*   let pattern = ctx.createPattern(imgRandom, "no-repeat"); 
         return `${imgRandom}`;
         
-    }
+    };
 
     addFichas();
-
+*/
 
 
 

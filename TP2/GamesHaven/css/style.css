@@ -21,6 +21,10 @@ body {
     background-color: var(--fondo);
 }
 
+#Juego {
+    display: none;
+}
+
 /*Mobile first home*/
 /*Cosas del header*/
 header {
