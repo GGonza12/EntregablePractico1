@@ -10,27 +10,27 @@ document.addEventListener("DOMContentLoaded", function () {
     
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
-    let circulos = [];
+    let huecos = [];
 
-    function probarRectangulo() {
-        addCirculo();
+    function probarTablero() {
+
         addRectangulo();
         addRectangulo2();
-        console.log(circulos);
+        console.log(huecos);
         let y= (juegoWidth/7)+80;
         for(let i=0;i<limiteHeight;i++){
 
-            let x= (juegoWidth/2)+40;
+            let x= (juegoWidth/2)+70;
             for(let j=0;j<limiteWidth;j++){
                 
-                addCirculo(x,y,(((juegoWidth/2)/7)-15),"#101B27",ctx);
-                x = x+((juegoWidth)/7);
+                addHueco(x,y,(((juegoWidth/2)/7)-15),"#101B27",ctx);
+                x = (x+((juegoWidth)/7)-10);
             };
             y = y+(juegoHeight/7)+25;
           
         };
-        for(let c=0;c<circulos.length;c++){
-            circulos[c].draw();
+        for(let c=0;c<huecos.length;c++){
+            huecos[c].draw();
         }
     };
 
@@ -44,12 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
         let fondo2 = new Rectangulo((1920/4), (1080/13), 1024, 900, "#273849", ctx);
         fondo2.draw();
     };
-    function addCirculo(posX,posY,radio,color){
+    function addHueco(posX,posY,radio,color){
         let circulo = new Circulo(posX,posY,radio,color,ctx);
-        circulos.push(circulo);    
+        huecos.push(circulo);    
     };
 
-    probarRectangulo();
+    probarTablero();
 
 
 }); 
