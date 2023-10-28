@@ -10,6 +10,11 @@ class Figura {
         this.fill = fill;
     }
 
+    setPosition (x,y){
+        this.posX= x;
+        this.posY = y;
+    }
+
     getPosition() {
         return {
             x: this.getPosX(),

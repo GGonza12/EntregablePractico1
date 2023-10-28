@@ -1,8 +1,9 @@
 class Circulo extends Figura {
     constructor(posX, posY, radius, fill, context) {
         super(posX, posY, fill, context);
-
+        this.resaltado = false;
         this.radius = radius;
+        this.resaltadoEstilo = "#FF0000";
     }
 
     draw() {
@@ -13,14 +14,22 @@ class Circulo extends Figura {
         this.context.closePath();
         
     }
+
     drawImage(){
         let imgFicha = new Image();
         imgFicha.src = this.fill;
+        
         let drawFicha = ()=> {
             this.context.save();
             this.context.beginPath();
             this.context.arc(this.posX, this.posY, this.radius, 0, 2 * Math.PI);
+            
             this.context.stroke();
+            if(this.resaltado === true){
+                this.context.strokeStyle = this.resaltadoEstilo;
+                this.context.lineWidth = 5;
+                this.context.stroke();
+            }
             this.context.closePath();
             this.context.clip();
         
@@ -59,4 +68,17 @@ class Circulo extends Figura {
     getRadius() {
         return this.radius;
     }
+
+    isPointInside(x,y){
+        let _x = this.posX = x;
+        let _y = this.posY = y;
+
+        return Math.sqrt(_x * _x + _y * _y) < this.radius;
+    }
+
+    setResaltado(resaltado) {
+        this.resaltado = resaltado;
+    }
+
+    
 }

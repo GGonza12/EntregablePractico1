@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const ctx = canvas.getContext("2d");
     let huecos = [];
     let fichas = [];
+    let lastClickedFigure = null;
+    let isMouseDown = false;
 
     let imgFichas = ["./images/paginaJuego/TT1.png",
         "./images/paginaJuego/TT2.png",
@@ -26,9 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         addRectanguloFondo();
         addRectanguloJuego();
         addRectangulo(canvasWidth / 7, 100, 150, 700, "#5d79ae");
-        console.log(canvasWidth / 20);
         addRectangulo(1500, 100, 150, 700, "#413a27");
-        console.log(huecos);
         let y = (canvasHeight / 5) + 60;
         //let y= (juegoWidth/5)+20;
         // addFicha(500,y,(((juegoWidth/2)/7)-15),ruta);
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             huecos[c].draw();
         }
 
-        generarFichas(y);
+        generarFichas();
         
         //  let ruta = "./images/paginaJuego/CT1.png";
         //  addFicha((canvasWidth/7)+75,y-150,(40),ruta);
@@ -85,7 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
-    function generarFichas(y){
+  
+
+    function generarFichas(){
+        clearCanvas();
+        let y = 880;
         let yFicha = y;
         const min = 4;
         const max = 7;
@@ -100,8 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 let imgCT = Math.floor(Math.random() * (max-min + 1)+min);
                 let ruta = imgFichas[imgCT];
-                console.log(imgCT);
-                addFicha(1600, yFicha - 150, (40), ruta);
+               
+                addFicha(1578, yFicha - 150, (40), ruta);
             }
         
        
@@ -109,9 +113,51 @@ document.addEventListener("DOMContentLoaded", function () {
             yFicha = yFicha - 5;
 
         };
+    };
+
+    function onMouseDown(e){
+        isMouseDown = true;
+        console.log(e);
+        if(lastClickedFigure != null) {
+            lastClickedFigure.setResaltado(false);
+            lastClickedFigure = null;
+        }
+
+        let clickFig = findClickedFigure(e.layerX,e.layerY);
+        if (clickFig != null){
+            clickFig.setResaltado(true);
+            lastClickedFigure = clickFig;
+        }
+        generarFichas();
+
     }
 
+    function findClickedFigure(x,y){
+        for(let i=0;i< fichas.length;i++){
+            const element = fichas[i];
+            if(element.isPointInside(x,y)){
+                return element;
+            }
+        }
+    }
+
+    function onMouseMove(e){
+        if(isMouseDown && lastClickedFigure!=null){
+            lastClickedFigure.setPosition(e.layerX,e.layerY);
+            generarFichas();
+        }
+    }
+    function clearCanvas(){
+        addRectanguloFondo();
+        addRectanguloJuego();
+        addRectangulo(canvasWidth / 7, 100, 150, 700, "#5d79ae");
+        addRectangulo(1500, 100, 150, 700, "#413a27");
+    }
+    function onMouseUp(){
+        isMouseDown = false;
+    }
     probarTablero();
-
-
+    canvas.addEventListener('mousedown',onMouseDown,false);
+    canvas.addEventListener('mouseup',onMouseUp,false);
+    canvas.addEventListener('mopusemove',onMouseMove,false);
 }); 
