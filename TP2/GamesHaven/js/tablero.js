@@ -87,23 +87,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function generarFichas(y){
         let yFicha = y;
+        const min = 4;
+        const max = 7;
         for (let f = 0; f < maximoFichas; f++) {
             if(f<maximoFichas/2){
                 let ruta = imgFichas[Math.round(Math.random() * 3)];
                 addFicha((canvasWidth / 7) + 75, yFicha - 150, (40), ruta);
             }
             else {
-                
                 if(f==maximoFichas/2){
                     yFicha = y;
                 }
-                let ruta = imgFichas[Math.round(Math.random() * (imgFichas.length-4)+4)];
+                let imgCT = Math.floor(Math.random() * (max-min + 1)+min);
+                let ruta = imgFichas[imgCT];
+                console.log(imgCT);
                 addFicha(1600, yFicha - 150, (40), ruta);
             }
         
        
             fichas[f].drawImage();
-            yFicha = yFicha - 60;
+            yFicha = yFicha - 5;
 
         };
     }

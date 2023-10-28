@@ -23,15 +23,18 @@ class Circulo extends Figura {
             this.context.stroke();
             this.context.closePath();
             this.context.clip();
-           
+        
+            // Set the globalCompositeOperation property
+            this.context.globalCompositeOperation = "source-over";
+        
+            // Draw the image
             this.context.drawImage(imgFicha, (this.posX-this.radius), (this.posY-this.radius), this.radius*2,this.radius*2);
         
-            this.context.beginPath();
-            this.context.arc(this.posX, this.posY-50, this.radius, 0, 2 * Math.PI);
-            this.context.clip();
-            this.context.closePath();
+            // Restore the context
             this.context.restore();
-           
+        
+            // Increment posY for next circle
+            
         }; 
         imgFicha.onload =  drawFicha;
     }
