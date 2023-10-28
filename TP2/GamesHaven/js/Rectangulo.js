@@ -9,7 +9,6 @@ class Rectangulo extends Figura {
     draw() {
         super.draw();
         this.context.fillRect(this.posX, this.posY, this.width, this.height);
-        console.log("rectangulo");
     }
 
     getWidth() {

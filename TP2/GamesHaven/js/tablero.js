@@ -29,6 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
         addRectanguloJuego();
         addRectangulo(canvasWidth / 7, 100, 150, 700, "#5d79ae");
         addRectangulo(1500, 100, 150, 700, "#413a27");
+        generarHuecos();
+        generarFichas();
+        
+        //  let ruta = "./images/paginaJuego/CT1.png";
+        //  addFicha((canvasWidth/7)+75,y-150,(40),ruta);
+        //  fichas[0].drawImage();
+
+    };
+
+    function generarHuecos(){
         let y = (canvasHeight / 5) + 60;
         //let y= (juegoWidth/5)+20;
         // addFicha(500,y,(((juegoWidth/2)/7)-15),ruta);
@@ -49,14 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let c = 0; c < huecos.length; c++) {
             huecos[c].draw();
         }
+    }
 
-        generarFichas();
-        
-        //  let ruta = "./images/paginaJuego/CT1.png";
-        //  addFicha((canvasWidth/7)+75,y-150,(40),ruta);
-        //  fichas[0].drawImage();
-
-    };
     function addRectangulo(x, y, width, height, color) {
         let fondo = new Rectangulo(x, y, width, height, color, ctx);
         fondo.draw();
@@ -88,7 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
     function generarFichas(){
-        clearCanvas();
+   
+       // clearCanvas();
         let y = 880;
         let yFicha = y;
         const min = 4;
@@ -96,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let f = 0; f < maximoFichas; f++) {
             if(f<maximoFichas/2){
                 let ruta = imgFichas[Math.round(Math.random() * 3)];
-                addFicha((canvasWidth / 7) + 75, yFicha - 150, (40), ruta);
+                addFicha(350, yFicha - 150, (40), ruta);
             }
             else {
                 if(f==maximoFichas/2){
@@ -106,29 +111,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 let ruta = imgFichas[imgCT];
                
                 addFicha(1578, yFicha - 150, (40), ruta);
-            }
-        
-       
+            }       
             fichas[f].drawImage();
             yFicha = yFicha - 5;
 
         };
+        dibujarFichas();
+       
     };
+    function dibujarFichas(){
+         // clearCanvas();
+         for(let i=0;i<fichas.length;i++){
+            fichas[i].drawImage();
+         };
+    }
+
 
     function onMouseDown(e){
         isMouseDown = true;
-        console.log(e);
         if(lastClickedFigure != null) {
             lastClickedFigure.setResaltado(false);
             lastClickedFigure = null;
         }
 
-        let clickFig = findClickedFigure(e.layerX,e.layerY);
+        let clickFig = findClickedFigure(e.offsetX,e.offsetY);
         if (clickFig != null){
             clickFig.setResaltado(true);
             lastClickedFigure = clickFig;
+            
         }
-        generarFichas();
+        dibujarFichas();
 
     }
 
@@ -142,9 +154,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function onMouseMove(e){
+       console.log(lastClickedFigure);
         if(isMouseDown && lastClickedFigure!=null){
+            console.log("test");
             lastClickedFigure.setPosition(e.layerX,e.layerY);
-            generarFichas();
+            dibujarFichas();
         }
     }
     function clearCanvas(){
@@ -152,12 +166,13 @@ document.addEventListener("DOMContentLoaded", function () {
         addRectanguloJuego();
         addRectangulo(canvasWidth / 7, 100, 150, 700, "#5d79ae");
         addRectangulo(1500, 100, 150, 700, "#413a27");
+        generarHuecos();
     }
     function onMouseUp(){
         isMouseDown = false;
     }
     probarTablero();
-    canvas.addEventListener('mousedown',onMouseDown,false);
-    canvas.addEventListener('mouseup',onMouseUp,false);
-    canvas.addEventListener('mopusemove',onMouseMove,false);
+    canvas.addEventListener("mousedown",onMouseDown,false);
+    canvas.addEventListener("mouseup",onMouseUp,false);
+    canvas.addEventListener("mousemove",onMouseMove,false);
 }); 
