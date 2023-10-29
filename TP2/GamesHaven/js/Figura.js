@@ -35,4 +35,6 @@ class Figura {
     draw() {
         this.context.fillStyle = this.fill;
     }
+
+    isPointInside(x,y){};
 }

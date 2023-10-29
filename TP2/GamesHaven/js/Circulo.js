@@ -34,10 +34,10 @@ class Circulo extends Figura {
             this.context.clip();
         
             // Set the globalCompositeOperation property
-            this.context.globalCompositeOperation = "source-over";
+           // this.context.globalCompositeOperation = "source-over";
         
             // Draw the image
-            this.context.drawImage(imgFicha, (this.posX-this.radius), (this.posY-this.radius), this.radius*2,this.radius*2);
+            this.context.drawImage(imgFicha, (this.posX-this.radius*7+7), (this.posY-(this.radius*3)), this.radius*14,this.radius*14);
         
             // Restore the context
             this.context.restore();
@@ -70,8 +70,8 @@ class Circulo extends Figura {
     }
 
     isPointInside(x,y){
-        let _x = this.posX = x;
-        let _y = this.posY = y;
+        let _x = this.posX - x;
+        let _y = this.posY - y;
 
         return Math.sqrt(_x * _x + _y * _y) < this.radius;
     }

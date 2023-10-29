@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         addRectangulo(1500, 100, 150, 700, "#413a27");
         generarHuecos();
         generarFichas();
-        
+        dibujarFichas();
         //  let ruta = "./images/paginaJuego/CT1.png";
         //  addFicha((canvasWidth/7)+75,y-150,(40),ruta);
         //  fichas[0].drawImage();
@@ -84,15 +84,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function addFicha(posX, posY, radio, imgRuta) {
         //  ct1.src = "./images/paginaJuego/CT1.png";
-        let circulo = new Circulo(posX, posY, radio, imgRuta, ctx);
-        fichas.push(circulo);
+        let ficha = new Circulo(posX, posY, radio, imgRuta, ctx);
+        fichas.push(ficha);
 
     };
 
   
 
     function generarFichas(){
-   
        // clearCanvas();
         let y = 880;
         let yFicha = y;
@@ -112,15 +111,15 @@ document.addEventListener("DOMContentLoaded", function () {
                
                 addFicha(1578, yFicha - 150, (40), ruta);
             }       
-            fichas[f].drawImage();
-            yFicha = yFicha - 5;
+           // fichas[f].drawImage();
+            yFicha = yFicha -10;
 
         };
-        dibujarFichas();
+       
        
     };
     function dibujarFichas(){
-         // clearCanvas();
+        clearCanvas();
          for(let i=0;i<fichas.length;i++){
             fichas[i].drawImage();
          };
@@ -132,12 +131,14 @@ document.addEventListener("DOMContentLoaded", function () {
         if(lastClickedFigure != null) {
             lastClickedFigure.setResaltado(false);
             lastClickedFigure = null;
-        }
 
+        }
+        
         let clickFig = findClickedFigure(e.offsetX,e.offsetY);
         if (clickFig != null){
             clickFig.setResaltado(true);
             lastClickedFigure = clickFig;
+
             
         }
         dibujarFichas();
@@ -148,16 +149,15 @@ document.addEventListener("DOMContentLoaded", function () {
         for(let i=0;i< fichas.length;i++){
             const element = fichas[i];
             if(element.isPointInside(x,y)){
+                console.log("a");
                 return element;
             }
         }
     }
 
     function onMouseMove(e){
-       console.log(lastClickedFigure);
         if(isMouseDown && lastClickedFigure!=null){
-            console.log("test");
-            lastClickedFigure.setPosition(e.layerX,e.layerY);
+            lastClickedFigure.setPosition(e.offsetX,e.offsetY);
             dibujarFichas();
         }
     }
@@ -169,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
         generarHuecos();
     }
     function onMouseUp(){
+        console.log("arriba");
         isMouseDown = false;
     }
     probarTablero();
