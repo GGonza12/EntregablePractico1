@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let limiteHeight = 6;
     let juegoWidth = 800;
     let juegoHeight = 600;
-    let maximoFichas = limiteWidth * limiteHeight;
+    let maximoFichas = 8;
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     let huecos = [];
@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         addRectangulo(canvasWidth / 7, 100, 150, 700, "#5d79ae");
         addRectangulo(1500, 100, 150, 700, "#413a27");
         generarHuecos();
+        dibujarHuecos();
         generarFichas();
         dibujarFichas();
         //  let ruta = "./images/paginaJuego/CT1.png";
@@ -56,26 +57,29 @@ document.addEventListener("DOMContentLoaded", function () {
             y = y + (juegoHeight / 7) + 10;
 
         };
+        
+    }
+
+    function dibujarHuecos(){
         for (let c = 0; c < huecos.length; c++) {
             huecos[c].draw();
         }
     }
 
     function addRectangulo(x, y, width, height, color) {
-        let fondo = new Rectangulo(x, y, width, height, color, ctx);
-        fondo.draw();
-
+        
+        ctx.fillStyle = color;
+        ctx.fillRect(x,y,width,height);
 
     };
     function addRectanguloFondo() {
-        let fondo = new Rectangulo(0, 0, canvasWidth, canvasHeight, "#101B27", ctx);
-        fondo.draw();
-
+        ctx.fillStyle = "#101B27";
+        ctx.fillRect(0,0,canvasWidth,canvasHeight);
 
     };
     function addRectanguloJuego() {
-        let fondo2 = new Rectangulo((canvasWidth / 4), canvasHeight / 5, juegoWidth, juegoHeight, "#273849", ctx);
-        fondo2.draw();
+        ctx.fillStyle = "#273849";
+        ctx.fillRect((canvasWidth / 4), canvasHeight / 5, juegoWidth, juegoHeight);
     };
     function addHueco(posX, posY, radio, color) {
         let circulo = new Circulo(posX, posY, radio, color, ctx);
@@ -111,8 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
                
                 addFicha(1578, yFicha - 150, (40), ruta);
             }       
-           // fichas[f].drawImage();
-            yFicha = yFicha -10;
+            yFicha = yFicha -100;
 
         };
        
@@ -149,7 +152,6 @@ document.addEventListener("DOMContentLoaded", function () {
         for(let i=0;i< fichas.length;i++){
             const element = fichas[i];
             if(element.isPointInside(x,y)){
-                console.log("a");
                 return element;
             }
         }
@@ -166,12 +168,11 @@ document.addEventListener("DOMContentLoaded", function () {
         addRectanguloJuego();
         addRectangulo(canvasWidth / 7, 100, 150, 700, "#5d79ae");
         addRectangulo(1500, 100, 150, 700, "#413a27");
-        generarHuecos();
-    }
+        dibujarHuecos();
+    };
     function onMouseUp(){
-        console.log("arriba");
         isMouseDown = false;
-    }
+    };
     probarTablero();
     canvas.addEventListener("mousedown",onMouseDown,false);
     canvas.addEventListener("mouseup",onMouseUp,false);
