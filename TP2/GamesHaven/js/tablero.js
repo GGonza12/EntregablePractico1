@@ -1,180 +1,294 @@
-"use strict";
+class Tablero {
+    constructor(posX, posY, cantHorizontal, cantVertical, fill, ctx) {
+        this.posX = posX;
+        this.posY = posY;
+        this.cantHorizontal = cantHorizontal;// 7
+        this.cantVertical = cantVertical;//Ejemplo de 4 en linea es 7 horizontal y 6 vertical
+        this.tipoJuego = this.cantHorizontal - 3;
+        this.fill = fill;
+        this.ctx = ctx;
+        this.huecos = new Array();
+        this.juegoWidth = ((100) * cantHorizontal) + 40;
+        this.juegoHeight = ((100) * cantVertical) + 20;
+        this.putFicha = new Array();
+        this.matrix = new Array();
+        this.fichasColocadas = 0;
+        this.ganador = null;
+        this.posXLeft=this.posX;
+        this.posYLeft=(600 / 5) +10;
+        this.posXRight=(this.juegoWidth+this.posX+50);
+    }
+    getWidthHuecos(){
+        return this.cantHorizontal;
+    }
+    getHeightHuecos(){
+        return this.cantVertical;
+    }
+    getPosXLeft(){
+        return this.posXLeft;
+    }
+    getPosYLeft(){
+        return this.posYLeft;
+    }
+    getPosXRight(){
+        return this.posXRight;
+    }
+    getPosYRight(){
+        return this.posYRight;
+    }
+    getTamanio() {
+        return this.tipoJuego;
+    }
+    getWidth(){
+        return this.juegoWidth;
+    }
+    getHeight(){
+        return this.juegoHeight;
+    }
+    generarTablero() {
+        this.generarHuecos();
+        this.dibujarHuecos();
 
-document.addEventListener("DOMContentLoaded", function () {
-    let canvasWidth = 1920;
-    let canvasHeight = 1080;
-    let limiteWidth = 7;
-    let limiteHeight = 6;
-    let juegoWidth = 800;
-    let juegoHeight = 600;
-    let maximoFichas = 8;
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
-    let huecos = [];
-    let fichas = [];
-    let lastClickedFigure = null;
-    let isMouseDown = false;
-
-    let imgFichas = ["./images/paginaJuego/TT1.png",
-        "./images/paginaJuego/TT2.png",
-        "./images/paginaJuego/TT3.png",
-        "./images/paginaJuego/TT4.png",
-        "./images/paginaJuego/CT1.png",
-        "./images/paginaJuego/CT2.png",
-        "./images/paginaJuego/CT3.png",
-        "./images/paginaJuego/CT4.png"];
-    function probarTablero() {
-
-        addRectanguloFondo();
-        addRectanguloJuego();
-        addRectangulo(canvasWidth / 7, 100, 150, 700, "#5d79ae");
-        addRectangulo(1500, 100, 150, 700, "#413a27");
-        generarHuecos();
-        dibujarHuecos();
-        generarFichas();
-        dibujarFichas();
-        //  let ruta = "./images/paginaJuego/CT1.png";
-        //  addFicha((canvasWidth/7)+75,y-150,(40),ruta);
-        //  fichas[0].drawImage();
-
-    };
-
-    function generarHuecos(){
-        let y = (canvasHeight / 5) + 60;
-        //let y= (juegoWidth/5)+20;
-        // addFicha(500,y,(((juegoWidth/2)/7)-15),ruta);
+    }
+    dibujarTablero() {
+        this.generarRectangulos();
+        this.dibujarHuecos();
+    }
+    getPutFicha() {
+        return this.putFicha;
+    }
 
 
+    generarRectangulos() {
+        this.putFicha = [];
+        let y = (600 / 5) + 60;
+        let yAux = y - 100;
+        let xAux = (this.posX + 60); 
 
-        for (let i = 0; i < limiteHeight; i++) {
+        //Cuadrados para indicar donde colocar la ficha
+        for (let c = 0; c < this.cantHorizontal; c++) {
+            let rectangulo = new Rectangulo(xAux - 50, yAux - 50, 100, 100, "#EEE8AA", this.ctx);
+            rectangulo.draw();
+            this.drawArrow(xAux,yAux);
+            xAux = (xAux + 100);
+            this.putFicha.push(rectangulo);
+        }
 
-            let x = (juegoWidth / 2) + 170;
-            for (let j = 0; j < limiteWidth; j++) {
-
-                addHueco(x, y, (40), "#101B27", ctx);
-                x = (x + ((juegoWidth) / 7) - 10);
+        for (let i = 0; i < this.cantVertical; i++) {
+            let x = (this.posX + 60);
+            for (let j = 0; j < this.cantHorizontal; j++) {
+                let rectangulo = new Rectangulo(x - 50, y - 50, 100, 100, this.fill, this.ctx);
+                rectangulo.draw();
+                x = (x + 100);
             };
-            y = y + (juegoHeight / 7) + 10;
+            y = y + 100;
 
         };
-        
     }
 
-    function dibujarHuecos(){
-        for (let c = 0; c < huecos.length; c++) {
-            huecos[c].draw();
+     drawArrow(x, y) {
+        x = x-20;
+        y= y-30;
+        // Dibuja la flecha
+        this.ctx.beginPath();
+        this.ctx.moveTo(x, y);
+        this.ctx.lineTo(x + 40, y);
+        this.ctx.lineTo(x + 40, y + 30);
+        this.ctx.lineTo(x + 60, y + 30);
+        this.ctx.lineTo(x + 20, y + 70);
+        this.ctx.lineTo(x - 20, y + 30);
+        this.ctx.lineTo(x, y + 30);
+        this.ctx.closePath();
+      
+        // Rellena la flecha
+        this.ctx.fillStyle = "black";
+        this.ctx.fill();
+      }
+
+    generarHuecos() {
+        let y = (600 / 5) + 60;
+        let yAux = y - 100;
+        let xAux = (this.posX + 60);
+        for (let c = 0; c < this.cantHorizontal; c++) {
+
+              let rectangulo = new Rectangulo(xAux - 50, yAux - 50, 100, 100, "#EEE8AA", this.ctx);
+            rectangulo.draw();
+            this.drawArrow(xAux,yAux);
+
+            xAux = (xAux + 100);
+            this.putFicha.push(rectangulo);
+        }
+
+        for (let i = 0; i < this.cantVertical; i++) {
+            this.huecos[i] = new Array(this.cantVertical);
+            let x = (this.posX + 60);
+            for (let j = 0; j < this.cantHorizontal; j++) {
+                let rectangulo = new Rectangulo(x - 50, y - 50, 100, 100, this.fill, this.ctx);
+                rectangulo.draw();
+                let circulo = new Circulo(x, y, 40, "#101B27", this.ctx);
+                this.huecos[i][j] = circulo;
+                x = (x + 100);
+            };
+            y = y + 100;
+
+        };
+    }
+
+    dibujarHuecos() {
+        for (let i = 0; i < this.cantVertical; i++) {
+            for (let c = 0; c < this.cantHorizontal; c++) {
+                this.huecos[i][c].draw();
+            }
         }
     }
 
-    function addRectangulo(x, y, width, height, color) {
-        
-        ctx.fillStyle = color;
-        ctx.fillRect(x,y,width,height);
 
-    };
-    function addRectanguloFondo() {
-        ctx.fillStyle = "#101B27";
-        ctx.fillRect(0,0,canvasWidth,canvasHeight);
+    getFichasColocas() {
+        return this.fichasColocadas;
+    }
 
-    };
-    function addRectanguloJuego() {
-        ctx.fillStyle = "#273849";
-        ctx.fillRect((canvasWidth / 4), canvasHeight / 5, juegoWidth, juegoHeight);
-    };
-    function addHueco(posX, posY, radio, color) {
-        let circulo = new Circulo(posX, posY, radio, color, ctx);
-        huecos.push(circulo);
-    };
+    getWherePutMatrix(x, ficha) {
+        let encontrado = false;
+        for (let i = this.cantVertical - 1; i >= 0 && !encontrado; i--) {
+            if (!Ficha.prototype.isPrototypeOf(this.huecos[i][x])) {
+                let test = this.huecos[i][x];
+                ficha.setPosition(test.getPosX(), test.getPosY());
+                this.setFichaTablero(ficha, i, x);
+                encontrado = true;
+                this.fichasColocadas++;
+                ficha.setPosXMatrix(x);
+                ficha.setPosYMatrix(i);
+                ficha.setLocked();
 
-    function addFicha(posX, posY, radio, imgRuta) {
-        //  ct1.src = "./images/paginaJuego/CT1.png";
-        let ficha = new Circulo(posX, posY, radio, imgRuta, ctx);
-        fichas.push(ficha);
-
-    };
-
-  
-
-    function generarFichas(){
-       // clearCanvas();
-        let y = 880;
-        let yFicha = y;
-        const min = 4;
-        const max = 7;
-        for (let f = 0; f < maximoFichas; f++) {
-            if(f<maximoFichas/2){
-                let ruta = imgFichas[Math.round(Math.random() * 3)];
-                addFicha(350, yFicha - 150, (40), ruta);
-            }
-            else {
-                if(f==maximoFichas/2){
-                    yFicha = y;
+                if (this.lineaHorizontal(i, ficha.getJugador())) {
+                    this.agregarGanador(ficha.getJugador());
                 }
-                let imgCT = Math.floor(Math.random() * (max-min + 1)+min);
-                let ruta = imgFichas[imgCT];
-               
-                addFicha(1578, yFicha - 150, (40), ruta);
-            }       
-            yFicha = yFicha -100;
+                if (this.lineaVertical(ficha.getPosXMatrix(), ficha.getJugador())) {
+                    this.agregarGanador(ficha.getJugador());
+                }
+                if (this.buscarDiagonal(ficha.getJugador())) {
+                    this.agregarGanador(ficha.getJugador());
 
-        };
-       
-       
-    };
-    function dibujarFichas(){
-        clearCanvas();
-         for(let i=0;i<fichas.length;i++){
-            fichas[i].drawImage();
-         };
-    }
-
-
-    function onMouseDown(e){
-        isMouseDown = true;
-        if(lastClickedFigure != null) {
-            lastClickedFigure.setResaltado(false);
-            lastClickedFigure = null;
-
-        }
-        
-        let clickFig = findClickedFigure(e.offsetX,e.offsetY);
-        if (clickFig != null){
-            clickFig.setResaltado(true);
-            lastClickedFigure = clickFig;
-
-            
-        }
-        dibujarFichas();
-
-    }
-
-    function findClickedFigure(x,y){
-        for(let i=0;i< fichas.length;i++){
-            const element = fichas[i];
-            if(element.isPointInside(x,y)){
-                return element;
+                }
             }
         }
     }
-
-    function onMouseMove(e){
-        if(isMouseDown && lastClickedFigure!=null){
-            lastClickedFigure.setPosition(e.offsetX,e.offsetY);
-            dibujarFichas();
-        }
+    agregarGanador(jugador) {
+        this.ganador = jugador.getNombre();
     }
-    function clearCanvas(){
-        addRectanguloFondo();
-        addRectanguloJuego();
-        addRectangulo(canvasWidth / 7, 100, 150, 700, "#5d79ae");
-        addRectangulo(1500, 100, 150, 700, "#413a27");
-        dibujarHuecos();
-    };
-    function onMouseUp(){
-        isMouseDown = false;
-    };
-    probarTablero();
-    canvas.addEventListener("mousedown",onMouseDown,false);
-    canvas.addEventListener("mouseup",onMouseUp,false);
-    canvas.addEventListener("mousemove",onMouseMove,false);
-}); 
+    revisarGanador() {
+        return this.ganador;
+    }
+
+    lineaHorizontal(posY, jugador) {
+        let contador = 0;
+        for (let x = 0; x < this.cantHorizontal; x++) {
+            if (Ficha.prototype.isPrototypeOf(this.huecos[posY][x]) && this.huecos[posY][x].isJugador(jugador)) {
+                contador++;
+                if (contador == this.tipoJuego) {
+                    return true;
+                }
+            } else {
+                contador = 0;
+            }
+        }
+        return false;
+    }
+
+
+    lineaVertical(posX, jugador) {
+        let contador = 0;
+        for (let y = 0; y < this.cantVertical; y++) {
+            if (Ficha.prototype.isPrototypeOf(this.huecos[y][posX]) && this.huecos[y][posX].isJugador(jugador)) {
+                contador++;
+                if (contador == this.tipoJuego) {
+                    return true;
+                }
+            } else {
+                contador = 0;
+            }
+        }
+        return false;
+    }
+
+
+    lineaDiagonal(posX, posY, jugador) {
+        let x, y, contador;
+
+        // Check Abajo-Izquierda para Arriba-Derecha
+        contador = 0;
+        for (x = posX, y = posY; x >= 0 && y >= 0; x--, y--) {
+            if (Ficha.prototype.isPrototypeOf(this.huecos[y][x]) && this.huecos[y][x].isJugador(jugador)) {
+                contador++;
+                if (contador == this.tipoJuego) {
+                    return true;
+                }
+            } else {
+                contador = 0;
+            }
+        }
+
+        // Check Arriba-Izquierda para Abajo-Derecha
+        contador = 0;
+        for (x = posX, y = posY; x < this.cantHorizontal && y < this.cantVertical; x++, y++) {
+            if (Ficha.prototype.isPrototypeOf(this.huecos[y][x]) && this.huecos[y][x].isJugador(jugador)) {
+                contador++;
+                if (contador == this.tipoJuego) {
+                    return true;
+                }
+            } else {
+                contador = 0;
+            }
+        }
+
+        // Check Arriba-Derecha para Abajo-Izquierda
+        contador = 0;
+        for (x = posX, y = posY; x >= 0 && y < this.cantVertical; x--, y++) {
+            if (Ficha.prototype.isPrototypeOf(this.huecos[y][x]) && this.huecos[y][x].isJugador(jugador)) {
+                contador++;
+                if (contador == this.tipoJuego) {
+                    return true;
+                }
+            } else {
+                contador = 0;
+            }
+        }
+
+        // Check Abajo-Derecha para Arriba-Izquierda
+        contador = 0;
+        for (x = posX, y = posY; x < this.cantHorizontal && y >= 0; x++, y--) {
+            if (Ficha.prototype.isPrototypeOf(this.huecos[y][x]) && this.huecos[y][x].isJugador(jugador)) {
+                contador++;
+                if (contador == this.tipoJuego) {
+                    return true;
+                }
+            } else {
+                contador = 0;
+            }
+        }
+
+
+        return false; // Devuelvo false si no se encontró una línea diagonal
+    }
+
+    buscarDiagonal(jugador) {
+        for (let y = 0; y < this.cantVertical; y++) {
+            for (let x = 0; x < this.cantHorizontal; x++) {
+                if (this.lineaDiagonal(x, y, jugador)) {
+                    return true;
+                }
+            }
+        }
+        return false; // Devolver false si no se encontró una línea diagonal
+    }
+
+
+    setFichaTablero(ficha, y, x) {
+        this.huecos[y][x] = ficha;
+    }
+
+    getMaxFichas() {
+        return this.cantHorizontal * this.cantVertical;
+    }
+
+}

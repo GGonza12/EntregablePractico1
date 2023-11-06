@@ -1833,6 +1833,8 @@ li>a {
 
     .contenedor-informacion {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .publicidad {
@@ -1844,7 +1846,7 @@ li>a {
     .elementos-costado-derecho {
         display: flex;
         flex-direction: column;
-        margin-left: 80px;
+        margin-left: 300px;
     }
 
     .publicidad-aside {
@@ -1899,7 +1901,7 @@ li>a {
     }
 
     .corrimiento-derecha {
-        margin-left: 65px;
+        margin-left: 80px;
     }
 
     .mostrarDivOculto {
@@ -2043,6 +2045,35 @@ li>a {
         display: flex;
         justify-content: start;
     }
+
+
+
+    /*Juego */
+    
+    .dificultad {
+        height: 1080px;
+        width: 300px;
+        background-color: #273849;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .dificultad-izq {
+        height: 1080px;
+        width: 300px;
+        background-color: #273849;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .seccion-del-canvas-final{
+        display: flex;
+    }
+    
 
     /*------------------------------INICIO COMENTAR---------------------------------------------------*/
     .cantidad-comentarios {
@@ -2536,3 +2567,36 @@ li>a {
 }
 
 /*Fin desktop*/
+
+.seleccionar-dificultad{
+    color: var(--color-blanco);
+    font-family: 'RobotoRegular';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button-para-el-canvas {
+
+    /*font-family: inherit;*/
+    font-family: 'RobotoRegular';
+    border: none;
+    outline-offset: -4px;
+    background: hsl(0deg 0% 75%);
+    box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 30px;
+  }
+  
+  .button-para-el-canvas:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+  }
+
+  .button-para-el-canvas-separacion{
+    margin-bottom: 20px;
+  }

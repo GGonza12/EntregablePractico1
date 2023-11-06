@@ -4,6 +4,8 @@ class Rectangulo extends Figura {
 
         this.width = width;
         this.height = height;
+        this.imgFicha = new Image();
+        this.imgFicha.src = this.fill;
     }
 
     draw() {
@@ -16,5 +18,8 @@ class Rectangulo extends Figura {
     }
     getHeight() {
         return this.height;
+    }
+    isPointInside(x,y){
+        return !(x < this.posX || x >this.posX + this.width || y< this.posY || y > this.posY + this.height);
     }
 }
