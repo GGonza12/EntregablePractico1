@@ -42,7 +42,7 @@ class Ficha extends Circulo{
     getJugador(){
         return this.jugador;
     }
-
+    //dibujo la ficha con la imagen
     draw(){
         
         let drawFicha = ()=> {

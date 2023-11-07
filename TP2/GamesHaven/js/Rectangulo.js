@@ -19,7 +19,7 @@ class Rectangulo extends Figura {
     getHeight() {
         return this.height;
     }
-    isPointInside(x,y){
+    isPointInside(x,y){ //para buscar si estoy apuntando a este rectangulo
         return !(x < this.posX || x >this.posX + this.width || y< this.posY || y > this.posY + this.height);
     }
 }

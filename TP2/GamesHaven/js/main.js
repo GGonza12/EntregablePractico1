@@ -1,5 +1,5 @@
 "use strict";
-
+//ejecuta todo el juego
 document.addEventListener("DOMContentLoaded", function () {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");

@@ -18,6 +18,7 @@ class Tablero {
         this.posYLeft=(600 / 5) +10;
         this.posXRight=(this.juegoWidth+this.posX+50);
     }
+    
     getWidthHuecos(){
         return this.cantHorizontal;
     }
@@ -105,10 +106,11 @@ class Tablero {
         this.ctx.fill();
       }
 
-    generarHuecos() {
+    generarHuecos() {   //genero la matriz con los huecos
         let y = (600 / 5) + 60;
         let yAux = y - 100;
         let xAux = (this.posX + 60);
+        //dibujo unos cuadrados con flechas para indicar donde colocar la ficha
         for (let c = 0; c < this.cantHorizontal; c++) {
 
               let rectangulo = new Rectangulo(xAux - 50, yAux - 50, 100, 100, "#EEE8AA", this.ctx);
@@ -134,7 +136,7 @@ class Tablero {
         };
     }
 
-    dibujarHuecos() {
+    dibujarHuecos() { //dibuja la matris huecos
         for (let i = 0; i < this.cantVertical; i++) {
             for (let c = 0; c < this.cantHorizontal; c++) {
                 this.huecos[i][c].draw();
@@ -143,7 +145,7 @@ class Tablero {
     }
 
 
-    getFichasColocas() {
+    getFichasColocas() { //obtengo las fichas colocadas
         return this.fichasColocadas;
     }
 
@@ -159,13 +161,15 @@ class Tablero {
                 ficha.setPosXMatrix(x);
                 ficha.setPosYMatrix(i);
                 ficha.setLocked();
-
+                //reviso si hay linea horizontal
                 if (this.lineaHorizontal(i, ficha.getJugador())) {
                     this.agregarGanador(ficha.getJugador());
                 }
+                 //reviso si hay linea vertical
                 if (this.lineaVertical(ficha.getPosXMatrix(), ficha.getJugador())) {
                     this.agregarGanador(ficha.getJugador());
                 }
+                 //reviso si hay linea diagonal
                 if (this.buscarDiagonal(ficha.getJugador())) {
                     this.agregarGanador(ficha.getJugador());
 
@@ -173,30 +177,30 @@ class Tablero {
             }
         }
     }
-    agregarGanador(jugador) {
+    agregarGanador(jugador) {   //guardo al ganador 
         this.ganador = jugador.getNombre();
     }
-    revisarGanador() {
+    revisarGanador() { //devuelvo al ganador
         return this.ganador;
     }
 
-    lineaHorizontal(posY, jugador) {
+    lineaHorizontal(posY, jugador) { //busca linea horizontal
         let contador = 0;
         for (let x = 0; x < this.cantHorizontal; x++) {
             if (Ficha.prototype.isPrototypeOf(this.huecos[posY][x]) && this.huecos[posY][x].isJugador(jugador)) {
                 contador++;
                 if (contador == this.tipoJuego) {
-                    return true;
+                    return true; //si encuentra linea retorna true
                 }
             } else {
-                contador = 0;
+                contador = 0; //si no encuentra linea el contador en este for se resetea;
             }
         }
         return false;
     }
 
 
-    lineaVertical(posX, jugador) {
+    lineaVertical(posX, jugador) { //busca linea vertical
         let contador = 0;
         for (let y = 0; y < this.cantVertical; y++) {
             if (Ficha.prototype.isPrototypeOf(this.huecos[y][posX]) && this.huecos[y][posX].isJugador(jugador)) {
@@ -212,7 +216,7 @@ class Tablero {
     }
 
 
-    lineaDiagonal(posX, posY, jugador) {
+    lineaDiagonal(posX, posY, jugador) { //los 4 tipos linea diagonales
         let x, y, contador;
 
         // Check Abajo-Izquierda para Arriba-Derecha
@@ -271,7 +275,7 @@ class Tablero {
         return false; // Devuelvo false si no se encontró una línea diagonal
     }
 
-    buscarDiagonal(jugador) {
+    buscarDiagonal(jugador) { //busca todos los tipos de diagonal por jugador
         for (let y = 0; y < this.cantVertical; y++) {
             for (let x = 0; x < this.cantHorizontal; x++) {
                 if (this.lineaDiagonal(x, y, jugador)) {
@@ -283,11 +287,11 @@ class Tablero {
     }
 
 
-    setFichaTablero(ficha, y, x) {
+    setFichaTablero(ficha, y, x) { //Dada una ficha y posiciones coloca esa ficha en la matriz del tablero.
         this.huecos[y][x] = ficha;
     }
 
-    getMaxFichas() {
+    getMaxFichas() { //devuelvo la cantidad maxima de fichas que tendria el tablero
         return this.cantHorizontal * this.cantVertical;
     }
 
