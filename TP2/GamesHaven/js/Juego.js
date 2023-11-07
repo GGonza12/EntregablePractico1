@@ -118,7 +118,7 @@ class Juego {
     }
 
     findClickedRect(x, y) {
-        for (let i = 0; i < this.fichas.length; i++) {
+        for (let i = 0; i < this.areaFicha.length; i++) {
             const element = this.areaFicha[i];
             if (element.isPointInside(x, y)) {
                 return i;
