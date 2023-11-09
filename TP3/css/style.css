@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/*Header*/
+.menu-hamburguesa {
+    width: 34px;
+    height: 26px;
+    filter: drop-shadow(4px 5px 0px #02187E);
+    position: relative;
+    bottom: -20px;
+    left: 100px;
+}
+
+.linea {
+    width: 34px;
+    height: 4px;
+    border-radius: 111px;
+    border: 4px solid #2981FF;
+    background: #FFE901;
+
+}
+
+.btn-comprar {
+    position: absolute;
+    right: 100px;
+    top: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 111px;
+    border: 8px solid var(--2982-ff, #2982FF);
+    background: #FFE901;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+    color: #02187E;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.5%;
+    /* 18.9px */
+    letter-spacing: 2.2px;
+}
+
+.div-header {
+    position: relative;
+    width: 1280px;
+    height: 227px;
+    background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
+}
+
+#spidey-and-his-amazing-friends {
+    width: 590px;
+    height: 301px;
+}
+
+/*INICIO LAYERS*/
+@keyframes scroll {
+    0% {
+        background-position-y: 0px;
+    }
+
+    50% {
+        background-position-y: -600px;
+    }
+
+    100% {
+        background-position-y: -720px;
+    }
+}
+
+.layer {
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.conjunto-1{
+    display:flex;
+}
+
+.layer-1 {
+    width: 1280px;
+    height: 720px;
+    background-image: url("../images/untitled-1-1.png");
+    animation: scroll 20s linear;
+}
+
+.layer-2 {
+    width: 452px;
+    height: 720px;
+    background-image: url("../images/Untitled-1-5.png");
+    animation: scroll 18s linear;
+}
+
+.layer-3 {
+    width: 543.5px;
+    height: 213.5px;
+    background-image: url("../images/untitled-1-5.png");
+    animation: scroll 18s linear;
+}
+
+.layer-4 {
+    width: 374px;
+    height: 727.5px;
+    background-image: url("../images/untitled-1-4.png");
+    animation: scroll 18s linear;
+}
+
+.layer-5 {
+    background-image: url("../images/image-1.png");
+    animation: scroll 18s linear;
+}
+
+.layer-6 {
+    background-image: url("../images/image-2.png");
+    animation: scroll 18s linear;
+}
+
+.layer-7 {
+    background-image: url("../images/image-3.png");
+    animation: scroll 18s linear;
+}
+
+/*FIN LAYERS*/
+
+
+
+.layer {
+    background-size: cover;
+}
