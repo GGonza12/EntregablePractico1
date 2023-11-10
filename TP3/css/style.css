@@ -227,10 +227,6 @@ Edificios centro
 }
 
 .titulo-h2 {
-    position: relative;
-    bottom: 606px;
-    left: 95px;
-    width: 646px;
     color: #FFF;
     font-family: 'Lato';
     font-size: 60px;
@@ -238,6 +234,20 @@ Edificios centro
     font-weight: 600;
     line-height: 94.5%;
     /* 56.7px */
+}
+
+.titulo1 {
+    position: relative;
+    bottom: 606px;
+    left: 95px;
+    width: 646px;
+}
+
+.titulo2 {
+    width: 667px;
+    position: relative;
+    left: 104px;
+    top: 500px;
 }
 
 .texto {
@@ -358,6 +368,7 @@ Edificios centro
     transform: rotate(-13.078deg);
     position: relative;
     left: 80px;
+    bottom: 100px;
 }
 
 .test2 {
@@ -366,6 +377,9 @@ Edificios centro
     width: 543.218px;
     height: 325.787px;
     transform: rotate(-26.474deg);
+    position: relative;
+    left: 75px;
+    bottom: 240px;
 }
 
 .test3 {
@@ -374,4 +388,77 @@ Edificios centro
     width: 546.108px;
     height: 326.509px;
     transform: rotate(-36.016deg);
+    position: relative;
+    left: 105px;
+    bottom: 351px;
+}
+
+.div-negro1 {
+    z-index: -10;
+    background-color: #000;
+    width: 1280px;
+    height: 1318px;
+    position: relative;
+    bottom: 332px;
+}
+
+.parallex2-1 {
+    width: 1076.4px;
+    height: 527.626px;
+    background-image: url("../images/image-222-2.png");
+    background-size: cover;
+    position: relative;
+    top: 555px;
+    left: 101.76px;
+}
+
+.parallex2-2 {
+    width: 1077.059px;
+    height: 527.626px;
+    background-image: url("../images/image-22-7.png");
+    background-size: cover;
+    position: relative;
+    top: 28px;
+    left: 101.76px;
+}
+
+.parallex2-3 {
+    background-image: url("../images/image-22-1.png");
+    background-size: cover;
+    width: 451.258px;
+    height: 591.442px;
+    position: relative;
+    bottom: 556px;
+    left: 185px;
+    transform: rotate(-12.483deg);
+}
+
+.parallex2-4 {
+    background-image: url("../images/untitled-4-2.png");
+    background-size: cover;
+    width: 451.258px;
+    height: 591.442px;
+    position: relative;
+    bottom: 1335px;
+    left: 560px;
+
+}
+
+.parallex2-5 {
+    background-image: url("../images/untitled-2-2.png");
+    background-size: cover;
+    width: 410.106px;
+    height: 437.972px;
+    position: relative;
+    bottom: 1560px;
+    left: 805px;
+}
+
+.parallex2-6 {
+    width: 1077.059px;
+    height: 527.626px;
+    background-image: url("../images/image-22-9.png");
+    position: relative;
+    bottom: 2120px;
+    left: 101.76px;
 }
