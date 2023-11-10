@@ -75,15 +75,18 @@
 }
 
 .layer {
+    position: absolute;
     min-height: 500px;
     width: 100%;
     height: 100%;
+    background-size: cover;
+    background: repeat-x;
 }
 
 .conjunto-1{
     display:flex;
 }
-
+/*Fondo*/
 .layer-1 {
     width: 1280px;
     height: 720px;
@@ -130,7 +133,3 @@
 /*FIN LAYERS*/
 
 
-
-.layer {
-    background-size: cover;
-}
