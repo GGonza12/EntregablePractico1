@@ -50,43 +50,18 @@
 .div-header {
     position: relative;
     width: 1280px;
-    height: 103px;
-    background: linear-gradient(180deg, #4D96F6 0%, #4D96F6 87.91%, rgba(84, 153, 248, 0.00) 100%);
-}
-
-#spidey-and-his-amazing-friends {
-    width: 590px;
-    height: 301px;
+    height: 227px;
+    background: #4D96F6;
 }
 
 /*INICIO LAYERS*/
-@keyframes scroll {
-    0% {
-        background-position-y: 0px;
-    }
-
-    50% {
-        background-position-y: -600px;
-    }
-
-    100% {
-        background-position-y: -720px;
-    }
-}
-
-
-.layer {
-    position: absolute;
+.div1 {
     width: 1280px;
     height: 720px;
-    background-size: cover;
-    /* background: repeat-x; */
-}
+    position: relative;
+    bottom: 80px;
 
-.conjunto-1 {
-    display: flex;
 }
-
 
 /*Fondo*/
 .layer-1 {
@@ -94,121 +69,86 @@
     height: 720px;
     background-image: url("../images/untitled-1-1.png");
     position: relative;
-    bottom: 12px;
-    /* animation: scroll 20s linear; */
-}
+    bottom: 47px;
 
-.sectionHeroes {
-    position: relative;
-    top: -700px;
+    /* animation: scroll 20s linear; */
 }
 
 /*Edificio Izquierda*/
 .layer-2 {
-    width: 412px;
+    width: 1280px;
     height: 720px;
-    background-image: url("../images/untitled-1-3.png");
+    background-image: url("../images/Edificios-difuminados.png");
     /* animation: scroll 18s linear; */
     position: relative;
-    left: 0px;
-    top: -15px;
+
+    bottom: 760px;
 
 }
 
-/* 
-Edificios centro
-*/
-
+/*GWEN STACY*/
 .layer-3 {
-    width: 542px;
-    height: 213.5px;
-    background-image: url("../images/untitled-1-5.png");
-    /* animation: scroll 18s linear; */
-    position: relative;
-    top: 480px;
-    right: 25px;
-}
-
-/* Edificios Derecha */
-
-.layer-4 {
-    width: 389px;
-    height: 727.5px;
-    background-image: url("../images/untitled-1-4.png");
-    /* animation: scroll 18s linear; */
-    position: relative;
-    top: -37px;
-    right: 63px;
-
-}
-
-
-/*Gwen*/
-.layer-5 {
-    width: 465px;
-    height: 465px;
     width: 360px;
     height: 444px;
     background-image: url("../images/image-3.png");
-    /* animation: scroll 18s linear; */
     position: relative;
-    left: 90px;
-    top: -500px;
+    left: 97px;
+    bottom: 1200px;
 }
 
-/*Peter*/
-.layer-6 {
+/*PETER PARKER*/
+.layer-4 {
+    z-index: 999;
     width: 465px;
     height: 465px;
     background-image: url("../images/image-2.png");
-    /* animation: scroll 18s linear; */
     position: relative;
-    top: -900px;
     left: 400px;
-
+    bottom: 1610px;
 }
 
-/*Miles-Morales*/
-.layer-7 {
+/*MILES MORALES*/
+.layer-5 {
+    z-index: 1;
     width: 393px;
     height: 393px;
     background-image: url("../images/image-1.png");
-    /* animation: scroll 18s linear; */
     position: relative;
-    right: -690px;
-    top: -1450px;
+    left: 695px;
+    bottom: 2165px;
 }
 
-/*Telaraña Peter*/
-.layer-8 {
-    width: 567px;
-    height: 671px;
-    background-image: url("../images/untitled-5-2.png");
+/*TELARAÑA DE PETER PARKER*/
+.layer-6 {
+    z-index: 999;
+    width: 460px;
+    height: 627.274px;
+    background-image: url("../images/untitled-5-1.png");
+    transform: rotate(65.403deg);
+    background-size: contain;
     position: relative;
-    top: -1785px;
-    right: 0px;
-
-
+    right: 38px;
+    bottom: 2475px;
 }
 
-/*Telaraña Miles*/
-.layer-9 {
-    width: 280.659px;
+/*TELARAÑA DE MILES MORALES*/
+.layer-7 {
+    z-index: 0;
+    width: 301.659px;
     height: 372.442px;
     background-image: url("../images/untitled-5-3.png");
     position: relative;
-    top: -2434px;
-    left: 999px;
+    left: 981px;
+    bottom: 3132px;
 }
 
-/*Logo*/
-.layer-10 {
+.layer-8 {
     width: 590px;
     height: 301px;
     background-image: url("../images/image-5-1.png");
     position: relative;
-    bottom: 3130px;
     left: 320px;
+    bottom: 3810px;
 }
 
 /*FIN LAYERS*/
@@ -222,8 +162,11 @@ Edificios centro
 }
 
 .div-duende-verde {
+
     width: 1280px;
     height: 845px;
+    position: relative;
+    bottom: 185px;
 }
 
 .titulo-h2 {
@@ -290,7 +233,8 @@ Edificios centro
 .imagen-y-descripcion-hombres-araña {
     width: 1280px;
     height: 942px;
-
+    position: relative;
+    bottom: 185px;
 }
 
 .descripcion-hombres-araña {
@@ -358,6 +302,8 @@ Edificios centro
     height: 566px;
 
     background-image: url("../images/image-223.png");
+    position: relative;
+    bottom: 237px;
 }
 
 .test1 {
@@ -399,7 +345,7 @@ Edificios centro
     width: 1280px;
     height: 1318px;
     position: relative;
-    bottom: 332px;
+    bottom: 569px;
 }
 
 .parallex2-1 {
