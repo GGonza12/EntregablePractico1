@@ -93,7 +93,7 @@
     background-image: url("../images/image-3.png");
     position: relative;
     left: 97px;
-    bottom: 1200px;
+    bottom: 1212px;
 }
 
 /*PETER PARKER*/
@@ -104,7 +104,7 @@
     background-image: url("../images/image-2.png");
     position: relative;
     left: 400px;
-    bottom: 1610px;
+    bottom: 1622px;
 }
 
 /*MILES MORALES*/
@@ -115,7 +115,7 @@
     background-image: url("../images/image-1.png");
     position: relative;
     left: 695px;
-    bottom: 2165px;
+    bottom: 2177px;
 }
 
 /*TELARAÑA DE PETER PARKER*/
@@ -128,7 +128,7 @@
     background-size: contain;
     position: relative;
     right: 38px;
-    bottom: 2475px;
+    bottom: 2487px;
 }
 
 /*TELARAÑA DE MILES MORALES*/
@@ -139,7 +139,7 @@
     background-image: url("../images/untitled-5-3.png");
     position: relative;
     left: 981px;
-    bottom: 3132px;
+    bottom: 3144px;
 }
 
 .layer-8 {
