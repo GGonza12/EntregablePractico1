@@ -42,6 +42,7 @@ body {
     /* Drop Shadow */
     box-shadow: 4px 5px 0px 0px #02187E;
     color: #02187E;
+
     font-family: Lato;
     font-size: 20px;
     font-style: normal;
@@ -324,6 +325,7 @@ body {
     bottom: 100px;
 }
 
+
 .test2 {
     background-image: url("../images/test.png");
     background-size: cover;
@@ -420,14 +422,24 @@ body {
 
 }
 
-.tituloNegro {
-    color: #000;
-    font-family: Lato;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 94.5%;
-    /* 56.7px */
+/*Amigos*/
+
+@keyframes scrollImages {
+    0% {
+        background-image: url("../images/image-21.png");
+    }
+
+    25% {
+        background-image: url("../images/image-9.png");
+    }
+
+    50% {
+        background-image: url("../images/image-10.png");
+    }
+
+    75% {
+        background-image: url("../images/image-6.png");
+    }
 }
 
 .fondo-amigos {
@@ -437,4 +449,138 @@ body {
     background-image: url("../images/rectangle-9.png");
     position: relative;
     bottom: 1000px;
+    animation: scrollImages linear infinite;
+}
+
+.tituloNegroAmigos {
+    color: #000;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%;
+    /* 56.7px */
+    position: relative;
+    bottom: 700px;
+    right: -96px;
+}
+
+.imagenes-juego {
+    width: 552px;
+    height: 302.762px;
+    background-image: url("../images/image-21.png");
+}
+
+.info-juego {
+    width: 467px;
+    padding-left: 57px;
+}
+
+.titulo-info {
+    color: #000;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    /* 37.8px */
+}
+
+.texto-info {
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    padding-top: 25px;
+    /* 18.9px */
+}
+
+.row-images {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 2830px;
+    right: -96px;
+}
+
+
+/*fin amigos*/
+.rectangle-10 {
+    width: 1280px;
+    height: 719.86px;
+    background-image: url("../images/rectangle-10.png");
+    background-size: cover;
+    position: relative;
+    bottom: 1185px;
+}
+
+.spider-gwen-stacy {
+    background-image: url("../images/image-229.png");
+    background-size: cover;
+    width: 268px;
+    height: 416.5px;
+    position: relative;
+    left: 190px;
+    top: 160px;
+}
+
+.spider-peter-parker {
+    background-image: url("../images/image-234.png");
+    background-size: cover;
+    width: 416.5px;
+    height: 457.5px;
+    position: relative;
+    left: 390px;
+    bottom: 245px;
+}
+
+.spider-miles-morales {
+    background-image: url("../images/image-236.png");
+    background-size: cover;
+    width: 313.5px;
+    height: 398.5px;
+    position: relative;
+    left: 770px;
+    bottom: 700px;
+}
+
+.titulo3 {
+    width: 816px;
+    position: relative;
+    bottom: 1250px;
+    left: 104px;
+
+    color: #FFF;
+
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.btn-comprar-ahora {
+    position: relative;
+    bottom: 1208px;
+    left: 104px;
+
+    width: 292px;
+    height: 50px;
+    border-radius: 111px;
+    border: 8px solid var(--2982-ff, #2982FF);
+    background: #FFE901;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+
+    color: #02187E;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.5%;
+    /* 18.9px */
+    letter-spacing: 2.2px;
 }
