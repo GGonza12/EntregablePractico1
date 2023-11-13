@@ -399,13 +399,14 @@ body {
 }
 
 .parallex2-5 {
-    background-image: url("../images/untitled-2-2.png");
+    background-image: url("../images/untitled-2-1.png");
+    transform: rotate(7.515deg);
     background-size: cover;
     width: 410.106px;
     height: 437.972px;
     position: relative;
-    bottom: 1560px;
-    left: 805px;
+    bottom: 1547px;
+    left: 800px;
 
 }
 
@@ -435,5 +436,5 @@ body {
     height: 2194.5px;
     background-image: url("../images/rectangle-9.png");
     position: relative;
-    bottom: 800px;
+    bottom: 1000px;
 }
