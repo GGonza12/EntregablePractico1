@@ -7,6 +7,10 @@
     outline: none;
 }
 
+body {
+    background-color: #000;
+}
+
 /*Header*/
 .menu-hamburguesa {
     width: 34px;
@@ -164,7 +168,7 @@
 .div-duende-verde {
 
     width: 1280px;
-    height: 845px;
+    height: 700px;
     position: relative;
     bottom: 185px;
 }
@@ -231,10 +235,13 @@
 }
 
 .imagen-y-descripcion-hombres-araña {
+    background-image: url("../images/Rectangle-7.png");
     width: 1280px;
-    height: 942px;
+    height: 1085px;
     position: relative;
     bottom: 185px;
+    z-index: -1;
+    padding-top: 150px;
 }
 
 .descripcion-hombres-araña {
@@ -303,7 +310,7 @@
 
     background-image: url("../images/image-223.png");
     position: relative;
-    bottom: 237px;
+    bottom: 400px;
 }
 
 .test1 {
@@ -340,12 +347,10 @@
 }
 
 .div-negro1 {
-    z-index: -10;
-    background-color: #000;
     width: 1280px;
     height: 1318px;
     position: relative;
-    bottom: 569px;
+    bottom: 732px;
 }
 
 .parallex2-1 {
@@ -356,6 +361,7 @@
     position: relative;
     top: 555px;
     left: 101.76px;
+
 }
 
 .parallex2-2 {
@@ -366,6 +372,7 @@
     position: relative;
     top: 28px;
     left: 101.76px;
+
 }
 
 .parallex2-3 {
@@ -377,6 +384,7 @@
     bottom: 556px;
     left: 185px;
     transform: rotate(-12.483deg);
+
 }
 
 .parallex2-4 {
@@ -398,6 +406,7 @@
     position: relative;
     bottom: 1560px;
     left: 805px;
+
 }
 
 .parallex2-6 {
@@ -407,6 +416,7 @@
     position: relative;
     bottom: 2120px;
     left: 101.76px;
+
 }
 
 .tituloNegro {
@@ -420,7 +430,10 @@
 }
 
 .fondo-amigos {
+    z-index: -1;
     width: 1280px;
     height: 2194.5px;
     background-image: url("../images/rectangle-9.png");
+    position: relative;
+    bottom: 800px;
 }
