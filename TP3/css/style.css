@@ -475,6 +475,8 @@ body {
 .img-juego-2,
 .img-juego-3,
 .img-juego-4 {
+    transition: 0.5s;
+    transform: translateY(20px);
     position: sticky;
     top: 0; /* Esto hará que la imagen se mantenga en la parte superior del div al desplazarse */
     opacity: 0; /* Las imágenes serán transparentes por defecto */
