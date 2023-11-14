@@ -467,35 +467,33 @@ body {
 }
 
 
-.img-juego-1,
-.info-img-1,
-.img-juego-2,
-.info-img-2,
-.img-juego-3,
-.info-img-3,
-.img-juego-4,
-.info-img-4 {
-    display: none;
-}
-
 .active {
     display: block;
+    opacity: 1 !important; /* Esto hará que la imagen sea visible */
 }
-
+.img-juego-1,
+.img-juego-2,
+.img-juego-3,
+.img-juego-4 {
+    position: sticky;
+    top: 0; /* Esto hará que la imagen se mantenga en la parte superior del div al desplazarse */
+    opacity: 0; /* Las imágenes serán transparentes por defecto */
+}
 .img-juego-1 {
+    position: sticky;
+    top: 0; /* Esto hará que la imagen se mantenga en la parte superior del div al desplazarse */
     width: 552px;
     height: 302.762px;
     background-image: url("../images/image-21.png");
-
+    
 
 }
-
 .img-juego-2 {
     width: 548px;
     height: 305px;
     background-image: url("../images/image-9.png");
     margin-top: 100px;
-
+    opacity: 0;
 }
 
 .img-juego-3 {
@@ -503,6 +501,7 @@ body {
     height: 301.507px;
     background-image: url("../images/image-10.png");
     margin-top: 121px;
+    opacity: 0;
 
 }
 
@@ -511,6 +510,7 @@ body {
     height: 308.253px;
     background-image: url("../images/image-6.png");
     margin-top: 211px;
+    opacity: 0;
 
 }
 
@@ -567,6 +567,8 @@ body {
     bottom: 2830px;
     right: -96px;
     animation: scrollImages linear infinite;
+    overflow: hidden; /* Esto permite el desplazamiento dentro del div */
+    height: 2194.5px;
 }
 
 .info-img {
@@ -786,9 +788,7 @@ body {
     height: 248px;
 }
 
-.div-amigos-diversion {
-    width: 1280px;
-}
+
 
 footer {
     width: 1280px;

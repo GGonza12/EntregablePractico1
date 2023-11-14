@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         return offsetTop;
     }
+
     window.addEventListener('scroll', function () {
         let scrollPosition = window.scrollY;
         let img1 = document.querySelector('.img-juego-1');
@@ -47,8 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             info2.classList.remove('active');
             img4.classList.remove('active');
             info4.classList.remove('active');
-            console.log("aaa");
-        }  else if (scrollPosition >= getDocumentOffsetTop(img4)) {
+        } else if (scrollPosition >= getDocumentOffsetTop(img4)) {
             img4.classList.add('active');
             info4.classList.add('active');
             img1.classList.remove('active');
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
             info2.classList.remove('active');
             img3.classList.remove('active');
             info3.classList.remove('active');
-            console.log("aa");
         }
     });
+
 });
