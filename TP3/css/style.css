@@ -45,7 +45,7 @@ body {
     box-shadow: 4px 5px 0px 0px #02187E;
     color: #02187E;
 
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 20px;
     font-style: normal;
     font-weight: 900;
@@ -455,7 +455,7 @@ body {
 
 .tituloNegroAmigos {
     color: #000;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
@@ -479,7 +479,7 @@ body {
 
 .titulo-info {
     color: #000;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -489,7 +489,7 @@ body {
 
 .texto-info {
     color: #000;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -514,7 +514,7 @@ body {
     background-image: url("../images/rectangle-10.png");
     background-size: cover;
     position: relative;
-    bottom: 1185px;
+    bottom: 1285px;
 }
 
 .spider-gwen-stacy {
@@ -553,7 +553,7 @@ body {
     bottom: 1250px;
     left: 104px;
     color: #FFF;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
@@ -565,14 +565,14 @@ body {
     bottom: 1208px;
     left: 104px;
     width: 292px;
-    height: 50px;
+    height: 70px;
     border-radius: 111px;
     border: 8px solid var(--2982-ff, #2982FF);
     background: #FFE901;
     /* Drop Shadow */
     box-shadow: 4px 5px 0px 0px #02187E;
     color: #02187E;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 20px;
     font-style: normal;
     font-weight: 900;
@@ -586,7 +586,7 @@ body {
     height: 1296px;
     background: linear-gradient(180deg, #8FBEFC 21.2%, #F7E3D8 81.48%);
     position: relative;
-    bottom: 1185px;
+    bottom: 1285px;
 }
 
 .seccion1 {
@@ -606,7 +606,7 @@ body {
     width: 816px;
     color: #000;
     text-align: center;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
@@ -640,6 +640,7 @@ body {
 .btn-suscripcion {
     width: 218px;
     height: 118px;
+
     border-radius: 0 50px 50px 0;
     border: 9px solid #2982FF;
     background: #FFE901;
@@ -648,7 +649,7 @@ body {
     box-shadow: 4px 5px 0px 0px #02187E;
 
     color: #02187E;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 20px;
     font-style: normal;
     font-weight: 900;
@@ -656,6 +657,8 @@ body {
     /* 18.9px */
     letter-spacing: 2.2px;
 }
+
+
 
 .politica-y-condiciones {
     position: relative;
@@ -666,7 +669,7 @@ body {
     height: 95px;
 
     color: #000;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -675,7 +678,7 @@ body {
 
 .subrayado {
     color: #000;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -699,7 +702,7 @@ body {
     background: #242424;
     background-size: cover;
     position: relative;
-    bottom: 1185px;
+    bottom: 1285px;
 }
 
 .plataformas2 {
@@ -726,7 +729,7 @@ footer {
     background: #5E5E5D;
 
     position: relative;
-    bottom: 1185px;
+    bottom: 1285px;
 }
 
 .derechos-reservados {
@@ -736,7 +739,7 @@ footer {
     height: 361px;
 
     color: #FFF;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -751,7 +754,7 @@ footer {
 
 .politicas {
     color: #FFF;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -773,4 +776,38 @@ footer {
 
     background-image: url("../images/image-238.png");
     background-size: contain;
+}
+
+.sprite-miles {
+    background-image: url("../images/image-228.png");
+    width: 97px;
+    height: 91px;
+    background-size: cover;
+    position: relative;
+    top: 560px;
+    left: 216px;
+}
+
+.sprite-gwen {
+    background-image: url("../images/image-239.png");
+    width: 58px;
+    height: 64px;
+    background-size: cover;
+    position: relative;
+    top: 405px;
+    left: 533px;
+}
+
+.sprite-peter {
+    background-image: url("../images/image-227.png");
+
+    width: 94px;
+    height: 91px;
+    background-size: cover;
+
+    position: relative;
+    left: 1000px;
+    top: 235px;
+
+    mix-blend-mode: darken;
 }
