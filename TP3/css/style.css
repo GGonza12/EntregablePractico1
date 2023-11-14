@@ -450,7 +450,7 @@ body {
     background-image: url("../images/rectangle-9.png");
     position: relative;
     bottom: 1000px;
-    animation: scrollImages linear infinite;
+
 }
 
 .tituloNegroAmigos {
@@ -466,10 +466,28 @@ body {
     right: -96px;
 }
 
-.imagenes-juego {
+.img-juego-1 {
     width: 552px;
     height: 302.762px;
     background-image: url("../images/image-21.png");
+}
+
+.img-juego-2 {
+    width: 548px;
+    height: 305px;
+    background-image: url("../images/image-9.png");
+}
+
+.img-juego-3 {
+    width: 556px;
+    height: 301.507px;
+    background-image: url("../images/image-10.png");
+}
+
+.img-juego-4 {
+    width: 552px;
+    height: 308.253px;
+    background-image: url("../images/image-6.png");
 }
 
 .info-juego {
@@ -504,6 +522,7 @@ body {
     position: relative;
     bottom: 2830px;
     right: -96px;
+    animation: scrollImages linear infinite;
 }
 
 
