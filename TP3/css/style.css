@@ -476,18 +476,21 @@ body {
     width: 548px;
     height: 305px;
     background-image: url("../images/image-9.png");
+    margin-top: 100px;
 }
 
 .img-juego-3 {
     width: 556px;
     height: 301.507px;
     background-image: url("../images/image-10.png");
+    margin-top: 121px;
 }
 
 .img-juego-4 {
     width: 552px;
     height: 308.253px;
     background-image: url("../images/image-6.png");
+    margin-top: 211px;
 }
 
 .info-juego {
@@ -523,6 +526,10 @@ body {
     bottom: 2830px;
     right: -96px;
     animation: scrollImages linear infinite;
+}
+
+.info-img{
+    margin-top: 150px;
 }
 
 
