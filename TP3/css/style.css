@@ -466,10 +466,29 @@ body {
     right: -96px;
 }
 
+
+.img-juego-1,
+.info-img-1,
+.img-juego-2,
+.info-img-2,
+.img-juego-3,
+.info-img-3,
+.img-juego-4,
+.info-img-4 {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
 .img-juego-1 {
     width: 552px;
     height: 302.762px;
     background-image: url("../images/image-21.png");
+    position: fixed;
+    top: 500px;
+
 }
 
 .img-juego-2 {
@@ -477,6 +496,8 @@ body {
     height: 305px;
     background-image: url("../images/image-9.png");
     margin-top: 100px;
+    position: fixed;
+    top: 500px;
 }
 
 .img-juego-3 {
@@ -484,6 +505,8 @@ body {
     height: 301.507px;
     background-image: url("../images/image-10.png");
     margin-top: 121px;
+    position: fixed;
+    top: 500px;
 }
 
 .img-juego-4 {
@@ -491,6 +514,28 @@ body {
     height: 308.253px;
     background-image: url("../images/image-6.png");
     margin-top: 211px;
+    position: fixed;
+    top: 500px;
+}
+
+.info-img-1,
+.info-img-2,
+.info-img-3,
+.info-img-4 {
+    /* Duración de la transición */
+    transition: 0.5s;
+    /* Estado inicial */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.info-img-1.active,
+.info-img-2.active,
+.info-img-3.active,
+.info-img-4.active {
+    /* Estado final */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .info-juego {
@@ -528,7 +573,7 @@ body {
     animation: scrollImages linear infinite;
 }
 
-.info-img{
+.info-img {
     margin-top: 150px;
 }
 
