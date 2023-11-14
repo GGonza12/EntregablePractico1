@@ -486,8 +486,7 @@ body {
     width: 552px;
     height: 302.762px;
     background-image: url("../images/image-21.png");
-    position: fixed;
-    top: 500px;
+
 
 }
 
@@ -496,8 +495,7 @@ body {
     height: 305px;
     background-image: url("../images/image-9.png");
     margin-top: 100px;
-    position: fixed;
-    top: 500px;
+
 }
 
 .img-juego-3 {
@@ -505,8 +503,7 @@ body {
     height: 301.507px;
     background-image: url("../images/image-10.png");
     margin-top: 121px;
-    position: fixed;
-    top: 500px;
+
 }
 
 .img-juego-4 {
@@ -514,8 +511,7 @@ body {
     height: 308.253px;
     background-image: url("../images/image-6.png");
     margin-top: 211px;
-    position: fixed;
-    top: 500px;
+
 }
 
 .info-img-1,
