@@ -8,6 +8,8 @@
 }
 
 body {
+    width: 1280px;
+    height: 8968px;
     background-color: #000;
 }
 
@@ -419,7 +421,6 @@ body {
     position: relative;
     bottom: 2120px;
     left: 101.76px;
-
 }
 
 /*Amigos*/
@@ -551,27 +552,98 @@ body {
     position: relative;
     bottom: 1250px;
     left: 104px;
-
     color: #FFF;
-
     font-family: Lato;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
 
 .btn-comprar-ahora {
     position: relative;
     bottom: 1208px;
     left: 104px;
-
     width: 292px;
     height: 50px;
     border-radius: 111px;
     border: 8px solid var(--2982-ff, #2982FF);
     background: #FFE901;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+    color: #02187E;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.5%;
+    /* 18.9px */
+    letter-spacing: 2.2px;
+}
+
+.prefooter {
+    width: 1280px;
+    height: 1296px;
+    background: linear-gradient(180deg, #8FBEFC 21.2%, #F7E3D8 81.48%);
+    position: relative;
+    bottom: 1185px;
+}
+
+.seccion1 {
+    width: 1280px;
+    height: 576px;
+}
+
+.seccion2 {
+    width: 1280px;
+    height: 720px;
+    background-image: url("../images/untitled-1-5-ByC.png");
+    background-size: cover;
+
+}
+
+.titulo4 {
+    width: 816px;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%;
+    /* 56.7px */
+    position: relative;
+    left: 232px;
+    top: 152px;
+}
+
+.suscribirse {
+    display: flex;
+    position: relative;
+    left: 250px;
+    top: 206px;
+}
+
+.casilla-suscripcion {
+    width: 562px;
+    height: 100px;
+    border-radius: 50px 0px 0px 50px;
+    border-top: 9px solid #2982FF;
+    border-bottom: 9px solid #2982FF;
+    border-left: 9px solid #2982FF;
+    background: #FFF;
+
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+}
+
+.btn-suscripcion {
+    width: 218px;
+    height: 118px;
+    border-radius: 0 50px 50px 0;
+    border: 9px solid #2982FF;
+    background: #FFE901;
+
     /* Drop Shadow */
     box-shadow: 4px 5px 0px 0px #02187E;
 
@@ -583,4 +655,122 @@ body {
     line-height: 94.5%;
     /* 18.9px */
     letter-spacing: 2.2px;
+}
+
+.politica-y-condiciones {
+    position: relative;
+    left: 302px;
+    top: 250px;
+
+    width: 578px;
+    height: 95px;
+
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+}
+
+.subrayado {
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    text-decoration-line: underline;
+}
+
+.edad-recomendada {
+    width: 231px;
+    height: 145px;
+    background-image: url("../images/image-224.png");
+    background-size: cover;
+    position: relative;
+    left: 302px;
+    top: 260px;
+}
+
+.plataformas {
+    width: 1280px;
+    height: 80px;
+    background: #242424;
+    background-size: cover;
+    position: relative;
+    bottom: 1185px;
+}
+
+.plataformas2 {
+    width: 1080px;
+    height: 75px;
+    background-image: url("../images/image-226.png");
+    background-size: contain;
+    position: relative;
+    left: 100px;
+}
+
+.seccion3 {
+    width: 1280px;
+    height: 248px;
+}
+
+.div-amigos-diversion {
+    width: 1280px;
+}
+
+footer {
+    width: 1280px;
+    height: 598px;
+    background: #5E5E5D;
+
+    position: relative;
+    bottom: 1185px;
+}
+
+.derechos-reservados {
+    padding-top: 38px;
+    margin-left: 100px;
+    width: 820px;
+    height: 361px;
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    /* 18.9px */
+    letter-spacing: 2.2px;
+}
+
+.cookies-y-privacidad {
+    margin-left: 100px;
+}
+
+.politicas {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    letter-spacing: 2.2px;
+    text-decoration-line: underline;
+}
+
+#cookie {
+    margin-right: 7px;
+}
+
+.redes-sociales {
+    width: 212px;
+    height: 41px;
+
+    margin-top: 38px;
+    margin-left: 100px;
+
+    background-image: url("../images/image-238.png");
+    background-size: contain;
 }
