@@ -15,16 +15,23 @@
 
 <body>
     <header>
-        <div class="div-header">
-            <div class="menu-hamburguesa">
-                <div class="linea-1 linea"></div>
-                <div class="linea-2 linea"></div>
-                <div class="linea-3 linea"></div>
+        <div class="header-bg">
+            <div class="div-header">
+                <div class="menu-hamburguesa">
+                    <div class="linea-1 linea"></div>
+                    <div class="linea-2 linea"></div>
+                    <div class="linea-3 linea"></div>
+                </div>
+
+                <div class="icono-spidey-nav"> </div>
+
+
+                <button class="btn-comprar">
+                    <p>COMPRAR</p>
+                </button>
             </div>
-            <button class="btn-comprar">
-                <p>COMPRAR</p>
-            </button>
         </div>
+
     </header>
 
     <div class="div1">
@@ -232,6 +239,12 @@
         <div class="redes-sociales"></div>
     </footer>
     <script src="js/scroll.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".div-header");
+            header.classList.toggle("abajo", window.scrollY > 0);
+        })
+    </script>
 </body>
 </div>
 
