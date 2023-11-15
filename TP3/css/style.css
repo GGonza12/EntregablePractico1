@@ -9,8 +9,10 @@
 
 body {
     width: 1280px;
-    height: 8968px;
+    height: 100vh;
     background-color: #000;
+    display: flex;
+    flex-direction: column;
 }
 
 header {}
@@ -273,8 +275,8 @@ header {}
     width: 553px;
     height: 921px;
     background-image: url("../images/untitled-3-1.png");
-    background-size: contain;
-    transform: scaleX(-1);
+    background-size: cover;
+
 }
 
 .tarjeta-duende-verde {
@@ -283,7 +285,7 @@ header {}
     height: 455.131px;
     position: relative;
     left: 90.28px;
-    bottom: 1500px;
+    bottom: 1505px;
     background-image: url("../images/image-16.png");
     background-size: cover;
 }
@@ -955,4 +957,8 @@ footer {
     position: relative;
     top: -950px;
     z-index: -1;
+}
+
+.vacio {
+    height: 100px;
 }
