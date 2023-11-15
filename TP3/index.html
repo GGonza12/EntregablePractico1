@@ -23,9 +23,6 @@
                     <div class="linea-3 linea"></div>
                 </div>
 
-                <div class="icono-spidey-nav"> </div>
-
-
                 <button class="btn-comprar">
                     <p>COMPRAR</p>
                 </button>
@@ -242,7 +239,9 @@
     <script type="text/javascript">
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".div-header");
+            var iconoSpidey = document.querySelector(".div1");
             header.classList.toggle("abajo", window.scrollY > 0);
+            iconoSpidey.classList.toggle("abajo", window.scrollY > 0);
         })
     </script>
 </body>
