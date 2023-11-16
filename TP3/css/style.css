@@ -83,6 +83,20 @@ header {}
 
 }
 
+.btn-comprar:hover,.btn-comprar-ahora:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(0.25em);
+    transition: 0.50s ease;
+   
+    background-color: #249A12;
+    cursor: pointer;
+}
+.btn-comprar::after {
+  
+    
+    transition:width 0.25s ease;
+}
+
 .btn-comprar {
     position: absolute;
     right: 100px;
@@ -478,23 +492,7 @@ header {}
 
 /*Amigos*/
 
-@keyframes scrollImages {
-    0% {
-        background-image: url("../images/image-21.png");
-    }
 
-    25% {
-        background-image: url("../images/image-9.png");
-    }
-
-    50% {
-        background-image: url("../images/image-10.png");
-    }
-
-    75% {
-        background-image: url("../images/image-6.png");
-    }
-}
 
 
 
