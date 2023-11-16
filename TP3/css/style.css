@@ -269,15 +269,15 @@ header {}
 
 .duende-verde {
     z-index: 1;
-    position: relative;
-    bottom: 970px;
+    position: absolute;
+    top: 0;
     left: 712px;
     width: 553px;
     height: 921px;
     background-image: url("../images/untitled-3-1.png");
     background-size: cover;
-
 }
+
 
 .tarjeta-duende-verde {
     z-index: 0;
@@ -285,7 +285,7 @@ header {}
     height: 455.131px;
     position: relative;
     left: 90.28px;
-    bottom: 1505px;
+    bottom: 585px;
     background-image: url("../images/image-16.png");
     background-size: cover;
 }

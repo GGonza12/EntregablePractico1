@@ -51,7 +51,9 @@
             superhéroe, tengan la seguridad de que un amigo de los Vengadores correrá
             para ayudar.
         </p>
+
         <div class="duende-verde"></div>
+
         <div class="tarjeta-duende-verde"></div>
     </div>
 
@@ -239,6 +241,15 @@
     </footer>
     <script src="js/scroll.js"></script>
     <script src="js/nav-animation.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const parallax = document.querySelector('.duende-verde');
+            let scrollPosition = window.pageYOffset;
+
+            parallax.style.transform = 'translateY(' + scrollPosition * 0.105 + 'px)';
+        });
+    </script>
 </body>
 </div>
 
