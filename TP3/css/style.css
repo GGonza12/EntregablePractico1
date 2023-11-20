@@ -15,24 +15,28 @@ body {
     flex-direction: column;
 }
 
-header {}
+footer {
+    width: 1280px;
+    height: 598px;
+    background: #5E5E5D;
+    position: relative;
+    bottom: 3145px;
+}
 
+/*-----------------------------------------------------------------------------------------INICIO DEL HEADER--------------------------------------------------------------------------------------------*/
 .header-bg {
     background-color: #5499F8;
     width: 1280px;
     height: 227px;
-    z-index: -1;
 }
 
-/*Header*/
-.menu-hamburguesa {
-    width: 34px;
-    height: 26px;
-    filter: drop-shadow(4px 5px 0px #02187E);
-    position: relative;
-    bottom: -20px;
-    left: 100px;
-
+.div-header {
+    position: fixed;
+    width: 1280px;
+    height: 145px;
+    background: linear-gradient(0deg, rgba(84, 153, 248, 0.00) 0%, #5499F8 12.09%, #5499F8 100%);
+    z-index: 999;
+    transition: 0.4s ease-out;
 }
 
 .div-header.abajo {
@@ -40,16 +44,76 @@ header {}
     height: 83px;
 }
 
-@keyframes mover {
-    0% {
-        top: 10px;
-        left: 575px;
-    }
+.menu-hamburguesa {
+    width: 34px;
+    height: 26px;
+    filter: drop-shadow(4px 5px 0px #02187E);
+    position: relative;
+    bottom: -20px;
+    left: 100px;
+}
 
-    100% {
-        top: 50px;
-        left: 600px;
-    }
+.linea {
+    width: 34px;
+    height: 4px;
+    border-radius: 111px;
+    border: 4px solid #2981FF;
+    background: #FFE901;
+}
+
+.btn-comprar {
+    position: absolute;
+    right: 100px;
+    top: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 111px;
+    border: 8px solid var(--2982-ff, #2982FF);
+    background: #FFE901;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    color: #02187E;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.5%;
+    letter-spacing: 2.2px;
+}
+
+.btn-comprar:hover,
+.btn-comprar-ahora:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(0.25em);
+    transition: 0.50s ease;
+    background-color: #249A12;
+    cursor: pointer;
+}
+
+.btn-comprar::after {
+    transition: width 0.25s ease;
+}
+
+/*-----------------------------------------------------------------------------------------FIN DEL HEADER-----------------------------------------------------------------------------------------------*/
+/**/
+/**/
+/**/
+/*-----------------------------------------------------------------------------------------INICIO DIV1--------------------------------------------------------------------------------------------------*/
+
+.div1 {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    bottom: 50px;
+}
+
+.div1 .layer-8 {
+    width: 590px;
+    height: 301px;
+    background-image: url("../images/image-5-1.png");
+    position: relative;
+    left: 330px;
+    bottom: 3857px;
+    z-index: 1;
 }
 
 .div1.abajo .layer-8 {
@@ -63,82 +127,7 @@ header {}
     transition: 0.5s;
 }
 
-
-
-.div1 .layer-8 {
-    width: 590px;
-    height: 301px;
-    background-image: url("../images/image-5-1.png");
-    position: relative;
-    left: 320px;
-    bottom: 3810px;
-}
-
-.linea {
-    width: 34px;
-    height: 4px;
-    border-radius: 111px;
-    border: 4px solid #2981FF;
-    background: #FFE901;
-
-}
-
-.btn-comprar:hover,.btn-comprar-ahora:hover{
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(0.25em);
-    transition: 0.50s ease;
-   
-    background-color: #249A12;
-    cursor: pointer;
-}
-.btn-comprar::after {
-  
-    
-    transition:width 0.25s ease;
-}
-
-.btn-comprar {
-    position: absolute;
-    right: 100px;
-    top: 15px;
-    width: 200px;
-    height: 50px;
-    border-radius: 111px;
-    border: 8px solid var(--2982-ff, #2982FF);
-    background: #FFE901;
-    /* Drop Shadow */
-    box-shadow: 4px 5px 0px 0px #02187E;
-    color: #02187E;
-
-    font-family: 'Lato';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 94.5%;
-    /* 18.9px */
-    letter-spacing: 2.2px;
-}
-
-.div-header {
-    position: fixed;
-    width: 1280px;
-    height: 145px;
-    background: linear-gradient(0deg, rgba(84, 153, 248, 0.00) 0%, #5499F8 12.09%, #5499F8 100%);
-    z-index: 999;
-    transition: 0.4s ease-out;
-}
-
-
-/*INICIO LAYERS*/
-.div1 {
-    width: 1280px;
-    height: 720px;
-    position: relative;
-    bottom: 50px;
-
-}
-
-/*Fondo*/
+/*Fondo nubes*/
 .layer-1 {
     width: 1280px;
     height: 720px;
@@ -146,23 +135,21 @@ header {}
     position: relative;
     bottom: 47px;
 
-    /* animation: scroll 20s linear; */
 }
 
-/*Edificio Izquierda*/
+/*Fondo edificios*/
 .layer-2 {
     width: 1280px;
     height: 720px;
     background-image: url("../images/Edificios-difuminados.png");
-    /* animation: scroll 18s linear; */
     position: relative;
-
     bottom: 760px;
 
 }
 
 /*GWEN STACY*/
 .layer-3 {
+
     width: 360px;
     height: 444px;
     background-image: url("../images/image-3.png");
@@ -173,18 +160,18 @@ header {}
 
 /*PETER PARKER*/
 .layer-4 {
-    z-index: 1;
     width: 465px;
     height: 465px;
     background-image: url("../images/image-2.png");
     position: relative;
     left: 400px;
     bottom: 1622px;
+    z-index: 1;
 }
 
 /*MILES MORALES*/
 .layer-5 {
-    z-index: 1;
+    z-index: 2;
     width: 393px;
     height: 393px;
     background-image: url("../images/image-1.png");
@@ -196,19 +183,18 @@ header {}
 /*TELARAÑA DE PETER PARKER*/
 .layer-6 {
     z-index: 1;
-    width: 460px;
-    height: 627.274px;
+    width: 567px;
+    height: 671px;
     background-image: url("../images/untitled-5-1.png");
-    transform: rotate(65.403deg);
     background-size: contain;
     position: relative;
-    right: 38px;
-    bottom: 2487px;
+    right: -5px;
+    bottom: 2507px;
 }
 
 /*TELARAÑA DE MILES MORALES*/
 .layer-7 {
-    z-index: 0;
+    z-index: 1;
     width: 301.659px;
     height: 372.442px;
     background-image: url("../images/untitled-5-3.png");
@@ -217,17 +203,10 @@ header {}
     bottom: 3144px;
 }
 
-/*.layer-8 {
-    width: 590px;
-    height: 301px;
-    background-image: url("../images/image-5-1.png");
-    position: relative;
-    left: 320px;
-    bottom: 3810px;
-    transition: 0.5s;
-}*/
-/*FIN LAYERS*/
-
+/*----------------------------------------------------------------------------------------------FIN DIV1--------------------------------------------------------------------------------------------------*/
+/**/
+/**/
+/**/
 .rectangulo-8 {
     width: 1280px;
     height: 844.5px;
@@ -241,6 +220,7 @@ header {}
     height: 700px;
     position: relative;
     bottom: 154px;
+
 }
 
 .titulo-h2 {
@@ -491,10 +471,6 @@ header {}
 }
 
 /*Amigos*/
-
-
-
-
 
 .fondo-amigos {
     z-index: -1;
@@ -862,14 +838,7 @@ header {}
 
 
 
-footer {
-    width: 1280px;
-    height: 598px;
-    background: #5E5E5D;
 
-    position: relative;
-    bottom: 3145px;
-}
 
 .derechos-reservados {
     padding-top: 38px;
