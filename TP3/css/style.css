@@ -929,3 +929,15 @@ footer {
 .vacio {
     height: 100px;
 }
+
+.card {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+    transition: opacity 2s, transform 2s;
+
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
