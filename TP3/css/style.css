@@ -372,6 +372,14 @@ footer {
     position: relative;
     left: 80px;
     bottom: 100px;
+    z-index: 999;
+}
+
+.test1:hover,
+.test2:hover,
+.test3:hover {
+    transform: rotate(13.078deg);
+    transform: perspective(17px);
 }
 
 
@@ -384,6 +392,7 @@ footer {
     position: relative;
     left: 75px;
     bottom: 240px;
+    z-index: 999;
 }
 
 .test3 {
@@ -395,6 +404,7 @@ footer {
     position: relative;
     left: 105px;
     bottom: 351px;
+    z-index: 999;
 }
 
 .div-negro1 {
@@ -940,4 +950,13 @@ footer {
 .card.visible {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+.js-scroll {
+    opacity: 0;
+    transition: opacity 1500ms;
+}
+
+.js-scroll.scrolled {
+    opacity: 1;
 }

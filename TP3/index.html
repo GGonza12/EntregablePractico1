@@ -88,10 +88,11 @@
     </div>
 
     <div class="ghost-spider">
-        <div class="test1"></div>
-        <div class="test2"></div>
-        <div class="test3"></div>
+        <div class="test1 js-scroll"></div>
+        <div class="test2 js-scroll"></div>
+        <div class="test3 js-scroll"></div>
     </div>
+
 
     <div class="div-negro1">
         <h2 class="titulo2 titulo-h2">Los vengadores acompañando tu aventura</h2>
@@ -268,6 +269,24 @@
                 }
             }
         });
+    </script>
+
+    <script>
+        let scrollElements = document.querySelectorAll('.js-scroll');
+
+        window.addEventListener('scroll', () => {
+            let delay = 0;
+            scrollElements.forEach((el) => {
+                if (el.getBoundingClientRect().top < window.innerHeight) {
+                    delay += 100;
+                    setTimeout(() => {
+                        el.classList.add('scrolled');
+                    }, delay);
+                }
+            });
+        });
+
+
     </script>
 </body>
 </div>
