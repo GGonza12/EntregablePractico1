@@ -960,3 +960,32 @@ footer {
 .js-scroll.scrolled {
     opacity: 1;
 }
+
+@keyframes walk {
+    /* Partimos de la primera viñeta del sprite sheet */
+    0% { background-position:0 }
+    /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
+    100% { background-position:-261px }
+  }
+
+  .miguel {
+    width: 41px;
+    height: 92px;
+    /* Tamaño de la viñeta individual */
+    /* Cómo hay establecido un tamaño, centramos con margin:auto */
+    margin:auto;  
+    /* Cargamos el sprite (el repeat-x se puede omitir, por defecto se repite) */
+     background-image: url("../images/spiderSheet.png");
+    /* Aplicamos la animación "walk": 0.8seg, 6 viñetas y repetimos infinitamente */
+    animation:walk .8s steps(6) infinite;
+    /* Posicionamos el personaje sobre el camino de madera */
+    position:relative;
+    left: 158px;
+    top: 350px;
+   
+
+
+
+
+    mix-blend-mode: darken;
+  }
