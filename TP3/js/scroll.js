@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.addEventListener('scroll', function () {
-        let scrollPosition = window.scrollY+150;
+        let scrollPosition = window.scrollY+290;
         let img1 = document.querySelector('.img-juego-1');
         let info1 = document.querySelector('.info-img-1');
         let img2 = document.querySelector('.img-juego-2');

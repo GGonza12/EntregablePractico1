@@ -521,7 +521,7 @@ footer {
 .img-juego-4 {
     transition: 0.5s;
     transform: translateY(20px);
-    position: sticky;
+    
     top: 0;
     /* Esto hará que la imagen se mantenga en la parte superior del div al desplazarse */
     opacity: 0;
@@ -529,6 +529,7 @@ footer {
 }
 
 .img-juego-1 {
+
     position: sticky;
     top: 0;
     /* Esto hará que la imagen se mantenga en la parte superior del div al desplazarse */
@@ -540,6 +541,7 @@ footer {
 }
 
 .img-juego-2 {
+    position: sticky;
     width: 548px;
     height: 305px;
     background-image: url("../images/image-9.png");
@@ -548,6 +550,7 @@ footer {
 }
 
 .img-juego-3 {
+    position: sticky;
     width: 556px;
     height: 301.507px;
     background-image: url("../images/image-10.png");
@@ -557,6 +560,7 @@ footer {
 }
 
 .img-juego-4 {
+
     width: 552px;
     height: 308.253px;
     background-image: url("../images/image-6.png");
@@ -581,6 +585,7 @@ footer {
 .info-img-3.active,
 .info-img-4.active {
     /* Estado final */
+    
     opacity: 1;
     transform: translateY(0);
 }
@@ -619,7 +624,7 @@ footer {
     bottom: 1850px;
     right: -104px;
     animation: scrollImages linear infinite;
-    overflow: hidden;
+
     /* Esto permite el desplazamiento dentro del div */
     height: 2194.5px;
 }
