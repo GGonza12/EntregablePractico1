@@ -961,28 +961,89 @@ footer {
     opacity: 1;
 }
 
-@keyframes walk {
+@keyframes miguelWall {
     /* Partimos de la primera viñeta del sprite sheet */
     0% { background-position:0 }
     /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
     100% { background-position:-261px }
   }
+  @keyframes miguelPunch {
+    /* Partimos de la primera viñeta del sprite sheet */
+    0% { background-position:0 }
+    /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
+    100% { background-position:-730px }
+
+    /*69px de alto*/
+  }
+  @keyframes miguelWeb {
+    /* Partimos de la primera viñeta del sprite sheet */
+    0% { background-position:0 }
+    /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
+    100% { background-position:-296px }
+
+    /*72px de alto*/
+  }
+  @keyframes miguelStanding {
+    /* Partimos de la primera viñeta del sprite sheet */
+    0% { background-position:0 }
+    /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
+    100% { background-position:-182px }
+
+    /*72px de alto*/
+  }
+
+  @keyframes miguelFall {
+    /* Partimos de la primera viñeta del sprite sheet */
+    0% { background-position:0 }
+    /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
+    100% { background-position:-254px }
+
+    /*72px de alto*/
+  }
+
+.miguel:hover {
+    width: 82px;
+    background-image: url("../images/spiderman2099Fall.png");
+    animation:miguelFall .8s steps(3) infinite;
+}
+
 
   .miguel {
-    width: 41px;
-    height: 92px;
+    width: 38px;
+    height: 67px;
     /* Tamaño de la viñeta individual */
     /* Cómo hay establecido un tamaño, centramos con margin:auto */
     margin:auto;  
     /* Cargamos el sprite (el repeat-x se puede omitir, por defecto se repite) */
-     background-image: url("../images/spiderSheet.png");
+    background-image: url("../images/spiderSheet.png");
     /* Aplicamos la animación "walk": 0.8seg, 6 viñetas y repetimos infinitamente */
-    animation:walk .8s steps(6) infinite;
+    animation:miguelWall .6s steps(6) infinite;
     /* Posicionamos el personaje sobre el camino de madera */
     position:relative;
     left: 158px;
     top: 350px;
-   
+   /*
+para la animacion de golpear tiene direferentes tamaños
+   1-60
+   muevo 60
+    2-66
+    muevo 127
+    3-75
+    muevo 201
+    4-69
+    muevo 270
+    5-53
+    muevo 326
+    6-63
+    muevo 396
+    7-86
+    muevo 486
+    8-65
+    muevo 552
+    9-79
+    muevo 637
+    10-89
+   */
 
 
 
