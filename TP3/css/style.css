@@ -82,10 +82,8 @@ footer {
 
 .btn-comprar:hover,
 .btn-comprar-ahora:hover {
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(0.25em);
     transition: 0.50s ease;
-    background-color: #249A12;
+    background-color: #e41820;
     cursor: pointer;
 }
 
@@ -521,7 +519,7 @@ footer {
 .img-juego-4 {
     transition: 0.5s;
     transform: translateY(20px);
-    
+
     top: 0;
     /* Esto hará que la imagen se mantenga en la parte superior del div al desplazarse */
     opacity: 0;
@@ -585,7 +583,7 @@ footer {
 .info-img-3.active,
 .info-img-4.active {
     /* Estado final */
-    
+
     opacity: 1;
     transform: translateY(0);
 }
@@ -644,7 +642,33 @@ footer {
     bottom: 3145px;
 }
 
+.rectangleGwen {
+    transition: .5s ease;
+    width: 1280px;
+    height: 841.639px;
+    background-image: url("../images/RectangleGwen.png");
+    background-size: cover;
+    position: relative;
+    bottom: 3145px;
+}
+
+.lineTopGwen {
+    transition: .5s ease;
+    width: 1280px;
+    height: 161px;
+    background-image: url("../images/RectangleTopGwen.png");
+}
+
+.lineBottomGwen {
+    transition: .5s ease;
+    width: 1280px;
+    height: 147.139px;
+    background-image: url("../images/RectangleBottomGwen.png");
+
+}
+
 .spider-gwen-stacy {
+    transition: .5s ease;
     background-image: url("../images/image-229.png");
     background-size: cover;
     width: 268px;
@@ -654,7 +678,65 @@ footer {
     top: 160px;
 }
 
+.spider-gwen-stacy-giant {
+    transition: .5s ease;
+    width: 395px;
+    height: 613.871px;
+    position: relative;
+    left: 180px;
+    top: -40px;
+    background-image: url("../images/GwenGiant.png");
+    background-size: cover;
+}
+
+.spider-gwen-stacy-blur {
+    transition: .5s ease;
+    width: 219.787px;
+    height: 341.572px;
+    background-image: url("../images/GwenBlurred.png");
+    background-size: cover;
+    position: relative;
+    left: 174px;
+    top: 140px;
+}
+.spider-gwen-stacy-blur-2 {
+    transition: .5s ease;
+    width: 226.537px;
+    height: 352.062px;
+    background-image: url("../images/GwenBlurred.png");
+    background-size: cover;
+    position: relative;
+    left: 252px;
+    top: 140px;
+}
+
+.rectanglePeter {
+    transition: .5s ease;
+    width: 1280px;
+    height: 841.639px;
+    background-image: url("../images/RectanglePeter.png");
+    background-size: cover;
+    position: relative;
+    bottom: 3145px;
+}
+
+.lineTopPeter {
+    transition: .5s ease;
+    width: 1280px;
+    height: 153.5px;
+    background-image: url("../images/RectangleTopPeter.png");
+}
+
+.lineBottomPeter {
+    transition: .5s ease;
+    width: 1280px;
+    height: 157.639px;
+    background-image: url("../images/RectangleBottomPeter.png");
+
+}
+
 .spider-peter-parker {
+    transition: .5s ease;
     background-image: url("../images/image-234.png");
     background-size: cover;
     width: 416.5px;
@@ -664,7 +746,68 @@ footer {
     bottom: 245px;
 }
 
+.spider-peter-parker-giant {
+    
+    transition: .5s ease;
+    width: 616px;
+    height: 676.639px;
+    position: relative;
+    left: 284px;
+    bottom: 380px;
+    background-image: url("../images/PeterGiant.png");
+    background-size: cover;
+}
+
+.spider-peter-parker-blur {
+    transition: .5s ease;
+    width: 352.062px;
+    height: 386.718px;
+    position: relative;
+    left: 572px;
+    bottom: 550px;
+    background-image: url("../images/PeterBlurred.png");
+    background-size: cover;
+}
+
+.spider-peter-parker-blur-2 {
+    transition: .5s ease;
+    width: 352.062px;
+    height: 386.718px;
+    position: relative;
+    left: 424.44px;
+    bottom: 200px;
+    background-image: url("../images/PeterBlurred.png");
+    background-size: cover;
+}
+
+
+.rectangleMiles {
+    transition: .5s ease;
+    width: 1280px;
+    height: 841.639px;
+    background-image: url("../images/RectangleMIles.png");
+    background-size: cover;
+    position: relative;
+    bottom: 3145px;
+}
+
+.lineTopMiles {
+    transition: .5s ease;
+    width: 1280px;
+    height: 159.5px;
+    background-image: url("../images/RectangleTopMiles.png");
+}
+
+.lineBottomMiles {
+    transition: .5s ease;
+    width: 1280px;
+    height: 143.139px;
+    background-image: url("../images/RectangleBottomMiles.png");
+
+}
+
 .spider-miles-morales {
+    transition: .5s ease;
     background-image: url("../images/image-236.png");
     background-size: cover;
     width: 313.5px;
@@ -672,6 +815,40 @@ footer {
     position: relative;
     left: 770px;
     bottom: 700px;
+}
+
+.spider-miles-morales-giant {
+    transition: .5s ease;
+    position: relative;
+    left: 694px;
+    bottom: 810px;
+    width: 497px;
+    height: 631.753px;
+    background-image: url("../images/MilesGiant.png");
+    background-size: cover;
+
+}
+
+.spider-miles-morales-blur-1 {
+    transition: .5s ease;
+    width: 257.101px;
+    height: 326.81px;
+    position: relative;
+    left: 869px;
+    bottom: 940px;
+    background-image: url("../images/MilesBlurred.png");
+    background-size: cover;
+}
+
+.spider-miles-morales-blur-2 {
+    transition: .5s ease;
+    width: 257.101px;
+    height: 326.81px;
+    position: relative;
+    left: 861px;
+    bottom: 840px;
+    background-image: url("../images/MilesBlurred.png");
+    background-size: cover;
 }
 
 .titulo3 {
@@ -967,67 +1144,100 @@ footer {
 }
 
 @keyframes miguelWall {
+
     /* Partimos de la primera viñeta del sprite sheet */
-    0% { background-position:0 }
+    0% {
+        background-position: 0
+    }
+
     /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
-    100% { background-position:-261px }
-  }
-  @keyframes miguelPunch {
+    100% {
+        background-position: -261px
+    }
+}
+
+@keyframes miguelPunch {
+
     /* Partimos de la primera viñeta del sprite sheet */
-    0% { background-position:0 }
+    0% {
+        background-position: 0
+    }
+
     /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
-    100% { background-position:-730px }
+    100% {
+        background-position: -730px
+    }
 
     /*69px de alto*/
-  }
-  @keyframes miguelWeb {
+}
+
+@keyframes miguelWeb {
+
     /* Partimos de la primera viñeta del sprite sheet */
-    0% { background-position:0 }
+    0% {
+        background-position: 0
+    }
+
     /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
-    100% { background-position:-296px }
+    100% {
+        background-position: -296px
+    }
 
     /*72px de alto*/
-  }
-  @keyframes miguelStanding {
+}
+
+@keyframes miguelStanding {
+
     /* Partimos de la primera viñeta del sprite sheet */
-    0% { background-position:0 }
+    0% {
+        background-position: 0
+    }
+
     /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
-    100% { background-position:-182px }
+    100% {
+        background-position: -182px
+    }
 
     /*72px de alto*/
-  }
+}
 
-  @keyframes miguelFall {
+@keyframes miguelFall {
+
     /* Partimos de la primera viñeta del sprite sheet */
-    0% { background-position:0 }
+    0% {
+        background-position: 0
+    }
+
     /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
-    100% { background-position:-254px }
+    100% {
+        background-position: -254px
+    }
 
     /*72px de alto*/
-  }
+}
 
 .miguel:hover {
     width: 82px;
     background-image: url("../images/spiderman2099Fall.png");
-    animation:miguelFall .8s steps(3) infinite;
+    animation: miguelFall .8s steps(3) infinite;
 }
 
 
-  .miguel {
+.miguel {
     width: 38px;
     height: 67px;
     /* Tamaño de la viñeta individual */
     /* Cómo hay establecido un tamaño, centramos con margin:auto */
-    margin:auto;  
+    margin: auto;
     /* Cargamos el sprite (el repeat-x se puede omitir, por defecto se repite) */
     background-image: url("../images/spiderSheet.png");
     /* Aplicamos la animación "walk": 0.8seg, 6 viñetas y repetimos infinitamente */
-    animation:miguelWall .6s steps(6) infinite;
+    animation: miguelWall .6s steps(6) infinite;
     /* Posicionamos el personaje sobre el camino de madera */
-    position:relative;
+    position: relative;
     left: 158px;
     top: 350px;
-   /*
+    /*
 para la animacion de golpear tiene direferentes tamaños
    1-60
    muevo 60
@@ -1054,4 +1264,4 @@ para la animacion de golpear tiene direferentes tamaños
 
 
     mix-blend-mode: darken;
-  }
+}
