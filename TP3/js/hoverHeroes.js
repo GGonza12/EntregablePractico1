@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let gwen = document.querySelector(".spider-gwen-stacy");
     let peter = document.querySelector(".spider-peter-parker");
     let miles = document.querySelector(".spider-miles-morales");
+    let prefooter = document.querySelector(".prefooter");
+
 
     function fondoGwen(){
         fondo.classList.add("rectangleGwen");
@@ -22,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
         gwen.classList.add("spider-gwen-stacy-giant");
         peter.classList.add("spider-peter-parker-blur");
         miles.classList.add("spider-miles-morales-blur-1");
+        prefooter.style.bottom= 3266.779+ "px";
+
         // fondo.style.backgroundImage="url(../images/RectangleGwen.png)";
     }
 
@@ -32,6 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
         gwen.classList.remove("spider-gwen-stacy-giant");
         peter.classList.remove("spider-peter-parker-blur");
         miles.classList.remove("spider-miles-morales-blur-1");
+        prefooter.style.bottom= 3145+ "px";
+
+        
     }
 
     function fondoPeter(){
@@ -41,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         peter.classList.add("spider-peter-parker-giant");
         gwen.classList.add("spider-gwen-stacy-blur");
         miles.classList.add("spider-miles-morales-blur-2");
+        prefooter.style.bottom= 3246.779+ "px";
     }
 
     function fondoPeterOut(){
@@ -50,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         peter.classList.remove("spider-peter-parker-giant");
         gwen.classList.remove("spider-gwen-stacy-blur");
         miles.classList.remove("spider-miles-morales-blur-2");
+        prefooter.style.bottom= 3145+ "px";
     }
 
     function fondoMiles(){
@@ -59,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
         peter.classList.add("spider-peter-parker-blur-2");
         gwen.classList.add("spider-gwen-stacy-blur-2");
         miles.classList.add("spider-miles-morales-giant");
+        prefooter.style.bottom= 3226.779+ "px";
     }
 
     function fondoMilesOut(){
@@ -68,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         peter.classList.remove("spider-peter-parker-blur-2");
         gwen.classList.remove("spider-gwen-stacy-blur-2");
         miles.classList.remove("spider-miles-morales-giant");
+        prefooter.style.bottom= 3145+ "px";
     }
 
 
