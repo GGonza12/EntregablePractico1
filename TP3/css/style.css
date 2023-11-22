@@ -664,6 +664,9 @@ footer {
     width: 1280px;
     height: 147.139px;
     background-image: url("../images/RectangleBottomGwen.png");
+    z-index: 2;
+    position: relative;
+    top: -790px;
 
 }
 
@@ -699,6 +702,7 @@ footer {
     left: 174px;
     top: 140px;
 }
+
 .spider-gwen-stacy-blur-2 {
     transition: .5s ease;
     width: 226.537px;
@@ -732,7 +736,9 @@ footer {
     width: 1280px;
     height: 157.639px;
     background-image: url("../images/RectangleBottomPeter.png");
-
+    position: relative;
+    top: -790px;
+    z-index: 2;
 }
 
 .spider-peter-parker {
@@ -747,7 +753,7 @@ footer {
 }
 
 .spider-peter-parker-giant {
-    
+
     transition: .5s ease;
     width: 616px;
     height: 676.639px;
@@ -803,7 +809,9 @@ footer {
     width: 1280px;
     height: 143.139px;
     background-image: url("../images/RectangleBottomMiles.png");
-
+    position: relative;
+    top: -790px;
+    z-index: 2;
 }
 
 .spider-miles-morales {
