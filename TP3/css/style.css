@@ -649,13 +649,15 @@ footer {
 /*Gwen*/
 .rectangleGwen {
     transition: .5s ease;
-    height: 819.86px;
+    height: 841.639px;
     background-image: url("../images/fondoGwen.png");
     background-size: cover;
     position: relative;
     bottom: 3145px;
     z-index: 3;
-    background: linear-gradient(0deg, rgba(143, 190, 252, 1), white, rgba(0, 0, 0, 0) 86%) no-repeat;
+   background: rgba(0, 0, 0, 0.00);
+    
+    /* background: linear-gradient(0deg, rgba(143, 190, 252, 1), white, rgba(0, 0, 0, 0) 86%) no-repeat; */
     /* background: linear-gradient(0deg, rgba(143, 190, 252, 1), rgba(0, 0, 0, 0) 80%) no-repeat; */
     /*121,779px*/
 }
