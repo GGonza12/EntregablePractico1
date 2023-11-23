@@ -14,16 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 var yPos = -(top * speed / 100);
                 layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
             }
-
-
-
         });
-
-
     }
 
     document.body.onload = castParallax();
-
-
 
 });

@@ -13,6 +13,7 @@ body {
     background-color: #000;
     display: flex;
     flex-direction: column;
+
 }
 
 footer {
@@ -359,6 +360,7 @@ footer {
     background-image: url("../images/image-223.png");
     position: relative;
     bottom: 350px;
+    z-index: 100;
 }
 
 .test1 {
@@ -370,16 +372,9 @@ footer {
     position: relative;
     left: 80px;
     bottom: 100px;
-    z-index: 999;
+    transition: transform 2s;
+    z-index: 1;
 }
-
-.test1:hover,
-.test2:hover,
-.test3:hover {
-    transform: rotate(13.078deg);
-    transform: perspective(17px);
-}
-
 
 .test2 {
     background-image: url("../images/test.png");
@@ -390,7 +385,8 @@ footer {
     position: relative;
     left: 75px;
     bottom: 240px;
-    z-index: 999;
+    transition: transform 2s;
+    z-index: 1;
 }
 
 .test3 {
@@ -402,7 +398,14 @@ footer {
     position: relative;
     left: 105px;
     bottom: 351px;
-    z-index: 999;
+    transition: transform 2s;
+    z-index: 1;
+}
+
+.test1:hover,
+.test2:hover,
+.test3:hover {
+    transform: perspective(5px);
 }
 
 .div-negro1 {
@@ -643,15 +646,17 @@ footer {
     bottom: 3145px;
 }
 
+/*Gwen*/
 .rectangleGwen {
     transition: .5s ease;
-    width: 1280px;
-    height: 841.639px;
-    background-image: url("../images/RectangleGwen.png");
+    height: 819.86px;
+    background-image: url("../images/fondoGwen.png");
     background-size: cover;
     position: relative;
     bottom: 3145px;
-    z-index: 999;
+    z-index: 3;
+    background: linear-gradient(0deg, rgba(143, 190, 252, 1), white, rgba(0, 0, 0, 0) 86%) no-repeat;
+    /* background: linear-gradient(0deg, rgba(143, 190, 252, 1), rgba(0, 0, 0, 0) 80%) no-repeat; */
     /*121,779px*/
 }
 
@@ -720,7 +725,7 @@ footer {
 .rectanglePeter {
     transition: .5s ease;
     width: 1280px;
-    height: 841.639px;
+    height: 741.639px;
     background-image: url("../images/RectanglePeter.png");
     background-size: cover;
     position: relative;
@@ -793,7 +798,7 @@ footer {
 .rectangleMiles {
     transition: .5s ease;
     width: 1280px;
-    height: 841.639px;
+    height: 741.639px;
     background-image: url("../images/RectangleMIles.png");
     background-size: cover;
     position: relative;
@@ -814,7 +819,7 @@ footer {
     background-image: url("../images/RectangleBottomMiles.png");
     position: relative;
     top: -790px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .spider-miles-morales {
@@ -902,10 +907,13 @@ footer {
 .prefooter {
     width: 1280px;
     height: 1296px;
-    background: linear-gradient(180deg, #8FBEFC 21.2%, #F7E3D8 81.48%);
+    background-image: url("../images/RectangleFooter.png");
+    /*background: linear-gradient(180deg, #8FBEFC 21.2%, #F7E3D8 81.48%);*/
     position: relative;
     bottom: 3145px;
+    z-index: 2;
     /*3226,779px miles*/
+
 }
 
 .seccion1 {
@@ -1146,14 +1154,6 @@ footer {
     transform: translate3d(0, 0, 0);
 }
 
-.js-scroll {
-    opacity: 0;
-    transition: opacity 1500ms;
-}
-
-.js-scroll.scrolled {
-    opacity: 1;
-}
 
 @keyframes miguelWall {
 

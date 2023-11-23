@@ -88,9 +88,9 @@
     </div>
 
     <div class="ghost-spider">
-        <div class="test1 js-scroll"></div>
-        <div class="test2 js-scroll"></div>
-        <div class="test3 js-scroll"></div>
+        <div class="test1"></div>
+        <div class="test2"></div>
+        <div class="test3"></div>
     </div>
 
 
@@ -171,12 +171,11 @@
 
     <div class="rectangle-10">
         <div class="lineTop"></div>
-        <div class="spider-gwen-stacy card"></div> <!--asdasdasdsadsadsadsadsadsasadsadsadsadsadsadsadsa-->
+        <div class="spider-gwen-stacy card"></div>
         <div class="spider-peter-parker card"></div>
         <div class="spider-miles-morales card"></div>
         <div class="lineBottom"></div>
     </div>
-
     <div class="prefooter">
         <div class="seccion1">
             <div class="titulo4">
@@ -276,23 +275,6 @@
         });
     </script>
 
-    <script>
-        let scrollElements = document.querySelectorAll('.js-scroll');
-
-        window.addEventListener('scroll', () => {
-            let delay = 0;
-            scrollElements.forEach((el) => {
-                if (el.getBoundingClientRect().top < window.innerHeight) {
-                    delay += 100;
-                    setTimeout(() => {
-                        el.classList.add('scrolled');
-                    }, delay);
-                }
-            });
-        });
-
-
-    </script>
 </body>
 </div>
 
