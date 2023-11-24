@@ -14,10 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
     let gwen = document.querySelector(".spider-gwen-stacy");
     let peter = document.querySelector(".spider-peter-parker");
     let miles = document.querySelector(".spider-miles-morales");
-    let prefooter = document.querySelector(".prefooter");
+
+    let divOculto = document.querySelector(".oculto");
 
 
     function fondoGwen() {
+        divOculto.classList.add("fondoBlanco")
         fondo.classList.add("rectangleGwen");
         top.classList.add("lineTopGwen");
         bottom.classList.add("lineBottomGwen");
