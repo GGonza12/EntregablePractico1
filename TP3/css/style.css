@@ -354,15 +354,12 @@ footer {
 }
 
 .ghost-spider {
-    width: 1280px !important;
-    height: 566px !important;
+    height: 566px ;
     background-image: url("../images/image-223.png");
     position: relative;
     bottom: 350px;
     z-index: 100;
-    overflow-x: hidden;
-
-
+    overflow-x: visible;
    
 }
 
