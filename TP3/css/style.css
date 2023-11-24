@@ -642,37 +642,40 @@ footer {
     background-image: url("../images/rectangle-10.png");
     background-size: cover;
     position: relative;
-    /* background-color: white; */
+
     bottom: 3145px;
 }
 
 .oculto {
     display: none;
 }
-.fondoBlanco{
-    display: block !important; 
+
+
+
+
+
+.fondoGwen {
+    display: block !important;
     width: 841.639px;
-	height: 1284px;
-	background: black;
+    height: 1284px;
+    background:white;
     background-size: cover;
-	clip-path: polygon(0% 100%, 17.5% 0%, 82.5% 0%, 100% 100%);
+    clip-path: polygon(0% 100%, 15.5% 0%, 84.5% 0%, 100% 100%);
     transform: rotate(270deg);
-    position: relative;
-    top: -300px;
+    position: absolute;
+    top: -215px;
     left: 220px;
     z-index: 3;
 }
+
 /*Gwen*/
 .rectangleGwen {
     transition: .5s ease;
-
-    background-image: url("../images/rectangle-10.png") ;
-    background-image:url("../images/RectangleGwen.png");
+    background-image: url("../images/RectangleGwen.png");
     background-size: cover;
     position: relative;
     bottom: 3145px;
-    z-index: 4;
-    
+    z-index: 9;
     /* background: linear-gradient(0deg, rgba(143, 190, 252, 1), white, rgba(0, 0, 0, 0) 86%) no-repeat; */
     /* background: linear-gradient(0deg, rgba(143, 190, 252, 1), rgba(0, 0, 0, 0) 80%) no-repeat; */
     /*121,779px*/
@@ -683,6 +686,9 @@ footer {
     width: 1280px;
     height: 161px;
     background-image: url("../images/RectangleTopGwen.png");
+    position: relative;
+    top: 0px;
+    z-index: 5;
 }
 
 .lineBottomGwen {
@@ -693,6 +699,7 @@ footer {
     z-index: 2;
     position: relative;
     top: -790px;
+    z-index: 4;
 
 }
 
@@ -705,6 +712,7 @@ footer {
     position: relative;
     left: 190px;
     top: 160px;
+    z-index: 6;
 }
 
 .spider-gwen-stacy-giant {
@@ -716,7 +724,7 @@ footer {
     top: -40px;
     background-image: url("../images/GwenGiant.png");
     background-size: cover;
-    z-index: 4;
+    z-index: 6;
 }
 
 .spider-gwen-stacy-blur {
@@ -728,6 +736,7 @@ footer {
     position: relative;
     left: 174px;
     top: 140px;
+    z-index: 6;
 }
 
 .spider-gwen-stacy-blur-2 {
@@ -738,15 +747,29 @@ footer {
     background-size: cover;
     position: relative;
     left: 252px;
-    top: 140px;
+    top: 120px;
+    z-index: 6;
+}
+
+.fondoPeter {
+    display: block !important;
+    width: 841.639px;
+    height: 1284px;
+    background:#d1d8ed;
+    background-size: cover;
+    clip-path: polygon(0% 100%, 15.5% 0%, 84.5% 0%, 100% 100%);
+    transform: rotate(270deg);
+    position: absolute;
+    top: -215px;
+    left: 220px;
+    z-index: 3;
 }
 
 
 .rectanglePeter {
+    display: block !important;
     transition: .5s ease;
-    width: 1280px;
-    height: 741.639px;
-    background-image: url("../images/RectanglePeter.png");
+    background-image: url("../images/RectanglePeter.png") !important;
     background-size: cover;
     position: relative;
     bottom: 3145px;
@@ -757,6 +780,9 @@ footer {
     width: 1280px;
     height: 153.5px;
     background-image: url("../images/RectangleTopPeter.png");
+    position: relative;
+    top: 0px;
+    z-index: 5;
 }
 
 .lineBottomPeter {
@@ -778,6 +804,7 @@ footer {
     position: relative;
     left: 390px;
     bottom: 245px;
+    z-index: 6;
 }
 
 .spider-peter-parker-giant {
@@ -790,6 +817,7 @@ footer {
     bottom: 380px;
     background-image: url("../images/PeterGiant.png");
     background-size: cover;
+    z-index: 6;
 }
 
 .spider-peter-parker-blur {
@@ -801,6 +829,7 @@ footer {
     bottom: 550px;
     background-image: url("../images/PeterBlurred.png");
     background-size: cover;
+    z-index: 6;
 }
 
 .spider-peter-parker-blur-2 {
@@ -809,20 +838,33 @@ footer {
     height: 386.718px;
     position: relative;
     left: 424.44px;
-    bottom: 200px;
+    bottom: 230px;
     background-image: url("../images/PeterBlurred.png");
     background-size: cover;
+    z-index: 6;
 }
 
+.fondoMiles {
+    display: block !important;
+    width: 841.639px;
+    height: 1284px;
+    background:#c7c7c7;
+    background-size: cover;
+    clip-path: polygon(0% 100%, 16.5% 0%, 83.5% 0%, 100% 100%);
+    transform: rotate(270deg);
+    position: absolute;
+    top: -215px;
+    left: 220px;
+    z-index: 3;
+}
 
 .rectangleMiles {
     transition: .5s ease;
-    width: 1280px;
-    height: 741.639px;
     background-image: url("../images/RectangleMIles.png");
     background-size: cover;
     position: relative;
     bottom: 3145px;
+    z-index: 6;
 }
 
 .lineTopMiles {
@@ -830,6 +872,9 @@ footer {
     width: 1280px;
     height: 159.5px;
     background-image: url("../images/RectangleTopMiles.png");
+    position: relative;
+    top: 5px;
+    z-index: 6;
 }
 
 .lineBottomMiles {
@@ -838,7 +883,7 @@ footer {
     height: 143.139px;
     background-image: url("../images/RectangleBottomMiles.png");
     position: relative;
-    top: -790px;
+    top: -820px;
     z-index: 3;
 }
 
@@ -851,17 +896,19 @@ footer {
     position: relative;
     left: 770px;
     bottom: 700px;
+    z-index: 6;
 }
 
 .spider-miles-morales-giant {
     transition: .5s ease;
     position: relative;
     left: 694px;
-    bottom: 810px;
+    bottom: 820px;
     width: 497px;
     height: 631.753px;
     background-image: url("../images/MilesGiant.png");
     background-size: cover;
+    z-index: 6;
 
 }
 
@@ -874,6 +921,7 @@ footer {
     bottom: 940px;
     background-image: url("../images/MilesBlurred.png");
     background-size: cover;
+    z-index: 6;
 }
 
 .spider-miles-morales-blur-2 {
@@ -885,6 +933,7 @@ footer {
     bottom: 840px;
     background-image: url("../images/MilesBlurred.png");
     background-size: cover;
+    z-index: 6;
 }
 
 .titulo3 {

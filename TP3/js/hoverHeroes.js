@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function fondoGwen() {
-        divOculto.classList.add("fondoBlanco")
+        divOculto.classList.add("fondoGwen");
         fondo.classList.add("rectangleGwen");
         top.classList.add("lineTopGwen");
         bottom.classList.add("lineBottomGwen");
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function fondoGwenOut() {
+        divOculto.classList.remove("fondoGwen");
         fondo.classList.remove("rectangleGwen");
         top.classList.remove("lineTopGwen");
         bottom.classList.remove("lineBottomGwen");
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function fondoPeter() {
+        divOculto.classList.add("fondoPeter");
         fondo.classList.add("rectanglePeter");
         top.classList.add("lineTopPeter");
         bottom.classList.add("lineBottomPeter");
@@ -54,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function fondoPeterOut() {
+        divOculto.classList.remove("fondoPeter");
         fondo.classList.remove("rectanglePeter");
         top.classList.remove("lineTopPeter");
         bottom.classList.remove("lineBottomPeter");
@@ -64,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function fondoMiles() {
+        divOculto.classList.add("fondoMiles");
         fondo.classList.add("rectangleMiles");
         top.classList.add("lineTopMiles");
         bottom.classList.add("lineBottomMiles");
@@ -74,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function fondoMilesOut() {
+        divOculto.classList.remove("fondoMiles");
         fondo.classList.remove("rectangleMiles");
         top.classList.remove("lineTopMiles");
         bottom.classList.remove("lineBottomMiles");
