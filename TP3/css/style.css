@@ -80,7 +80,7 @@ footer {
     line-height: 18.9px;
     /* 18.9px */
     letter-spacing: 2.2px;
-    -webkit-text-stroke:2px;
+    -webkit-text-stroke: 2px;
 }
 
 .btn-comprar:hover,
@@ -1055,7 +1055,7 @@ footer {
     line-height: 94.5%;
     /* 18.9px */
     letter-spacing: 2.2px;
-    -webkit-text-stroke:2px;
+    -webkit-text-stroke: 2px;
 }
 
 .prefooter {
@@ -1119,6 +1119,7 @@ footer {
 }
 
 .btn-suscripcion {
+    -webkit-text-stroke: 2px;
     width: 218px;
     height: 118px;
 
