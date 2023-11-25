@@ -105,6 +105,17 @@ footer {
     bottom: 50px;
 }
 
+@keyframes logo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 .div1 .layer-8 {
     width: 590px;
     height: 301px;
@@ -113,6 +124,9 @@ footer {
     left: 330px;
     bottom: 3857px;
     z-index: 1;
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-delay: 4s;
 }
 
 .div1.abajo .layer-8 {
@@ -126,6 +140,15 @@ footer {
     transition: 0.5s;
 }
 
+.parche {
+    width: 400px;
+    height: 100px;
+    background-color: #8F6AA6;
+    position: absolute;
+    z-index: -99999;
+    top: 850px;
+}
+
 /*Fondo nubes*/
 .layer-1 {
     width: 1280px;
@@ -133,7 +156,16 @@ footer {
     background-image: url("../images/untitled-1-1.png");
     position: relative;
     bottom: 47px;
+}
 
+@keyframes deslizarEdificios {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 /*Fondo edificios*/
@@ -143,8 +175,43 @@ footer {
     background-image: url("../images/Edificios-difuminados.png");
     position: relative;
     bottom: 760px;
-
+    animation-name: deslizarEdificios;
+    animation-duration: 4s;
+    animation-delay: 4s;
 }
+
+@keyframes deslizarPeter {
+    from {
+        transform: translateY(-300%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes deslizarGwen {
+    from {
+        transform: translateX(-150%) translateY(-50%);
+    }
+
+    to {
+        transform: translateX(0) translateY(0);
+
+    }
+}
+
+@keyframes deslizarMiles {
+    from {
+        transform: translateX(150%) translateY(-50%);
+    }
+
+    to {
+        transform: translateX(0) translateY(0);
+
+    }
+}
+
 
 /*GWEN STACY*/
 .layer-3 {
@@ -155,6 +222,9 @@ footer {
     position: relative;
     left: 97px;
     bottom: 1212px;
+    animation-name: deslizarGwen;
+    animation-duration: 4s;
+    animation-delay: 4s;
 }
 
 /*PETER PARKER*/
@@ -165,7 +235,10 @@ footer {
     position: relative;
     left: 400px;
     bottom: 1622px;
-    z-index: 1;
+    z-index: 5;
+    animation-name: deslizarPeter;
+    animation-duration: 4s;
+    animation-delay: 4s;
 }
 
 /*MILES MORALES*/
@@ -177,11 +250,14 @@ footer {
     position: relative;
     left: 695px;
     bottom: 2177px;
+    animation-name: deslizarMiles;
+    animation-duration: 4s;
+    animation-delay: 4s;
 }
 
 /*TELARAÑA DE PETER PARKER*/
 .layer-6 {
-    z-index: 1;
+    z-index: 5;
     width: 567px;
     height: 671px;
     background-image: url("../images/untitled-5-1.png");
@@ -189,6 +265,9 @@ footer {
     position: relative;
     right: -5px;
     bottom: 2507px;
+    animation-name: deslizarPeter;
+    animation-duration: 4s;
+    animation-delay: 4s;
 }
 
 /*TELARAÑA DE MILES MORALES*/
@@ -199,7 +278,10 @@ footer {
     background-image: url("../images/untitled-5-3.png");
     position: relative;
     left: 981px;
-    bottom: 3144px;
+    bottom: 3187px;
+    animation-name: deslizarMiles;
+    animation-duration: 4s;
+    animation-delay: 4s;
 }
 
 /*----------------------------------------------------------------------------------------------FIN DIV1--------------------------------------------------------------------------------------------------*/
@@ -354,13 +436,13 @@ footer {
 }
 
 .ghost-spider {
-    height: 566px ;
+    height: 566px;
     background-image: url("../images/image-223.png");
     position: relative;
     bottom: 350px;
     z-index: 100;
     overflow-x: visible;
-   
+
 }
 
 .test1 {
@@ -658,7 +740,7 @@ footer {
     display: block !important;
     width: 841.639px;
     height: 1284px;
-    background:white;
+    background: white;
     background-size: cover;
     clip-path: polygon(0% 100%, 15.5% 0%, 84.5% 0%, 100% 100%);
     transform: rotate(270deg);
@@ -755,7 +837,7 @@ footer {
     display: block !important;
     width: 841.639px;
     height: 1284px;
-    background:#d1d8ed;
+    background: #d1d8ed;
     background-size: cover;
     clip-path: polygon(0% 100%, 15.5% 0%, 84.5% 0%, 100% 100%);
     transform: rotate(270deg);
@@ -848,7 +930,7 @@ footer {
     display: block !important;
     width: 841.639px;
     height: 1284px;
-    background:#c7c7c7;
+    background: #c7c7c7;
     background-size: cover;
     clip-path: polygon(0% 100%, 16.5% 0%, 83.5% 0%, 100% 100%);
     transform: rotate(270deg);
@@ -1211,7 +1293,8 @@ footer {
     height: 100px;
 }
 
-.card,.card-text {
+.card,
+.card-text {
     opacity: 0;
     transform: translate3d(0, 20px, 0);
     transition: opacity 2s, transform 2s;
@@ -1219,7 +1302,8 @@ footer {
 }
 
 
-.card.visible,.card-text.visible{
+.card.visible,
+.card-text.visible {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
@@ -1346,4 +1430,46 @@ para la animacion de golpear tiene direferentes tamaños
 
 
     mix-blend-mode: darken;
+}
+
+.spinner {
+    z-index: 999999;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("../images/SpiderMan-Spinner.png");
+    background-color: #FFF;
+    background-size: contain;
+    animation: spin 1s ease infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF;
+    z-index: 999999;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.contenedor-spinner {
+    z-index: 999999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
