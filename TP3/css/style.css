@@ -73,12 +73,14 @@ footer {
     background: #FFE901;
     box-shadow: 4px 5px 0px 0px #02187E;
     color: #02187E;
-    font-family: 'Lato';
+    font-family: Lato;
     font-size: 20px;
     font-style: normal;
     font-weight: 900;
-    line-height: 94.5%;
+    line-height: 18.9px;
+    /* 18.9px */
     letter-spacing: 2.2px;
+    -webkit-text-stroke:2px;
 }
 
 .btn-comprar:hover,
@@ -258,13 +260,13 @@ footer {
 /*TELARAÑA DE PETER PARKER*/
 .layer-6 {
     z-index: 5;
-    width: 567px;
+    width: 575px;
     height: 671px;
     background-image: url("../images/untitled-5-1.png");
-    background-size: contain;
+    background-size: cover;
     position: relative;
-    right: -5px;
-    bottom: 2507px;
+    right: 0px;
+    bottom: 2511px;
     animation-name: deslizarPeter;
     animation-duration: 4s;
     animation-delay: 4s;
@@ -739,14 +741,14 @@ footer {
 .fondoGwen {
     display: block !important;
     width: 841.639px;
-    height: 1284px;
-    background: white;
+    height: 1280px;
+    background: #f6e2ef;
     background-size: cover;
     clip-path: polygon(0% 100%, 15.5% 0%, 84.5% 0%, 100% 100%);
     transform: rotate(270deg);
     position: absolute;
     top: -215px;
-    left: 220px;
+    left: 219px;
     z-index: 3;
 }
 
@@ -836,14 +838,14 @@ footer {
 .fondoPeter {
     display: block !important;
     width: 841.639px;
-    height: 1284px;
+    height: 1280px;
     background: #d1d8ed;
     background-size: cover;
-    clip-path: polygon(0% 100%, 15.5% 0%, 84.5% 0%, 100% 100%);
+    clip-path: polygon(0% 100%, 14.5% 0%, 84.3% 0%, 100% 100%);
     transform: rotate(270deg);
     position: absolute;
     top: -215px;
-    left: 220px;
+    left: 219px;
     z-index: 3;
 }
 
@@ -863,7 +865,7 @@ footer {
     height: 153.5px;
     background-image: url("../images/RectangleTopPeter.png");
     position: relative;
-    top: 0px;
+    top: 3px;
     z-index: 5;
 }
 
@@ -873,7 +875,7 @@ footer {
     height: 157.639px;
     background-image: url("../images/RectangleBottomPeter.png");
     position: relative;
-    top: -790px;
+    top: -810px;
     z-index: 3;
 }
 
@@ -896,7 +898,7 @@ footer {
     height: 676.639px;
     position: relative;
     left: 284px;
-    bottom: 380px;
+    bottom: 374px;
     background-image: url("../images/PeterGiant.png");
     background-size: cover;
     z-index: 6;
@@ -929,14 +931,14 @@ footer {
 .fondoMiles {
     display: block !important;
     width: 841.639px;
-    height: 1284px;
+    height: 1280px;
     background: #c7c7c7;
     background-size: cover;
-    clip-path: polygon(0% 100%, 16.5% 0%, 83.5% 0%, 100% 100%);
+    clip-path: polygon(0% 100%, 14.9% 0%, 84.5% 0%, 100% 100%);
     transform: rotate(270deg);
     position: absolute;
     top: -215px;
-    left: 220px;
+    left: 219px;
     z-index: 3;
 }
 
@@ -955,7 +957,7 @@ footer {
     height: 159.5px;
     background-image: url("../images/RectangleTopMiles.png");
     position: relative;
-    top: 5px;
+    top: 0px;
     z-index: 6;
 }
 
@@ -1053,6 +1055,7 @@ footer {
     line-height: 94.5%;
     /* 18.9px */
     letter-spacing: 2.2px;
+    -webkit-text-stroke:2px;
 }
 
 .prefooter {
