@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         return offsetTop;
     }
-
+//punto 4 este es para que cuando scrolleas cambie de imagen y texto cuando estas cerca de la imagen que lo sigue. 
     window.addEventListener('scroll', function () {
         let scrollPosition = window.scrollY+290;
         let img1 = document.querySelector('.img-juego-1');

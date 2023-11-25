@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let divOculto = document.querySelector(".oculto");
 
-
+//Cuando pasas el mouse encima de uno de los 3 heroes cambia el fondo y las imagenes de los personajes
     function fondoGwen() {
         divOculto.classList.add("fondoGwen");
         fondo.classList.add("rectangleGwen");
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // fondo.style.backgroundImage="url(../images/RectangleGwen.png)";
     }
-
+//cuando el mouse ya no esta aputando a uno de los personajes vuelve a como estaba antes
     function fondoGwenOut() {
         divOculto.classList.remove("fondoGwen");
         fondo.classList.remove("rectangleGwen");

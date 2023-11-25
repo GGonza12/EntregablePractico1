@@ -1,5 +1,5 @@
 "use strict";
-
+//esta funcion es para que el spinner cambie de opacidad despues de un tiempo.
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         document.querySelector('.overlay').style.opacity = 0;
