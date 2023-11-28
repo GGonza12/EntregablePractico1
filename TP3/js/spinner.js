@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.overlay').remove();
     }, 10000);
 
-    /*const percentage = document.getElementById('percentage');
+    const percentage = document.getElementById('percentage');
 
     let currentPercentage = 0;
 
@@ -24,5 +24,5 @@ document.addEventListener('DOMContentLoaded', function () {
         percentage.textContent = `${currentPercentage}%`;
     }
 
-    increasePercentage(); // Inicia el proceso de aumento del porcentaje*/
+    increasePercentage(); // Inicia el proceso de aumento del porcentaje
 });
